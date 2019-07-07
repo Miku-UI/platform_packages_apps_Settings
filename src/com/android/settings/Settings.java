@@ -454,4 +454,9 @@ public class Settings extends SettingsActivity {
      * Activity for PreviouslyConnectedDeviceDashboardFragment
      */
     public static class PreviouslyConnectedDevicesActivity extends SettingsActivity { /* empty */ }
+
+    /**
+     * Activity for Smart Pixels
+     */
+    public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
 }
