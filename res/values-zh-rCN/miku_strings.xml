@@ -67,4 +67,8 @@
     <!-- Label for device's hardware ram size [CHAR LIMIT=40] -->
     <string name="total_ram">可以使用的总内存</string>
 
+    <!-- Double Tap to Sleep Statusbar -->
+    <string name="double_tap_sleep_gesture_title">点按锁屏</string>
+    <string name="double_tap_sleep_gesture_summary">在状态栏的任何地方双击都可以锁屏哦！</string>
+
 </resources>
