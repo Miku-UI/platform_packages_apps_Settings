@@ -21,7 +21,7 @@
 
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Swipe to screenshot</string>
-    <string name="three_finger_gesture_summary">Swipe down your three fingers, and~~~ it's done!</string>
+    <string name="three_finger_gesture_summary">Swipe down your three fingers, and～～it is done！</string>
 
     <!-- Miku version -->
     <string name="miku_version">MikuUI Ver.</string>
@@ -29,9 +29,9 @@
 
     <!-- SELinux Status -->
     <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled! That's weird...</string>
-    <string name="selinux_status_permissive">Permissive~Be careful~</string>
-    <string name="selinux_status_enforcing">Enforcing!You're safe now!</string>
+    <string name="selinux_status_disabled">Disabled？ That is weird...</string>
+    <string name="selinux_status_permissive">Permissive～Be careful～</string>
+    <string name="selinux_status_enforcing">Enforcing.You are safe now.</string>
 
      <!-- Status Bar Lyric -->
     <string name="status_bar_show_lyric_title">Status bar lyric (need App support)</string>
