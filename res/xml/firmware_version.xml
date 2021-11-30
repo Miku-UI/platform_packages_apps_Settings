@@ -21,7 +21,12 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- Android version -->
+    <PreferenceScreen
+        android:key="mikuui_logo"
+        android:layout="@layout/mikuui_logo"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+
+    <!-- Android version 
     <Preference
         android:key="os_firmware_version"
         android:title="@string/firmware_version"
@@ -29,6 +34,7 @@
         settings:enableCopying="true"
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+    -->
 
     <!-- MikuUI version -->
     <Preference
