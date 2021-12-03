@@ -43,10 +43,10 @@
     <string name="radioInfo_data_connected" msgid="8816467971633020141">"已连接"</string>
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"已暂停"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"未知"</string>
-    <string name="sdcard_unmount" product="nosdcard" msgid="1816306320988638382">"卸载USB存储设备"</string>
-    <string name="sdcard_unmount" product="default" msgid="8078570285871053815">"卸载SD卡"</string>
-    <string name="sdcard_format" product="nosdcard" msgid="3248760426252305366">"格式化USB存储设备"</string>
-    <string name="sdcard_format" product="default" msgid="3676635435136326182">"格式化SD卡"</string>
+    <string name="sdcard_unmount" product="nosdcard" msgid="1816306320988638382">"卸载 USB 存储设备"</string>
+    <string name="sdcard_unmount" product="default" msgid="8078570285871053815">"卸载 SD 卡"</string>
+    <string name="sdcard_format" product="nosdcard" msgid="3248760426252305366">"格式化 USB 存储设备"</string>
+    <string name="sdcard_format" product="default" msgid="3676635435136326182">"格式化 SD 卡"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"预览"</string>
     <string name="preview_page_indicator_content_description" msgid="2790254666634885865">"预览第 <xliff:g id="CURRENT_PAGE">%1$d</xliff:g> 页（共 <xliff:g id="NUM_PAGES">%2$d</xliff:g> 页）"</string>
     <string name="font_size_summary" msgid="1296835853522566260">"缩小或放大屏幕上的文字。"</string>
@@ -188,20 +188,20 @@
     <string name="sdcard_changes_instructions" msgid="2331969501845866957">"重新连接USB线后更改就会生效。"</string>
     <string name="sdcard_settings_screen_mass_storage_text" msgid="129059989000252994">"启用USB大容量存储设备"</string>
     <string name="sdcard_settings_total_bytes_label" msgid="5298511430610207103">"总字节数："</string>
-    <string name="sdcard_settings_not_present_status" product="nosdcard" msgid="6189761476582690998">"未装载USB存储设备。"</string>
-    <string name="sdcard_settings_not_present_status" product="default" msgid="6601962586941623203">"无SD卡。"</string>
+    <string name="sdcard_settings_not_present_status" product="nosdcard" msgid="6189761476582690998">"未装载 USB 存储设备。"</string>
+    <string name="sdcard_settings_not_present_status" product="default" msgid="6601962586941623203">"无 SD 卡。"</string>
     <string name="sdcard_settings_available_bytes_label" msgid="7721283102767669004">"可用的字节数："</string>
-    <string name="sdcard_settings_mass_storage_status" product="nosdcard" msgid="4878190674458263222">"计算机正将USB存储设备用作大容量存储设备。"</string>
-    <string name="sdcard_settings_mass_storage_status" product="default" msgid="8850227049504860012">"计算机正将SD卡用作大容量存储设备。"</string>
-    <string name="sdcard_settings_unmounted_status" product="nosdcard" msgid="1053258530368541571">"现在可以安全地移除该USB存储设备了。"</string>
-    <string name="sdcard_settings_unmounted_status" product="default" msgid="5813940671700138561">"现在可以安全地移除SD卡了。"</string>
-    <string name="sdcard_settings_bad_removal_status" product="nosdcard" msgid="209564009449909311">"USB存储设备仍在使用中便被移除！"</string>
-    <string name="sdcard_settings_bad_removal_status" product="default" msgid="6817342973919819392">"SD卡仍在使用中便被移除！"</string>
+    <string name="sdcard_settings_mass_storage_status" product="nosdcard" msgid="4878190674458263222">"计算机正将 USB 存储设备用作大容量存储设备。"</string>
+    <string name="sdcard_settings_mass_storage_status" product="default" msgid="8850227049504860012">"计算机正将 SD 卡用作大容量存储设备。"</string>
+    <string name="sdcard_settings_unmounted_status" product="nosdcard" msgid="1053258530368541571">"现在可以安全地移除该 USB 存储设备了。"</string>
+    <string name="sdcard_settings_unmounted_status" product="default" msgid="5813940671700138561">"现在可以安全地移除 SD 卡了。"</string>
+    <string name="sdcard_settings_bad_removal_status" product="nosdcard" msgid="209564009449909311">"USB 存储设备仍在使用中便被移除！"</string>
+    <string name="sdcard_settings_bad_removal_status" product="default" msgid="6817342973919819392">"SD 卡仍在使用中便被移除！"</string>
     <string name="sdcard_settings_used_bytes_label" msgid="5646588579332741943">"已使用的字节数："</string>
-    <string name="sdcard_settings_scanning_status" product="nosdcard" msgid="8037280964384235345">"正在扫描USB存储设备中的媒体..."</string>
-    <string name="sdcard_settings_scanning_status" product="default" msgid="3297316465982471437">"正从SD卡扫描媒体..."</string>
-    <string name="sdcard_settings_read_only_status" product="nosdcard" msgid="3444648373391629840">"已将USB存储设备装载为只读设备。"</string>
-    <string name="sdcard_settings_read_only_status" product="default" msgid="4338796260718910164">"已将SD卡装载为只读设备。"</string>
+    <string name="sdcard_settings_scanning_status" product="nosdcard" msgid="8037280964384235345">"正在扫描 USB 存储设备中的媒体..."</string>
+    <string name="sdcard_settings_scanning_status" product="default" msgid="3297316465982471437">"正从 SD 卡扫描媒体..."</string>
+    <string name="sdcard_settings_read_only_status" product="nosdcard" msgid="3444648373391629840">"已将 USB 存储设备装载为只读设备。"</string>
+    <string name="sdcard_settings_read_only_status" product="default" msgid="4338796260718910164">"已将 SD 卡装载为只读设备。"</string>
     <string name="skip_label" msgid="6380034601349015895">"跳过"</string>
     <string name="next_label" msgid="1248293387735652187">"下一步"</string>
     <string name="language_picker_title" msgid="4271307478263345133">"语言"</string>
@@ -238,7 +238,7 @@
     <string name="settings_shortcut" msgid="8548239727871847171">"设置快捷方式"</string>
     <string name="airplane_mode" msgid="3196085857882526817">"飞行模式"</string>
     <string name="wireless_networks_settings_title" msgid="8557542379234105369">"无线和网络"</string>
-    <string name="radio_controls_summary" msgid="9028430178697624501">"管理WLAN、蓝牙、飞行模式、移动网络和VPN"</string>
+    <string name="radio_controls_summary" msgid="9028430178697624501">"管理 WLAN、蓝牙、飞行模式、移动网络和 VPN"</string>
     <string name="cellular_data_summary" msgid="6551434804367912367">"允许使用移动数据网络"</string>
     <string name="allow_data_usage_title" msgid="2645963379925196671">"允许漫游时使用数据流量"</string>
     <string name="roaming" msgid="3055365654530847985">"漫游"</string>
@@ -572,13 +572,13 @@
     <string name="crypt_keeper_encrypt_title" product="tablet" msgid="7484150746479958376">"加密平板电脑"</string>
     <string name="crypt_keeper_encrypt_title" product="default" msgid="8302873664348463041">"加密手机"</string>
     <string name="crypt_keeper_encrypted_summary" msgid="3866488451639592071">"已加密"</string>
-    <string name="crypt_keeper_desc" product="tablet" msgid="4103951371711323192">"您可以对自己的帐号、设置、下载的应用及其数据、媒体和其他文件进行加密。加密平板电脑后，如果您设置了屏幕锁定（即图案、数字PIN码或密码），那么您必须在每次开机时解锁屏幕，才能将平板电脑解密。除此之外，唯一的解密方法就是恢复出厂设置，但这会清除您所有的数据。\n\n加密过程至少需要1个小时的时间。在开始加密之前，您必须先将电池充满电，并让平板电脑在整个加密过程中保持电源接通状态。如果加密过程出现中断，您将丢失部分或所有数据。"</string>
-    <string name="crypt_keeper_desc" product="default" msgid="6180866043921135548">"您可以对自己的帐号、设置、下载的应用及其数据、媒体和其他文件进行加密。加密手机后，如果您设置了屏幕锁定（即图案、数字PIN码或密码），那么您必须在每次开机时解锁屏幕，才能将手机解密。除此之外，唯一的解密方法就是恢复出厂设置，但这会清除您所有的数据。\n\n加密过程至少需要1个小时的时间。在开始加密之前，您必须先将电池充满电，并让手机在整个加密过程中保持电源接通状态。如果加密过程出现中断，您将丢失部分或所有数据。"</string>
+    <string name="crypt_keeper_desc" product="tablet" msgid="4103951371711323192">"您可以对自己的帐号、设置、下载的应用及其数据、媒体和其他文件进行加密。加密平板电脑后，如果您设置了屏幕锁定（即图案、数字 PIN 码或密码），那么您必须在每次开机时解锁屏幕，才能将平板电脑解密。除此之外，唯一的解密方法就是恢复出厂设置，但这会清除您所有的数据。\n\n加密过程至少需要1个小时的时间。在开始加密之前，您必须先将电池充满电，并让平板电脑在整个加密过程中保持电源接通状态。如果加密过程出现中断，您将丢失部分或所有数据。"</string>
+    <string name="crypt_keeper_desc" product="default" msgid="6180866043921135548">"您可以对自己的帐号、设置、下载的应用及其数据、媒体和其他文件进行加密。加密手机后，如果您设置了屏幕锁定（即图案、数字 PIN 码或密码），那么您必须在每次开机时解锁屏幕，才能将手机解密。除此之外，唯一的解密方法就是恢复出厂设置，但这会清除您所有的数据。\n\n加密过程至少需要1个小时的时间。在开始加密之前，您必须先将电池充满电，并让手机在整个加密过程中保持电源接通状态。如果加密过程出现中断，您将丢失部分或所有数据。"</string>
     <string name="crypt_keeper_button_text" product="tablet" msgid="5551608011810921471">"加密平板电脑"</string>
     <string name="crypt_keeper_button_text" product="default" msgid="6370330929679426136">"加密手机"</string>
     <string name="crypt_keeper_low_charge_text" msgid="4920087247177024521">"请为电池充电，然后重试。"</string>
     <string name="crypt_keeper_unplugged_text" msgid="2709721134148651329">"请插上充电器，然后重试。"</string>
-    <string name="crypt_keeper_dialog_need_password_title" msgid="1847280235529858357">"没有锁屏PIN码或密码"</string>
+    <string name="crypt_keeper_dialog_need_password_title" msgid="1847280235529858357">"没有锁屏 PIN 码或密码"</string>
     <string name="crypt_keeper_dialog_need_password_message" msgid="7210616262954236042">"您需要先设置锁屏 PIN 码或密码，才能开始加密。"</string>
     <string name="crypt_keeper_confirm_title" msgid="8600000209722452230">"要加密吗？"</string>
     <string name="crypt_keeper_final_desc" product="tablet" msgid="3270587498436152259">"加密操作无法撤消，如果您中断该过程，则会丢失数据。加密过程需要1小时或更长时间，在此期间，平板电脑会重新启动数次。"</string>
@@ -593,8 +593,8 @@
     <string name="crypt_keeper_warn_wipe" msgid="8104921337301750394">"警告：如果解锁尝试再失败<xliff:g id="COUNT">^1</xliff:g>次，您的设备将被清空！"</string>
     <string name="crypt_keeper_enter_password" msgid="1274917431075529732">"键入密码"</string>
     <string name="crypt_keeper_failed_title" msgid="8173654570682244149">"加密失败"</string>
-    <string name="crypt_keeper_failed_summary" product="tablet" msgid="5977961188966570342">"加密过程中断，无法完成。因此，您已无法再使用平板电脑上的数据。\n\n要继续使用您的平板电脑，您需要恢复出厂设置。恢复出厂设置后对平板电脑进行设置时，您可以将之前备份到Google帐号的所有数据恢复到平板电脑中。"</string>
-    <string name="crypt_keeper_failed_summary" product="default" msgid="1028716993071131029">"加密过程中断，无法完成。因此，您已无法再使用手机上的数据。\n\n要继续使用您的手机，您需要恢复出厂设置。恢复出厂设置后对手机进行设置时，您可以将之前备份到Google帐号的所有数据恢复到手机中。"</string>
+    <string name="crypt_keeper_failed_summary" product="tablet" msgid="5977961188966570342">"加密过程中断，无法完成。因此，您已无法再使用平板电脑上的数据。\n\n要继续使用您的平板电脑，您需要恢复出厂设置。恢复出厂设置后对平板电脑进行设置时，您可以将之前备份到 Google 帐号的所有数据恢复到平板电脑中。"</string>
+    <string name="crypt_keeper_failed_summary" product="default" msgid="1028716993071131029">"加密过程中断，无法完成。因此，您已无法再使用手机上的数据。\n\n要继续使用您的手机，您需要恢复出厂设置。恢复出厂设置后对手机进行设置时，您可以将之前备份到 Google 帐号的所有数据恢复到手机中。"</string>
     <string name="crypt_keeper_data_corrupt_title" msgid="5920153462176846037">"解密失败"</string>
     <string name="crypt_keeper_data_corrupt_summary" product="tablet" msgid="4420666705959562753">"您输入的密码正确无误，但遗憾的是，您的数据已损坏。\n\n要继续使用您的平板电脑，您需要将其恢复出厂设置。对恢复出厂设置后的平板电脑进行设置时，您可以恢复之前备份到 Google 帐号的任何数据。"</string>
     <string name="crypt_keeper_data_corrupt_summary" product="default" msgid="3200498792238652367">"您输入的密码正确无误，但遗憾的是，您的数据已损坏。\n\n要继续使用您的手机，您需要将其恢复出厂设置。对恢复出厂设置后的手机进行设置时，您可以恢复之前备份到 Google 帐号的任何数据。"</string>
@@ -925,15 +925,15 @@
     <string name="android_beam_label" msgid="7168565080321110094">"Android Beam"</string>
     <string name="android_beam_explained" msgid="5684416131846701256">"开启此功能后，只需将本设备与另一台支持 NFC 的设备靠在一起，即可将应用内容传输过去。例如，您可以传输浏览器网页、YouTube 视频、联系人信息等等。\n\n您只需将两台设备靠在一起（通常是背靠背），然后点按屏幕确认，应用就会确定传输哪些内容。"</string>
     <string name="wifi_quick_toggle_title" msgid="2737097538432862807">"WLAN"</string>
-    <string name="wifi_quick_toggle_summary" msgid="4957267477820468553">"打开WLAN"</string>
+    <string name="wifi_quick_toggle_summary" msgid="4957267477820468553">"打开 WLAN"</string>
     <string name="wifi_settings" msgid="8313301946393559700">"WLAN"</string>
     <string name="wifi_settings_primary_switch_title" msgid="628360786662947258">"使用 WLAN"</string>
-    <string name="wifi_settings_category" msgid="3523464780563778321">"WLAN设置"</string>
+    <string name="wifi_settings_category" msgid="3523464780563778321">"WLAN 设置"</string>
     <string name="wifi_settings_title" msgid="3879649725059512799">"WLAN"</string>
     <string name="wifi_settings_summary" msgid="784074686763572811">"设置和管理无线接入点"</string>
-    <string name="wifi_select_network" msgid="6692897876718813259">"选择WLAN网络"</string>
-    <string name="wifi_starting" msgid="6147022683967506341">"正在打开WLAN…"</string>
-    <string name="wifi_stopping" msgid="4471699665741299711">"正在关闭WLAN…"</string>
+    <string name="wifi_select_network" msgid="6692897876718813259">"选择 WLAN 网络"</string>
+    <string name="wifi_starting" msgid="6147022683967506341">"正在打开 WLAN…"</string>
+    <string name="wifi_stopping" msgid="4471699665741299711">"正在关闭 WLAN…"</string>
     <string name="wifi_error" msgid="4903954145386086899">"出错"</string>
     <string name="wifi_sap_no_channel_error" msgid="2126487622024749402">"在此国家/地区无法使用 5 GHz 频段"</string>
     <string name="wifi_in_airplane_mode" msgid="1235412508135267981">"正处于飞行模式下"</string>
@@ -959,9 +959,9 @@
     <string name="wifi_setting_on_during_sleep_title" msgid="8753852404141070878">"在休眠状态下保持WLAN连接"</string>
     <string name="wifi_setting_sleep_policy_error" msgid="4512566787805720422">"更改设置时出现问题"</string>
     <string name="wifi_suspend_efficiency_title" msgid="3589291227092825754">"提高能效"</string>
-    <string name="wifi_suspend_optimizations" msgid="5840680940416640209">"WLAN优化"</string>
-    <string name="wifi_suspend_optimizations_summary" msgid="8204170804523356781">"开启WLAN时尽可能节约电池用量"</string>
-    <string name="wifi_limit_optimizations_summary" msgid="8461087338100462302">"限制WLAN耗电量"</string>
+    <string name="wifi_suspend_optimizations" msgid="5840680940416640209">"WLAN 优化"</string>
+    <string name="wifi_suspend_optimizations_summary" msgid="8204170804523356781">"开启 WLAN 时尽可能节约电池用量"</string>
+    <string name="wifi_limit_optimizations_summary" msgid="8461087338100462302">"限制 WLAN 耗电量"</string>
     <string name="wifi_switch_away_when_unvalidated" msgid="681353878530696197">"在 WLAN 网络无法连接到互联网时切换到移动数据网络。"</string>
     <string name="wifi_cellular_data_fallback_title" msgid="2844653839490977040">"自动切换到移动数据网络"</string>
     <string name="wifi_cellular_data_fallback_summary" msgid="7039944853033554386">"在 WLAN 网络无法连接到互联网时切换到移动数据网络（可能会消耗移动数据流量）。"</string>
@@ -981,7 +981,7 @@
     <string name="wifi_menu_modify" msgid="7246143391161038875">"修改网络"</string>
     <string name="wifi_empty_list_wifi_off" msgid="7697422506708419298">"要查看可用网络，请打开 WLAN。"</string>
     <string name="wifi_empty_list_wifi_on" msgid="2448010040478321376">"正在搜索网络…"</string>
-    <string name="wifi_empty_list_user_restricted" msgid="454861411536708709">"您无权更改WLAN网络。"</string>
+    <string name="wifi_empty_list_user_restricted" msgid="454861411536708709">"您无权更改 WLAN 网络。"</string>
     <string name="wifi_more" msgid="8742256421693351035">"更多"</string>
     <string name="wifi_setup_wps" msgid="4303694722593999931">"自动设置 (WPS)"</string>
     <string name="wifi_settings_scanning_required_title" msgid="1088663325396007484">"要开启 WLAN 扫描功能吗？"</string>
@@ -1143,7 +1143,7 @@
     <string name="wifi_ip_settings_menu_cancel" msgid="1757817733064004598">"取消"</string>
     <string name="wifi_ip_settings_invalid_ip_address" msgid="3622891107865052307">"请输入有效的IP地址。"</string>
     <string name="wifi_ip_settings_invalid_gateway" msgid="1174931247370931239">"请键入有效的网关地址。"</string>
-    <string name="wifi_ip_settings_invalid_dns" msgid="1757402215999845975">"请输入有效的DNS地址。"</string>
+    <string name="wifi_ip_settings_invalid_dns" msgid="1757402215999845975">"请输入有效的 DNS 地址。"</string>
     <string name="wifi_ip_settings_invalid_network_prefix_length" msgid="5980808986926987299">"键入长度在 0 到 32 之间的网络前缀。"</string>
     <string name="wifi_dns1" msgid="6764769531843748514">"DNS 1（除非已被专用 DNS 替换）"</string>
     <string name="wifi_dns2" msgid="7273133202625326148">"DNS 2（除非已被专用 DNS 替换）"</string>
@@ -1189,9 +1189,9 @@
     <string name="wifi_tether_starting" msgid="8879874184033857814">"正在打开热点..."</string>
     <string name="wifi_tether_stopping" msgid="4416492968019409188">"正在关闭热点..."</string>
     <string name="wifi_tether_enabled_subtext" msgid="5085002421099821056">"<xliff:g id="NETWORK_SSID">%1$s</xliff:g> 已连接"</string>
-    <string name="wifi_tether_failed_subtext" msgid="437190628041885500">"便携式WLAN热点错误"</string>
-    <string name="wifi_tether_configure_ap_text" msgid="7072559431286459122">"设置WLAN热点"</string>
-    <string name="wifi_hotspot_configure_ap_text" msgid="9027072969831022321">"WLAN热点设置"</string>
+    <string name="wifi_tether_failed_subtext" msgid="437190628041885500">"便携式 WLAN 热点错误"</string>
+    <string name="wifi_tether_configure_ap_text" msgid="7072559431286459122">"设置 WLAN 热点"</string>
+    <string name="wifi_hotspot_configure_ap_text" msgid="9027072969831022321">"WLAN 热点设置"</string>
     <string name="wifi_hotspot_configure_ap_text_summary" msgid="1445157424926935178">"AndroidAP WPA2 PSK 热点"</string>
     <string name="wifi_tether_configure_ssid_default" msgid="1709397571393179300">"Android热点"</string>
     <string name="wifi_add_app_single_network_title" msgid="8911612806204065225">"要保存此网络吗？"</string>
@@ -1449,14 +1449,14 @@
     <string name="sim_change_pin" msgid="1104103818545005448">"SIM 卡 PIN 码"</string>
     <string name="sim_bad_pin" msgid="5416328363761048221">"PIN 码不正确"</string>
     <string name="sim_pins_dont_match" msgid="1540348773896609260">"PIN 码不匹配"</string>
-    <string name="sim_change_failed" msgid="316723087029061740">"无法更改PIN码。\n输入的PIN码可能不正确。"</string>
+    <string name="sim_change_failed" msgid="316723087029061740">"无法更改PIN码。\n输入的 PIN 码可能不正确。"</string>
     <string name="sim_change_succeeded" msgid="3516905528149069739">"已成功更改 SIM 卡 PIN 码"</string>
     <string name="sim_lock_failed" msgid="16360418201678317">"无法更改 SIM 卡锁定状态。\nPIN 码可能不正确。"</string>
     <string name="sim_pin_disable_failed" msgid="8719890393181032837">"无法停用 PIN 码。"</string>
     <string name="sim_pin_enable_failed" msgid="5156513975085380284">"无法启用 PIN 码。"</string>
     <string name="sim_enter_ok" msgid="3401715290135787531">"确定"</string>
     <string name="sim_enter_cancel" msgid="2001859323724961490">"取消"</string>
-    <string name="sim_multi_sims_title" msgid="4875083890014013296">"找到多张SIM卡"</string>
+    <string name="sim_multi_sims_title" msgid="4875083890014013296">"找到多张 SIM 卡"</string>
     <string name="sim_multi_sims_summary" msgid="1711012455679332238">"选择您想用于移动数据网络的 SIM 卡。"</string>
     <string name="sim_change_data_title" msgid="4663239438584588847">"要使用<xliff:g id="CARRIER">%1$s</xliff:g>的移动数据吗？"</string>
     <string name="sim_change_data_message" msgid="3046178883369645132">"您目前使用的是<xliff:g id="CARRIER2_0">%2$s</xliff:g>的移动数据。如果切换到<xliff:g id="CARRIER1">%1$s</xliff:g>，系统将不再使用<xliff:g id="CARRIER2_1">%2$s</xliff:g>的移动数据。"</string>
@@ -1491,8 +1491,8 @@
     <string name="storage_settings_for_app" msgid="229425418984637483">"存储和缓存"</string>
     <string name="storage_usb_settings" msgid="7058142934214211583">"存储"</string>
     <string name="storage_settings_title" msgid="486118156723194815">"存储设置"</string>
-    <string name="storage_settings_summary" product="nosdcard" msgid="3858049818577638926">"卸载USB存储设备，查看可用存储设备"</string>
-    <string name="storage_settings_summary" product="default" msgid="267557695753980969">"卸载SD卡，查看可用存储设备"</string>
+    <string name="storage_settings_summary" product="nosdcard" msgid="3858049818577638926">"卸载 USB 存储设备，查看可用存储设备"</string>
+    <string name="storage_settings_summary" product="default" msgid="267557695753980969">"卸载 SD 卡，查看可用存储设备"</string>
     <string name="imei_multi_sim" msgid="71477088017585479">"IMEI（SIM 卡插槽 %1$d）"</string>
     <string name="view_saved_network" msgid="1232387673095080910">"如需查看，请选择已保存的网络"</string>
     <string name="status_number" product="tablet" msgid="3597945414666253183">"移动目录编号 (MDN)"</string>
@@ -1544,29 +1544,29 @@
     <string name="memory_media_cache_usage" msgid="780808666853685824">"缓存数据"</string>
     <string name="sd_eject" product="nosdcard" msgid="6136102589751843304">"卸载共享存储设备"</string>
     <string name="sd_eject" product="default" msgid="8062832622096296251">"卸载SD卡"</string>
-    <string name="sd_eject_summary" product="nosdcard" msgid="6859940774161708871">"卸载内部USB存储设备"</string>
-    <string name="sd_eject_summary" product="default" msgid="5151243312587186226">"需要先卸载SD卡，然后才能将其安全移除"</string>
-    <string name="sd_insert_summary" product="nosdcard" msgid="9164545135649775664">"插入要装载的USB存储设备"</string>
-    <string name="sd_insert_summary" product="default" msgid="5949168259622002192">"插入SD卡进行安装"</string>
-    <string name="sd_mount" product="nosdcard" msgid="8305985249945415150">"装载USB存储设备"</string>
-    <string name="sd_mount" product="default" msgid="5279813999455776169">"安装SD卡"</string>
+    <string name="sd_eject_summary" product="nosdcard" msgid="6859940774161708871">"卸载内部 USB 存储设备"</string>
+    <string name="sd_eject_summary" product="default" msgid="5151243312587186226">"需要先卸载 SD 卡，然后才能将其安全移除"</string>
+    <string name="sd_insert_summary" product="nosdcard" msgid="9164545135649775664">"插入要装载的 USB 存储设备"</string>
+    <string name="sd_insert_summary" product="default" msgid="5949168259622002192">"插入 SD 卡进行安装"</string>
+    <string name="sd_mount" product="nosdcard" msgid="8305985249945415150">"装载 USB 存储设备"</string>
+    <string name="sd_mount" product="default" msgid="5279813999455776169">"安装 SD 卡"</string>
     <string name="sd_mount_summary" product="nosdcard" msgid="2190410240845521205"></string>
     <string name="sd_mount_summary" product="default" msgid="2190410240845521205"></string>
-    <string name="sd_format" product="nosdcard" msgid="8657427883364711513">"格式化USB存储设备"</string>
-    <string name="sd_format" product="default" msgid="9085302892248732329">"格式化SD卡"</string>
-    <string name="sd_format_summary" product="nosdcard" msgid="6179784504937189658">"清除内部USB存储设备中的全部数据，例如音乐和照片"</string>
-    <string name="sd_format_summary" product="default" msgid="60583152211068164">"清除SD卡中的全部数据，例如音乐和照片"</string>
-    <string name="mtp_ptp_mode_summary" msgid="7969656567437639239">"已开启MTP或PTP功能"</string>
-    <string name="dlg_confirm_unmount_title" product="nosdcard" msgid="7694112411895701320">"要卸载USB存储设备吗？"</string>
-    <string name="dlg_confirm_unmount_title" product="default" msgid="8251329019960361646">"要卸载SD卡吗？"</string>
-    <string name="dlg_confirm_unmount_text" product="nosdcard" msgid="1212025106709645023">"如果卸载该USB存储设备，您当前使用的某些应用会停止运行，并且在您重新装载该设备前可能都无法使用。"</string>
-    <string name="dlg_confirm_unmount_text" product="default" msgid="3887768438615563697">"如果卸载该SD卡，您当前使用的某些应用会停止，并且在您重新装载该SD卡前，这些应用可能都无法使用。"</string>
+    <string name="sd_format" product="nosdcard" msgid="8657427883364711513">"格式化 USB 存储设备"</string>
+    <string name="sd_format" product="default" msgid="9085302892248732329">"格式化 SD 卡"</string>
+    <string name="sd_format_summary" product="nosdcard" msgid="6179784504937189658">"清除内部 USB 存储设备中的全部数据，例如音乐和照片"</string>
+    <string name="sd_format_summary" product="default" msgid="60583152211068164">"清除 SD 卡中的全部数据，例如音乐和照片"</string>
+    <string name="mtp_ptp_mode_summary" msgid="7969656567437639239">"已开启 MTP 或 PTP 功能"</string>
+    <string name="dlg_confirm_unmount_title" product="nosdcard" msgid="7694112411895701320">"要卸载 USB 存储设备吗？"</string>
+    <string name="dlg_confirm_unmount_title" product="default" msgid="8251329019960361646">"要卸载 SD 卡吗？"</string>
+    <string name="dlg_confirm_unmount_text" product="nosdcard" msgid="1212025106709645023">"如果卸载该 USB 存储设备，您当前使用的某些应用会停止运行，并且在您重新装载该设备前可能都无法使用。"</string>
+    <string name="dlg_confirm_unmount_text" product="default" msgid="3887768438615563697">"如果卸载该 SD 卡，您当前使用的某些应用会停止，并且在您重新装载该SD卡前，这些应用可能都无法使用。"</string>
     <string name="dlg_error_unmount_title" product="nosdcard" msgid="2205587942165199845"></string>
     <string name="dlg_error_unmount_title" product="default" msgid="2205587942165199845"></string>
-    <string name="dlg_error_unmount_text" product="nosdcard" msgid="7876201891724279436">"无法卸载USB存储设备，请稍后重试。"</string>
-    <string name="dlg_error_unmount_text" product="default" msgid="2185659901137961711">"无法卸载SD卡，请稍后重试。"</string>
-    <string name="unmount_inform_text" product="nosdcard" msgid="5932607205977999175">"系统将会卸载USB存储设备。"</string>
-    <string name="unmount_inform_text" product="default" msgid="716578785262713312">"系统将会卸载SD卡。"</string>
+    <string name="dlg_error_unmount_text" product="nosdcard" msgid="7876201891724279436">"无法卸载 USB 存储设备，请稍后重试。"</string>
+    <string name="dlg_error_unmount_text" product="default" msgid="2185659901137961711">"无法卸载 SD 卡，请稍后重试。"</string>
+    <string name="unmount_inform_text" product="nosdcard" msgid="5932607205977999175">"系统将会卸载 USB 存储设备。"</string>
+    <string name="unmount_inform_text" product="default" msgid="716578785262713312">"系统将会卸载 SD 卡。"</string>
     <string name="sd_ejecting_title" msgid="1641122369013595273">"正在卸载"</string>
     <string name="sd_ejecting_summary" msgid="861928572729341132">"正在卸载"</string>
     <string name="storage_low_title" msgid="8002650511493419567">"存储空间不足"</string>
@@ -1588,7 +1588,7 @@
     <string name="storage_title_usb" msgid="1332488715547400452">"USB计算机连接"</string>
     <string name="usb_connection_category" msgid="2288543238378907242">"连接方式"</string>
     <string name="usb_mtp_title" msgid="9068009584556422314">"媒体设备(MTP)"</string>
-    <string name="usb_mtp_summary" msgid="6293240861011560842">"让您可以在Windows上传输媒体文件，或在Mac上使用Android文件传输应用来传输文件（请参见www.android.com/filetransfer）"</string>
+    <string name="usb_mtp_summary" msgid="6293240861011560842">"让您可以在 Windows 上传输媒体文件，或在 Mac 上使用 Android 文件传输应用来传输文件（请参见 www.android.com/filetransfer）"</string>
     <string name="usb_ptp_title" msgid="4496529268189091846">"相机(PTP)"</string>
     <string name="usb_ptp_summary" msgid="8382539472311655671">"可让您使用相机软件传输照片，并在不支持MTP的计算机上传输任何文件"</string>
     <string name="usb_midi_title" msgid="1139558846427981761">"MIDI"</string>
@@ -1862,17 +1862,17 @@
     <string name="location_time_zone_detection_not_applicable" msgid="6757964612836952714">"位置信息时区检测已停用"</string>
     <string name="location_time_zone_detection_not_supported" msgid="3251181656388306501">"不支持位置信息时区检测"</string>
     <string name="location_time_zone_detection_not_allowed" msgid="8264525161514617051">"不允许更改位置信息时区检测"</string>
-    <string name="location_network_based" msgid="5247042890080021887">"WLAN和移动网络位置信息"</string>
-    <string name="location_neighborhood_level" msgid="3668890550358558267">"允许应用使用Google位置信息服务更快地大致了解您所在的位置。系统将收集匿名位置数据并将其发送给Google。"</string>
+    <string name="location_network_based" msgid="5247042890080021887">"WLAN 和移动网络位置信息"</string>
+    <string name="location_neighborhood_level" msgid="3668890550358558267">"允许应用使用 Google 位置信息服务更快地大致了解您所在的位置。系统将收集匿名位置数据并将其发送给Google。"</string>
     <string name="location_neighborhood_level_wifi" msgid="6227393490651891977">"通过WLAN确定位置"</string>
     <string name="location_gps" msgid="8783616672454701134">"GPS卫星定位"</string>
     <string name="location_street_level" product="tablet" msgid="865953107414742784">"允许应用使用您平板电脑上的GPS定位您的位置"</string>
     <string name="location_street_level" product="default" msgid="3813836654645896185">"允许应用使用您手机上的GPS定位您的位置"</string>
     <string name="assisted_gps" msgid="1714546606018821498">"使用增强型GPS"</string>
-    <string name="assisted_gps_enabled" msgid="6220188450779319248">"使用服务器来辅助GPS（取消选中可降低网络使用率）"</string>
-    <string name="assisted_gps_disabled" msgid="1062496503892849">"使用服务器来辅助GPS（取消选中可提高GPS性能）"</string>
-    <string name="use_location_title" msgid="1345594777162897654">"位置信息和Google搜索"</string>
-    <string name="use_location_summary" msgid="377322574549729921">"允许Google使用您的位置信息改善搜索结果和其他服务"</string>
+    <string name="assisted_gps_enabled" msgid="6220188450779319248">"使用服务器来辅助 GPS（取消选中可降低网络使用率）"</string>
+    <string name="assisted_gps_disabled" msgid="1062496503892849">"使用服务器来辅助 GPS（取消选中可提高GPS性能）"</string>
+    <string name="use_location_title" msgid="1345594777162897654">"位置信息和 Google 搜索"</string>
+    <string name="use_location_summary" msgid="377322574549729921">"允许 Google 使用您的位置信息改善搜索结果和其他服务"</string>
     <string name="location_access_title" msgid="4052667453826272040">"允许使用我的位置信息"</string>
     <string name="location_access_summary" msgid="8634100005481578143">"允许得到您许可的应用使用您的位置信息"</string>
     <string name="location_sources_heading" msgid="6126965815860570524">"位置信息来源"</string>
@@ -2040,10 +2040,10 @@
     <string name="force_stop" msgid="2681771622136916280">"强行停止"</string>
     <string name="total_size_label" msgid="2052185048749658866">"总计"</string>
     <string name="application_size_label" msgid="6407051020651716729">"应用大小"</string>
-    <string name="external_code_size_label" msgid="7375146402660973743">"USB存储（应用）"</string>
+    <string name="external_code_size_label" msgid="7375146402660973743">"USB 存储（应用）"</string>
     <string name="data_size_label" msgid="7814478940141255234">"用户数据"</string>
-    <string name="external_data_size_label" product="nosdcard" msgid="1054860423004751290">"USB存储（数据）"</string>
-    <string name="external_data_size_label" product="default" msgid="3370825186202856353">"SD卡"</string>
+    <string name="external_data_size_label" product="nosdcard" msgid="1054860423004751290">"USB 存储（数据）"</string>
+    <string name="external_data_size_label" product="default" msgid="3370825186202856353">"SD 卡"</string>
     <string name="uninstall_text" msgid="315764653029060126">"卸载"</string>
     <string name="uninstall_all_users_text" msgid="5924715251087176474">"为所有用户卸载"</string>
     <string name="install_text" msgid="4558333621516996473">"安装"</string>
@@ -2077,8 +2077,8 @@
     <string name="filter_apps_disabled" msgid="5068011814871004105">"已停用的应用"</string>
     <string name="filter_apps_third_party" msgid="9049447784849114843">"已下载"</string>
     <string name="filter_apps_running" msgid="535465683273284141">"正在运行"</string>
-    <string name="filter_apps_onsdcard" product="nosdcard" msgid="5140211657134608469">"USB存储设备"</string>
-    <string name="filter_apps_onsdcard" product="default" msgid="1774499644768369891">"SD卡中"</string>
+    <string name="filter_apps_onsdcard" product="nosdcard" msgid="5140211657134608469">"USB 存储设备"</string>
+    <string name="filter_apps_onsdcard" product="default" msgid="1774499644768369891">"SD卡 中"</string>
     <string name="not_installed" msgid="5074606858798519449">"未针对此用户安装"</string>
     <string name="installed" msgid="2837449358488825884">"已安装"</string>
     <string name="no_applications" msgid="985069304755391640">"无应用。"</string>
@@ -2099,8 +2099,8 @@
     <string name="move_app" msgid="5421158479447276791">"移动"</string>
     <string name="move_app_to_internal" product="tablet" msgid="5799782476959541144">"移至平板电脑"</string>
     <string name="move_app_to_internal" product="default" msgid="7395498801589544372">"移至手机"</string>
-    <string name="move_app_to_sdcard" product="nosdcard" msgid="1145367822171576972">"移至USB存储设备"</string>
-    <string name="move_app_to_sdcard" product="default" msgid="7161667212614143767">"移至SD卡"</string>
+    <string name="move_app_to_sdcard" product="nosdcard" msgid="1145367822171576972">"移至 USB 存储设备"</string>
+    <string name="move_app_to_sdcard" product="default" msgid="7161667212614143767">"移至 SD 卡"</string>
     <string name="another_migration_already_in_progress" msgid="6550546307856052261">"系统目前正在执行另一项迁移操作。"</string>
     <string name="insufficient_storage" msgid="8115088042669030558">"存储空间不足。"</string>
     <string name="does_not_exist" msgid="6499163879348776120">"应用不存在。"</string>
@@ -2207,7 +2207,7 @@
     <string name="vibrate_input_devices_summary" msgid="8791680891376689823">"连接后将振动传到游戏控制器"</string>
     <string name="keyboard_layout_dialog_title" msgid="8770130364048089954">"选择键盘布局"</string>
     <string name="keyboard_layout_dialog_setup_button" msgid="6546245862744626706">"设置键盘布局"</string>
-    <string name="keyboard_layout_dialog_switch_hint" msgid="3303564123674979354">"要切换，请按 Ctrl+空格键"</string>
+    <string name="keyboard_layout_dialog_switch_hint" msgid="3303564123674979354">"要切换，请按 Ctrl + 空格键"</string>
     <string name="keyboard_layout_default_label" msgid="6078569989261528039">"默认"</string>
     <string name="keyboard_layout_picker_title" msgid="240504762718562906">"键盘布局"</string>
     <string name="user_dict_settings_title" msgid="680410651924276991">"个人字典"</string>
@@ -2772,18 +2772,18 @@
     <string name="power_idle" product="default" msgid="9132502722499465252">"手机待机"</string>
     <string name="power_unaccounted" msgid="2160811497426475703">"其他"</string>
     <string name="power_overcounted" msgid="3681101460287472876">"多算了的"</string>
-    <string name="usage_type_cpu" msgid="8544148642836549011">"CPU总使用时间"</string>
+    <string name="usage_type_cpu" msgid="8544148642836549011">"CPU 总使用时间"</string>
     <string name="usage_type_cpu_foreground" msgid="6120871498122604239">"CPU（前台）"</string>
     <string name="usage_type_wake_lock" msgid="3442487584173668904">"保持唤醒状态"</string>
     <string name="usage_type_gps" msgid="4118035982288964651">"GPS"</string>
-    <string name="usage_type_wifi_running" msgid="5573404832197356206">"WLAN运行时间"</string>
+    <string name="usage_type_wifi_running" msgid="5573404832197356206">"WLAN 运行时间"</string>
     <string name="usage_type_phone" product="tablet" msgid="4527092861928972130">"平板电脑"</string>
     <string name="usage_type_phone" product="default" msgid="4149330237181984782">"通话"</string>
     <string name="usage_type_data_send" msgid="4375755152437282184">"发送的移动数据包"</string>
     <string name="usage_type_data_recv" msgid="7821924049621005218">"接收的移动数据包"</string>
     <string name="usage_type_radio_active" msgid="1876069445855950097">"移动无线装置运行时间"</string>
-    <string name="usage_type_data_wifi_send" msgid="6154038607322769558">"发送的WLAN数据包"</string>
-    <string name="usage_type_data_wifi_recv" msgid="4821128213012023100">"接收的WLAN数据包"</string>
+    <string name="usage_type_data_wifi_send" msgid="6154038607322769558">"发送的 WLAN 数据包"</string>
+    <string name="usage_type_data_wifi_recv" msgid="4821128213012023100">"接收的 WLAN 数据包"</string>
     <string name="usage_type_audio" msgid="1100651355357912864">"音频"</string>
     <string name="usage_type_video" msgid="1068481638906679035">"视频"</string>
     <string name="usage_type_camera" msgid="3999579307204257822">"相机"</string>
@@ -2797,7 +2797,7 @@
     <string name="battery_action_app_details" msgid="7201369216798227707">"应用信息"</string>
     <string name="battery_action_app_settings" msgid="2437124469335488464">"应用设置"</string>
     <string name="battery_action_display" msgid="6515712081248863749">"屏幕设置"</string>
-    <string name="battery_action_wifi" msgid="1829212604573932607">"WLAN设置"</string>
+    <string name="battery_action_wifi" msgid="1829212604573932607">"WLAN 设置"</string>
     <string name="battery_action_bluetooth" msgid="4723692623358386789">"蓝牙设置"</string>
     <string name="battery_desc_voice" msgid="6900799826084022585">"语音通话所耗的电量"</string>
     <string name="battery_desc_standby" product="tablet" msgid="5818742458684767043">"平板电脑待机所耗的电量"</string>
@@ -2937,7 +2937,7 @@
     <string name="voice_input_output_settings" msgid="1055497319048272051">"语音输入与输出"</string>
     <string name="voice_input_output_settings_title" msgid="6449454483955543064">"语音输入与输出设置"</string>
     <string name="voice_search_settings_title" msgid="228743187532160069">"语音搜索"</string>
-    <string name="keyboard_settings_title" msgid="2199286020368890114">"Android键盘"</string>
+    <string name="keyboard_settings_title" msgid="2199286020368890114">"Android 键盘"</string>
     <string name="voice_input_settings" msgid="105821652985768064">"语音输入设置"</string>
     <string name="voice_input_settings_title" msgid="3708147270767296322">"语音输入"</string>
     <string name="voice_service_preference_section_title" msgid="4807795449147187497">"语音输入服务"</string>
@@ -3014,7 +3014,7 @@
     <string name="backup_section_title" msgid="6539706829848457794">"备份和还原"</string>
     <string name="personal_data_section_title" msgid="6368610168625722682">"个人数据"</string>
     <string name="backup_data_title" msgid="507663517227498525">"备份我的数据"</string>
-    <string name="backup_data_summary" msgid="8054551085241427531">"将应用数据、WLAN密码和其他设置备份到Google服务器"</string>
+    <string name="backup_data_summary" msgid="8054551085241427531">"将应用数据、WLAN 密码和其他设置备份到 Google 服务器"</string>
     <string name="backup_configure_account_title" msgid="8574055186903658842">"备份帐号"</string>
     <string name="backup_data_management_title" msgid="6596830198441939702">"管理备份帐号"</string>
     <string name="include_app_data_title" msgid="2969603876620594523">"包括应用数据"</string>
@@ -3023,7 +3023,7 @@
     <string name="backup_inactive_title" msgid="6753265378043349277">"备份服务未启用"</string>
     <string name="backup_configure_account_default_summary" msgid="5323225330966306690">"目前没有帐号存储备份数据"</string>
     <string name="backup_erase_dialog_title" msgid="5892431263348766484"></string>
-    <string name="backup_erase_dialog_message" msgid="2250872501409574331">"要停止备份您的WLAN密码、书签、其他设置和应用数据，并清除Google服务器上的所有副本吗？"</string>
+    <string name="backup_erase_dialog_message" msgid="2250872501409574331">"要停止备份您的 WLAN 密码、书签、其他设置和应用数据，并清除 Google 服务器上的所有副本吗？"</string>
     <string name="fullbackup_erase_dialog_message" msgid="2379053988557486162">"要停止备份设备数据（例如 WLAN 密码和通话记录）和应用数据（例如应用存储的设置和文件），并清除远程服务器上的所有副本吗？"</string>
     <string name="fullbackup_data_summary" msgid="971587401251601473">"自动远程备份设备数据（例如 WLAN 密码和通话记录）和应用数据（例如应用存储的设置和文件）。\n\n启用自动备份功能后，系统会定期远程保存设备和应用数据。应用数据可以是应用根据开发者设置保存的任何数据，包括可能比较敏感的数据（例如通讯录、邮件和照片）。"</string>
     <string name="device_admin_settings_title" msgid="31392408594557070">"设备管理设置"</string>
@@ -3103,9 +3103,9 @@
     <string name="remove_account_failed" msgid="3709502163548900644">"您的管理员不允许进行这项更改"</string>
     <string name="cant_sync_dialog_title" msgid="2613000568881139517">"无法手动同步"</string>
     <string name="cant_sync_dialog_message" msgid="7612557105054568581">"此项内容的同步功能目前未开启。要更改此设置，请暂时开启后台流量和自动同步功能。"</string>
-    <string name="enter_password" msgid="6327051330258595331">"要启动Android，请输入您的密码"</string>
+    <string name="enter_password" msgid="6327051330258595331">"要启动 Android，请输入您的密码"</string>
     <string name="enter_pin" msgid="1029287617551232681">"要启动Android，请输入您的PIN码"</string>
-    <string name="enter_pattern" msgid="1747316785866742960">"要启动Android，请绘制您的解锁图案"</string>
+    <string name="enter_pattern" msgid="1747316785866742960">"要启动 Android，请绘制您的解锁图案"</string>
     <string name="cryptkeeper_wrong_pattern" msgid="340747269176120242">"图案错误"</string>
     <string name="cryptkeeper_wrong_password" msgid="7295607881887114486">"密码错误"</string>
     <string name="cryptkeeper_wrong_pin" msgid="2347961593970714201">"PIN 码错误"</string>
@@ -3128,9 +3128,9 @@
     <string name="data_usage_menu_roaming" msgid="6864561338842056939">"数据漫游"</string>
     <string name="data_usage_menu_restrict_background" msgid="1414574366645086133">"限制后台流量"</string>
     <string name="data_usage_menu_allow_background" msgid="6242931073390680432">"允许使用后台流量"</string>
-    <string name="data_usage_menu_split_4g" msgid="3391899816926640583">"单独显示4G流量"</string>
-    <string name="data_usage_menu_show_wifi" msgid="6380926350184939975">"显示WLAN流量"</string>
-    <string name="data_usage_menu_hide_wifi" msgid="4694889089278302691">"隐藏WLAN流量"</string>
+    <string name="data_usage_menu_split_4g" msgid="3391899816926640583">"单独显示 4G 流量"</string>
+    <string name="data_usage_menu_show_wifi" msgid="6380926350184939975">"显示 WLAN 流量"</string>
+    <string name="data_usage_menu_hide_wifi" msgid="4694889089278302691">"隐藏 WLAN 流量"</string>
     <string name="data_usage_menu_show_ethernet" msgid="4401026240876938859">"显示有线网络流量"</string>
     <string name="data_usage_menu_hide_ethernet" msgid="7792365022467586772">"隐藏有线网络流量"</string>
     <string name="data_usage_menu_metered" msgid="4279260736172851951">"网络限制"</string>

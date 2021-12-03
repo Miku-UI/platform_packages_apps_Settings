@@ -38,7 +38,7 @@
 
     <!-- Status Bar Lyric -->
     <string name="status_bar_show_lyric_title">状态栏歌词（需要应用支持哦）</string>
-    <string name="status_bar_show_lyric_summary">感谢Shelling的贡献~</string>
+    <string name="status_bar_show_lyric_summary">感谢 Shelling 的贡献~</string>
 
     <!-- Units -->
     <string name="unit_seconds">秒</string>
