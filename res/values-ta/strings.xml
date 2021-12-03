@@ -1472,7 +1472,7 @@
     <string name="pin_failed" msgid="3726505565797352255">"சிம் பின் செயல்பாடு தோல்வி!"</string>
     <string name="system_update_settings_list_item_title" msgid="3398346836439366350">"புதிய பதிப்பு"</string>
     <string name="system_update_settings_list_item_summary" msgid="6703752298349642101"></string>
-    <string name="firmware_version" msgid="1606901586501447275">"Android பதிப்பு"</string>
+    <string name="firmware_version" msgid="1606901586501447275">"Miku UI பதிப்பு"</string>
     <string name="security_patch" msgid="4071756145347865382">"Android பாதுகாப்புப் புதுப்பிப்பு"</string>
     <string name="model_info" msgid="8997566254717810904">"மாடல்"</string>
     <string name="hardware_info" msgid="7035211991066637019">"மாடல் &amp; வன்பொருள்"</string>

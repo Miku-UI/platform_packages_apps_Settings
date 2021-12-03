@@ -1495,7 +1495,7 @@
     <string name="pin_failed" msgid="3726505565797352255">"Deblocarea cu ajutorul codului PIN pentru cardul SIM nu a reușit!"</string>
     <string name="system_update_settings_list_item_title" msgid="3398346836439366350">"Actualizări de sistem"</string>
     <string name="system_update_settings_list_item_summary" msgid="6703752298349642101"></string>
-    <string name="firmware_version" msgid="1606901586501447275">"Versiune Android"</string>
+    <string name="firmware_version" msgid="1606901586501447275">"Versiune Miku UI"</string>
     <string name="security_patch" msgid="4071756145347865382">"Actualizare de securitate Android"</string>
     <string name="model_info" msgid="8997566254717810904">"Model"</string>
     <string name="hardware_info" msgid="7035211991066637019">"Model și hardware"</string>

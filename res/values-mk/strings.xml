@@ -1474,7 +1474,7 @@
     <string name="pin_failed" msgid="3726505565797352255">"Операцијата PIN на SIM картичка не успеа!"</string>
     <string name="system_update_settings_list_item_title" msgid="3398346836439366350">"Ажурирања на системот"</string>
     <string name="system_update_settings_list_item_summary" msgid="6703752298349642101"></string>
-    <string name="firmware_version" msgid="1606901586501447275">"Верзија на Android"</string>
+    <string name="firmware_version" msgid="1606901586501447275">"Верзија на Miku UI"</string>
     <string name="security_patch" msgid="4071756145347865382">"Безбедносно ажурирање на Android"</string>
     <string name="model_info" msgid="8997566254717810904">"Модел"</string>
     <string name="hardware_info" msgid="7035211991066637019">"Модел и хардвер"</string>

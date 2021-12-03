@@ -1472,7 +1472,7 @@
     <string name="pin_failed" msgid="3726505565797352255">"सिम PIN की कार्यवाही विफल रही!"</string>
     <string name="system_update_settings_list_item_title" msgid="3398346836439366350">"सिस्‍टम के बारे में नई जानकारी"</string>
     <string name="system_update_settings_list_item_summary" msgid="6703752298349642101"></string>
-    <string name="firmware_version" msgid="1606901586501447275">"Android वर्शन"</string>
+    <string name="firmware_version" msgid="1606901586501447275">"Miku UI वर्शन"</string>
     <string name="security_patch" msgid="4071756145347865382">"Android की सुरक्षा से जुड़ा अपडेट"</string>
     <string name="model_info" msgid="8997566254717810904">"मॉडल"</string>
     <string name="hardware_info" msgid="7035211991066637019">"मॉडल और हार्डवेयर"</string>

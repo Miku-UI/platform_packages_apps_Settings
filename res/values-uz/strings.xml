@@ -1474,7 +1474,7 @@
     <string name="pin_failed" msgid="3726505565797352255">"SIM karta PIN kodining amaliyoti bajarilmadi!"</string>
     <string name="system_update_settings_list_item_title" msgid="3398346836439366350">"Tizimni yangilash"</string>
     <string name="system_update_settings_list_item_summary" msgid="6703752298349642101"></string>
-    <string name="firmware_version" msgid="1606901586501447275">"Android versiyasi"</string>
+    <string name="firmware_version" msgid="1606901586501447275">"Miku UI versiyasi"</string>
     <string name="security_patch" msgid="4071756145347865382">"Android xavfsizlik yangilanishi"</string>
     <string name="model_info" msgid="8997566254717810904">"Model"</string>
     <string name="hardware_info" msgid="7035211991066637019">"Model va qurilma"</string>

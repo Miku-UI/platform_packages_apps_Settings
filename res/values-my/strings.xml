@@ -1472,7 +1472,7 @@
     <string name="pin_failed" msgid="3726505565797352255">"ဆင်းမ်ကတ် ပင်လုပ်ငန်းဆောင်ရွက်မှု မအောင်မြင်ပါ!"</string>
     <string name="system_update_settings_list_item_title" msgid="3398346836439366350">"စနစ်အားတိုးမြင့်ခြင်း"</string>
     <string name="system_update_settings_list_item_summary" msgid="6703752298349642101"></string>
-    <string name="firmware_version" msgid="1606901586501447275">"Android ဗားရှင်း"</string>
+    <string name="firmware_version" msgid="1606901586501447275">"Miku UI ဗားရှင်း"</string>
     <string name="security_patch" msgid="4071756145347865382">"Android လုံခြုံရေးအပ်ဒိတ်"</string>
     <string name="model_info" msgid="8997566254717810904">"မော်ဒယ်"</string>
     <string name="hardware_info" msgid="7035211991066637019">"မော်ဒယ်နှင့် စက်ပစ္စည်း"</string>
