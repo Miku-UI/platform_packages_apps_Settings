@@ -26,7 +26,7 @@
         android:layout="@layout/mikuui_logo"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- MikuUI version -->
+    <!-- Miku version -->
     <Preference
         android:key="miku_version"
         android:title="@string/miku_version"
