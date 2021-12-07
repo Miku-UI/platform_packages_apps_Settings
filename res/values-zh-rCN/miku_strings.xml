@@ -23,6 +23,9 @@
     <string name="three_finger_gesture">三指截屏</string>
     <string name="three_finger_gesture_summary">滑动你的三根手指~来截图叭！</string>
 
+    <!-- Miku build type -->
+    <string name="miku_type">❤构建组织❤</string>
+
     <!-- Miku version -->
     <string name="miku_version">MikuUI Ver.</string>
     <string name="miku_version_uri" translatable="false">https://github.com/Project-Mushroom</string>
