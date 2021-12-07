@@ -23,6 +23,13 @@
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe down your three fingers, and～～it is done！</string>
 
+    <!-- Maintainer name -->
+    <string name="maintainer_name">❤Master❤</string>
+    <string name="miku_maintainer_uri" translatable="false">http://127.0.0.1</string>
+
+    <!-- Miku build type -->
+    <string name="miku_type">❤Buiid type❤</string>
+
     <!-- Miku version -->
     <string name="miku_version">MikuUI Ver.</string>
     <string name="miku_version_uri" translatable="false">https://github.com/Project-Mushroom</string>
