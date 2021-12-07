@@ -44,6 +44,23 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MikuVersionPreferenceController"/>
 
+    <!-- Build type -->
+    <Preference
+        android:key="miku_type"
+        android:title="@string/miku_type"
+        android:summary="@string/summary_placeholder"
+        android:selectable="false"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.MikuTypePreferenceController"/>
+
+    <!-- Maintainer name -->
+    <Preference
+        android:key="maintainer_name"
+        android:title="@string/maintainer_name"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.MaintainerPreferenceController"/>
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
