@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--  Copyright (C) 2007 The Android Open Source Project
+      Copyright (C) 2021 Miku UI
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,6 +14,42 @@
      See the License for the specific language governing permissions and
      limitations under the License.
  -->
+
+<!--
+	Here is Miku UI simplified Chinese translation dictionary.
+
+	We follow the following principles:
+
+	• Reduce the stiffness caused by the use of honorifics.
+		  We aim to bring users a better Android experience. Miku UI brings realism to users in mechanized devices.
+
+	• Avoid causing users' disgust under various circumstances.
+		  We're sure that you will like the lovely Miku UI:)
+
+	In addition, we have corrected a number of translations that are unclear or may not be applicable to the current equipment.
+
+	We may also appropriately modify some translated contents in the dictionary. They may not be the original meaning of AOSP, but they can better help users understand.
+
+	We revise the translation of AOSP, hereby express our sincere thanks to the relevant contributors.
+  
+  --><!--
+  
+	这里是 Miku UI 简体中文翻译字典。
+
+	我们遵循以下原则：
+
+	• 减少使用敬语所带来的生硬感。
+		  我们旨在为使用者带来更好的 Android 体验，Miku UI 于机械化的设备中为使用者带来真实感。
+
+	• 避免在各种情况下引起使用者的反感。
+		  谁会拒绝可爱的 Miku UI 呢~
+
+	另外，我们纠正了若干表意不清，抑或是可能会不适用于当前设备的翻译。
+
+	我们还可能会适当修改字典中的某些翻译的内容，它们也许并不是 AOSP 的本意，但能更好的帮助使用者理解。
+
+	我们基于 AOSP 的翻译工作进行修改，在此向相关贡献者表示真诚的感谢。
+-->
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
