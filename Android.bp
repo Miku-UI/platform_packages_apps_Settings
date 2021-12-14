@@ -44,7 +44,16 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: ["src/**/*.java",
+	   "src/**/*.kt",
+	   "MikuSettings/src/**/*.java",
+    ],
+
+    aaptflags: ["--extra-packages com.miku.exsettings"],
+
+    resource_dirs: ["res",
+		   "MikuSettings/res"
+    ],
 
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
@@ -85,6 +94,10 @@ android_library {
         "ims-common",
         "app-compat-annotations",
     ],
+
+    optimize: {
+	proguard_flags_files: ["proguard.flags"],
+    },
 }
 
 platform_compat_config {
