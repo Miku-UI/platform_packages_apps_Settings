@@ -205,6 +205,15 @@
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
+        android:key="top_level_miku"
+        android:title="@string/miku_settings_title"
+        android:summary="@string/miku_settings_summary"
+        android:icon="@drawable/ic_settings_about_device"
+        android:order="-125"
+        settings:highlightableMenuKey="@string/menu_key_miku"
+        android:fragment="com.miku.exsettings.MikuSettings"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_help"
         android:key="top_level_support"
         android:order="100"

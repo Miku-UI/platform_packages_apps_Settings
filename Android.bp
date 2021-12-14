@@ -54,12 +54,17 @@ android_library {
         "SpaPrivilegedLib-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: ["src/**/*.java",
+	   "src/**/*.kt",
+	   "MikuSettings/src/**/*.java",
+    ],
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+        "MikuSettings/res",
     ],
+    aaptflags: ["--extra-packages com.miku.exsettings"],
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
         "androidx.slice_slice-builders",
@@ -110,6 +115,10 @@ android_library {
         "telephony-common",
         "ims-common",
     ],
+
+    optimize: {
+	proguard_flags_files: ["proguard.flags"],
+    },
 }
 
 platform_compat_config {
