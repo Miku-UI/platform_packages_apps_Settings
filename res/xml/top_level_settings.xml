@@ -174,7 +174,16 @@
         settings:highlightableMenuKey="@string/menu_key_system"/>
 
     <com.android.settings.widget.HomepagePreference
-        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:key="top_level_miku"
+        android:title="@string/miku_settings_title"
+        android:summary="@string/miku_settings_summary"
+        android:icon="@drawable/ic_phone_info"
+	android:order="-125"
+	settings:highlightableMenuKey="@string/menu_key_miku"
+        android:fragment="com.miku.exsettings.MikuSettings"/>
+
+    <com.android.settings.widget.HomepagePreference
+	android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
         android:icon="@drawable/ic_phone_info"
         android:key="top_level_about_device"
         android:order="20"
