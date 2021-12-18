@@ -28,7 +28,7 @@
     <string name="miku_maintainer_uri" translatable="false">http://127.0.0.1</string>
 
     <!-- Miku build type -->
-    <string name="miku_type">❤Buiid type❤</string>
+    <string name="miku_type">❤Build type❤</string>
 
     <!-- Miku version -->
     <string name="miku_version">Miku UI Ver.</string>
