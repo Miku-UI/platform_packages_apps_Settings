@@ -19,6 +19,10 @@
     <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
     <string name="custom_seekbar_default_value_is_set">Default value is set</string>
 
+    <!-- Auto Reboot -->
+    <string name="auto_reboot_title">Auto reboot</string>
+    <string name="auto_reboot_summary">Automatically reboot your Miku, if the phone hasn\'t been unlocked within the selected number of hours.</string>
+
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Swipe to screenshot</string>
     <string name="three_finger_gesture_summary">Swipe down your three fingers, and～～it is done！</string>
