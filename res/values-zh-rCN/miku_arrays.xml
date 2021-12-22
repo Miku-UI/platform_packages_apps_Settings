@@ -15,18 +15,18 @@
 
     <!-- Auto reboot settings -->
     <string-array name="auto_reboot_entries">
-        <item>Off</item>
-        <item>10 minutes</item>
-        <item>30 minutes</item>
-        <item>1 hour</item>
-        <item>2 hours</item>
-        <item>4 hours</item>
-        <item>8 hours</item>
-        <item>12 hours</item>
-        <item>24 hours</item>
-        <item>36 hours</item>
-        <item>48 hours</item>
-        <item>72 hours</item>
+        <item>我不要！</item>
+        <item>10 分钟(眯一会儿)</item>
+        <item>30 分钟(睡一会儿)</item>
+        <item>1 小时(午间休息)</item>
+        <item>2 小时(午间休息Plus!)</item>
+        <item>4 小时(睡一下午)</item>
+        <item>8 小时(睡到天亮)</item>
+        <item>12 小时(睡到中午！)</item>
+        <item>24 小时(睡一整天！)</item>
+        <item>36 小时(Miku你没事吧？)</item>
+        <item>48 小时(你已经睡了两天了！)</item>
+        <item>72 小时(快点醒过来QAQ！)</item>
     </string-array>
 
     <string-array name="auto_reboot_values" translatable="false">
