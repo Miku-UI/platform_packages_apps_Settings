@@ -15,18 +15,18 @@
 
     <!-- Auto reboot settings -->
     <string-array name="auto_reboot_entries">
-        <item>Off</item>
-        <item>10 minutes</item>
-        <item>30 minutes</item>
+        <item>iyada!</item>
+        <item>10 minutes(take a break)</item>
+        <item>30 minutes(have a nap)</item>
         <item>1 hour</item>
         <item>2 hours</item>
         <item>4 hours</item>
-        <item>8 hours</item>
+        <item>8 hours(Just go to bed)</item>
         <item>12 hours</item>
-        <item>24 hours</item>
-        <item>36 hours</item>
-        <item>48 hours</item>
-        <item>72 hours</item>
+        <item>24 hours(Sleep a whole day)</item>
+        <item>36 hours(Miku...Are u ok?)</item>
+        <item>48 hours(It;ve been 2 days!)</item>
+        <item>72 hours(Wake up plz!QAQ)</item>
     </string-array>
 
     <string-array name="auto_reboot_values" translatable="false">
