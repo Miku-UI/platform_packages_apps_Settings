@@ -35,9 +35,9 @@
         <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from being a developer.</item>
     </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-    <string name="show_dev_on">You are now a developer!</string>
+    <string name="show_dev_on">You are now a developer!(Really?)</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-    <string name="show_dev_already">No need, you are already a developer.</string>
+    <string name="show_dev_already">Stop tapping me plz...it hurts!</string>
 
     <!-- [CHAR LIMIT=NONE] Toast message when user attemps to launch developer otions before enabling it. -->
     <string name="dev_settings_disabled_warning">Please enable developer options first.</string>
@@ -72,7 +72,7 @@
     <string name="radioInfo_data_suspended">Suspended</string>
 
     <!-- Used for diagnostic info screens, precise translation isn't needed -->
-    <string name="radioInfo_unknown">Unknown</string>
+    <string name="radioInfo_unknown">I don\'t know</string>
 
     <!-- Used for diagnostic info screens, precise translation isn't needed. Unmounts the SD card from the phone, meaning it will become available for an attached computer  [CHAR LIMIT=25] -->
     <string name="sdcard_unmount" product="nosdcard">Unmount USB storage</string>
@@ -655,7 +655,7 @@
     <!-- Description of how many characters are used in owner info [CHAR LIMIT=40]-->
     <string name="owner_info_settings_status"><xliff:g id="count" example="90">%1$d</xliff:g> / <xliff:g id="count" example="100">%2$d</xliff:g></string>
     <!-- Hint text shown in owner info edit text [CHAR LIMIT=50] -->
-    <string name="owner_info_settings_edit_text_hint">E.g., Joe\u2019s Android.</string>
+    <string name="owner_info_settings_edit_text_hint">E.g., Miku\u2019s Android.</string>
 
     <!-- Text shown next to checkbox for showing profile info on LockScreen [CHAR LIMIT=50]-->
     <string name="show_profile_info_on_lockscreen_label">Show profile info on lock screen</string>
@@ -3171,7 +3171,7 @@
     <!-- Sound & display settings screen, setting option summary to change screen timeout -->
     <string name="screen_timeout_summary">After <xliff:g id="timeout_description">%1$s</xliff:g> of inactivity</string>
     <!-- Wallpaper settings title [CHAR LIMIT=30] -->
-    <string name="wallpaper_settings_title">Wallpaper</string>
+    <string name="wallpaper_settings_title">Miku UI Wallpaper</string>
     <!-- Styles & Wallpapers settings title [CHAR LIMIT=30] -->
     <string name="style_and_wallpaper_settings_title">Wallpaper &amp; style</string>
     <!-- Summary for the top level wallpapers settings [CHAR LIMIT=NONE]-->
@@ -4301,13 +4301,13 @@
 
     <!-- About --> <skip />
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
-    <string name="about_settings" product="tablet">About tablet</string>
+    <string name="about_settings" product="tablet">About Miku UI</string>
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
-    <string name="about_settings" product="default">About phone</string>
+    <string name="about_settings" product="default">About Miku UI</string>
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
-    <string name="about_settings" product="device">About device</string>
+    <string name="about_settings" product="device">About Miku UI</string>
     <!-- Main settings screen, setting title for the user to go into the About phone screen -->
-    <string name="about_settings" product="emulator">About emulated device</string>
+    <string name="about_settings" product="emulator">About Miku UI</string>
     <!-- Main settings screen, setting summary for the user to go into the About phone screen-->
     <string name="about_settings_summary">View legal info, status, software version</string>
     <!-- About phone settings screen, setting option name to go to dialog that shows legal info -->
@@ -10974,17 +10974,17 @@
     <string name="screen_zoom_make_larger_desc">Make larger</string>
 
     <!-- Name Initial shown in the conversation message icon. [CHAR LIMIT=1] -->
-    <string name="screen_zoom_conversation_icon_alex">A</string>
+    <string name="screen_zoom_conversation_icon_alex">Y</string>
     <!-- Name Initial shown in the conversation message icon. [CHAR LIMIT=1] -->
-    <string name="screen_zoom_conversation_icon_pete">P</string>
+    <string name="screen_zoom_conversation_icon_pete">M</string>
     <!-- Conversation message body of the messaging app preview screen. [CHAR LIMIT=NONE] -->
-    <string name="screen_zoom_conversation_message_1">Hi Pete!</string>
+    <string name="screen_zoom_conversation_message_1">Hi Miku!</string>
     <!-- Conversation message body of the messaging app preview screen. [CHAR LIMIT=NONE] -->
-    <string name="screen_zoom_conversation_message_2">Hey, want to grab coffee and catch up today?</string>
+    <string name="screen_zoom_conversation_message_2">Miku dayo~How are you today?</string>
     <!-- Conversation message body of the messaging app preview screen. [CHAR LIMIT=NONE] -->
-    <string name="screen_zoom_conversation_message_3">Sounds great. I know of a good place not too far from here.</string>
+    <string name="screen_zoom_conversation_message_3">Good, what about you my princess?</string>
     <!-- Conversation message body of the messaging app preview screen. [CHAR LIMIT=NONE] -->
-    <string name="screen_zoom_conversation_message_4">Perfect!</string>
+    <string name="screen_zoom_conversation_message_4">(= w =)</string>
     <!-- Conversation message timestamp of the messaging app preview screen. [CHAR LIMIT=20] -->
     <string name="screen_zoom_conversation_timestamp_1">Tue 6:00PM</string>
     <!-- Conversation message timestamp of the messaging app preview screen. [CHAR LIMIT=20] -->
