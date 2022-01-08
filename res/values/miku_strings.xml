@@ -46,7 +46,7 @@
 
      <!-- Status Bar Lyric -->
     <string name="status_bar_show_lyric_title">Status bar lyric (need App support)</string>
-    <string name="status_bar_show_lyric_summary">Show lyric in status bar. Thanks to @cjybyjk ! (from @exTHmUI)</string>
+    <string name="status_bar_show_lyric_summary">Show lyric in status bar. Thanks to @cjybyjk ! </string>
 
     <!-- Units -->
     <string name="unit_seconds">seconds</string>
