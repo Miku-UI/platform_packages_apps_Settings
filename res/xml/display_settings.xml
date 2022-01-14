@@ -68,6 +68,12 @@
             settings:controller="com.android.settings.display.DarkUIPreferenceController"
             settings:keywords="@string/keywords_dark_ui_mode"/>
 
+	<Preference
+	    android:key="android.theme.customization.fonts"
+	    android:title="@string/theme_customization_font_title"
+	    android:summary="@string/theme_customization_font_summary"
+	    android:fragment="com.miku.exsettings.fragments.FontsPicker"/>
+
         <Preference
             android:fragment="com.android.settings.accessibility.TextReadingPreferenceFragment"
             android:key="text_reading_options"
