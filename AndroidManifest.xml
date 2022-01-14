@@ -3,7 +3,6 @@
           package="com.android.settings"
           coreApp="true"
           android:sharedUserId="android.uid.system">
-
     <original-package android:name="com.android.settings"/>
 
     <!-- Permissions for reading or writing battery-related data. -->
@@ -147,7 +146,8 @@
             android:directBootAware="true"
             android:appComponentFactory="androidx.core.app.CoreComponentFactory"
             android:gwpAsanMode="always"
-            android:enableOnBackInvokedCallback="true">
+            android:enableOnBackInvokedCallback="true"
+            tools:replace="android:appComponentFactory">
 
         <uses-library android:name="org.apache.http.legacy" />
 
