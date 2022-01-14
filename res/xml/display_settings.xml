@@ -69,6 +69,12 @@
             settings:keywords="@string/keywords_dark_ui_mode"/>
 
         <Preference
+            android:key="android.theme.customization.fonts"
+            android:title="@string/theme_customization_font_title"
+            android:summary="@string/theme_customization_font_summary"
+            android:fragment="com.miku.exsettings.fragments.FontsPicker"/>
+
+        <Preference
             android:key="font_size"
             android:title="@string/title_font_size"
             android:fragment="com.android.settings.display.ToggleFontSizePreferenceFragment"
