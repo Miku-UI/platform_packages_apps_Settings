@@ -40,8 +40,8 @@
 
     <!-- SELinux Status -->
     <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled？ That is weird...</string>
-    <string name="selinux_status_permissive">Permissive～Be careful～</string>
+    <string name="selinux_status_disabled">Disabled? That is weird...</string>
+    <string name="selinux_status_permissive">Permissive~Be careful~</string>
     <string name="selinux_status_enforcing">Enforcing.You are safe now.</string>
 
      <!-- Status Bar Lyric -->
