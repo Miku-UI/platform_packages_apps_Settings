@@ -37,7 +37,7 @@ public class AnimatorDurationScalePreferenceController extends DeveloperOptionsP
     @VisibleForTesting
     static final int ANIMATOR_DURATION_SCALE_SELECTOR = 2;
     @VisibleForTesting
-    static final float DEFAULT_VALUE = 1;
+    static final float DEFAULT_VALUE = 1.5f;
 
     private final IWindowManager mWindowManager;
     private final String[] mListValues;
