@@ -31,10 +31,10 @@
     <string name="miku_version_uri" translatable="false">https://github.com/Project-Mushroom</string>
 
     <!-- SELinux Status -->
-    <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
-    <string name="selinux_status_permissive">Permissive</string>
-    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="selinux_status">SELinux 状态</string>
+    <string name="selinux_status_disabled">被...禁用了？这可不太对劲</string>
+    <string name="selinux_status_permissive">宽容~请谨慎行事~</string>
+    <string name="selinux_status_enforcing">强制执行！</string>
 
     <!-- Status Bar Lyric -->
     <string name="status_bar_show_lyric_title">状态栏歌词（需要应用支持哦）</string>
