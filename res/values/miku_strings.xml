@@ -13,9 +13,15 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">by default</string>
+    <string name="custom_seekbar_default_value_to_set">Default value: <xliff:g id="v">%s</xliff:g>\nLong tap to set</string>
+    <string name="custom_seekbar_default_value_is_set">Default value is set</string>
+
     <!-- Three-fingers-swipe to screenshot -->
     <string name="three_finger_gesture">Swipe to screenshot</string>
-    <string name="three_finger_gesture_summary">Swipe down with three fingers to take a screenshot</string>
+    <string name="three_finger_gesture_summary">Swipe down your three fingers, and~~~ it's done!</string>
 
     <!-- Miku version -->
     <string name="miku_version">MikuUI Ver.</string>
@@ -23,9 +29,18 @@
 
     <!-- SELinux Status -->
     <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
-    <string name="selinux_status_permissive">Permissive</string>
-    <string name="selinux_status_enforcing">Enforcing</string>
+    <string name="selinux_status_disabled">Disabled! That's weird...</string>
+    <string name="selinux_status_permissive">Permissive~Be careful~</string>
+    <string name="selinux_status_enforcing">Enforcing!You're safe now!</string>
+
+     <!-- Status Bar Lyric -->
+    <string name="status_bar_show_lyric_title">Status bar lyric (need App support)</string>
+    <string name="status_bar_show_lyric_summary">Show lyric in status bar. Thanks to @cjybyjk ! (from @exTHmUI)</string>
+
+    <!-- Units -->
+    <string name="unit_seconds">seconds</string>
+    <string name="unit_milliseconds">milliseconds</string>
+    <string name="unit_pixels">dp</string>
 
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
