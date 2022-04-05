@@ -13,6 +13,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+
+    <!-- Category Titles -->
+    <string name="network_category_title">互联网</string>
+    <string name="apps_category_title">应用程式</string>
+    <string name="display_and_sound_category_title">显示与声音</string>
+    <string name="security_category_title">安全</string>
+    <string name="others_category_title">杂七杂八の东西</string>
+
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">值: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">默认</string>

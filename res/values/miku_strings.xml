@@ -13,6 +13,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Category Titles -->
+    <string name="network_category_title">Network</string>
+    <string name="apps_category_title">Applications</string>
+    <string name="display_and_sound_category_title">Display and Sound</string>
+    <string name="security_category_title">Security</string>
+    <string name="others_category_title">Others</string>
+
     <!-- Custom seekbar -->
     <string name="custom_seekbar_value">Value: <xliff:g id="v">%s</xliff:g></string>
     <string name="custom_seekbar_default_value">by default</string>
