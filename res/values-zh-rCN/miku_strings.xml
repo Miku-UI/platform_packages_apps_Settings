@@ -72,7 +72,7 @@
     <string name="double_tap_sleep_gesture_summary">在状态栏的任何地方双击都可以锁屏哦！</string>
 
     <!--Double Tap to Sleep Lockscreen-->
-    <string name="lockscreen_tweaks_category_title">Lockscreen gestures</string>
-    <string name="double_tap_sleep_lockscreen_title">Double tap to sleep on lockscreen</string>
+    <string name="lockscreen_tweaks_category_title">锁屏手势</string>
+    <string name="double_tap_sleep_lockscreen_title">在锁屏界面双击就可以息屏噢！</string>
 
 </resources>
