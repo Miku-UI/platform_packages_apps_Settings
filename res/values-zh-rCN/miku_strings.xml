@@ -40,7 +40,7 @@
 
     <!-- Miku version -->
     <string name="miku_version">Miku UI Ver.</string>
-    <string name="miku_version_uri" translatable="false">https://github.com/Project-Mushroom</string>
+    <string name="miku_version_uri" translatable="false">https://github.com/Miku-UI</string>
 
     <!-- SELinux Status -->
     <string name="selinux_status">SELinux 状态</string>
