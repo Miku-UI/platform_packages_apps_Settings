@@ -49,7 +49,8 @@
         settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
 
     <PreferenceCategory
-        android:title="@string/network_category_title" />
+        android:title="@string/network_category_title"
+        android:icon="@drawable/icon_miku" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
@@ -79,7 +80,8 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <PreferenceCategory
-        android:title="@string/apps_category_title" />
+        android:title="@string/apps_category_title"
+        android:icon="@drawable/icon_miku" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.applications.AppDashboardFragment"
@@ -90,7 +92,8 @@
         settings:highlightableMenuKey="@string/menu_key_apps"/>
 
     <PreferenceCategory
-        android:title="@string/display_and_sound_category_title" />
+        android:title="@string/display_and_sound_category_title"
+        android:icon="@drawable/icon_miku" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
@@ -126,7 +129,8 @@
         settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
 
     <PreferenceCategory
-        android:title="@string/security_category_title" />
+        android:title="@string/security_category_title"
+        android:icon="@drawable/icon_miku" />
 
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_settings_safety_center"
@@ -182,7 +186,8 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <PreferenceCategory
-        android:title="@string/others_category_title" />
+        android:title="@string/others_category_title"
+        android:icon="@drawable/icon_miku" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.system.SystemDashboardFragment"
