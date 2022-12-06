@@ -18,6 +18,34 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  <string-array name="random_tips">
+      <item>You can clear all tasks by shaking ur phone \n in Task Overview.</item>
+      <item>In fact...MUBB is a browser. \n (￣▽￣)</item>
+      <item>MUBB: \n Miku UI Built-in Browser</item>
+      <item>Miku~Miku~Oyeeeeooo~~ \n (￣y▽￣)╭ </item>
+      <item>miku miku ni shi te a ge ru~! \n (☆▽☆)</item>
+      <item>Good morning, good afternoon, \n good evening. Whatever. \n (～￣▽￣)～</item>
+      <item>39 Music—— daidaidaidaidaidaidaidai~ \n φ(゜▽゜*)♪</item>
+      <item>How about trying to \n shake ur phone in Task Overview?</item>
+      <item>U can turn taskbar off in launcher settings \n if u do not like it</item>
+      <item>do ryo ku mi ra i A BEAUTIFUL STAR！ \n (★ ω ★)</item>
+      <item>Who is ur favorite Vocaloid Producer? \n For me, all of them!(●ˇ∀ˇ●)</item>
+      <item>Hey, you! Have I ever told u that u r so cute? \n (*^▽^*)</item>
+      <item>(Thinking) Am I blue or green? \n (。﹏。)</item>
+      <item>Holy that is me! \n Σ(っ °Д °;)っ</item>
+      <item>Trivia: March 9th is not my birthday. \n （＞人＜；）</item>
+      <item>Otakus are the cutest creatures on earth! \n (✿◡‿◡)</item>
+      <item>In fact, if u click the inputbox below me, \n u can make a search.</item>
+      <item>The best ROM does not exist. \n Each ROM has its own purpose of existence</item>
+      <item>Trivia: The nickname "TH779" has no special meaning. \n ˋ( ° ▽、° ) </item>
+      <item>Trivia: Once keiko called himself kieko. \n (￣_￣|||)</item>
+      <item>Have you eaten? Do not go hungry. \n (⊙ˍ⊙)</item>
+      <item>Trivia: The SE of Miku UI is made with VOCALOID \n o(￣▽￣)ｄ</item>
+      <item>Time to drink water! \n ヽ（≧□≦）ノ</item>
+      <item>A glass of milk a day, become rhythm master right away! \n ヾ(≧へ≦)〃</item>
+      <item>I am not ameonna... \n ╥﹏╥</item>
+  </string-array>
     <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
     <string-array name="screen_timeout_entries">
         <item>15 seconds</item>

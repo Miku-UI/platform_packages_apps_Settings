@@ -20,6 +20,33 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string-array name="random_tips">
+      <item>在多任务界面摇动手机可以清理后台哦~</item>
+      <item>那个叫做MUBB的东西，其实是浏览器... \n (￣▽￣)</item>
+      <item>MUBB的全称是Miku UI Built-in Browser哦！</item>
+      <item>Miku~Miku~Oyeeeeooo~~ \n (￣y▽￣)╭ </item>
+      <item>把你MikuMiku掉~！ \n (☆▽☆)</item>
+      <item>你好呀~祝你早午晚都安~ \n (～￣▽￣)～</item>
+      <item>39 Music—— 呆呆呆呆呆呆呆呆~ \n φ(゜▽゜*)♪</item>
+      <item>试一下在多任务界面摇一下手机...？</item>
+      <item>如果不喜欢底下的任务栏，可以在桌面的 \n 主屏幕设置里面关掉哦！</item>
+      <item>努力 未来 A BEAUTIFUL STAR！ \n (★ ω ★)</item>
+      <item>你最喜欢的P主是哪一位呢？ \n 我全都喜欢噢！(●ˇ∀ˇ●)</item>
+      <item>你！等一下！你今天也很可爱哦！ \n (*^▽^*)</item>
+      <item>我到底是绿色还是蓝色的呢...？（沉思） \n (。﹏。)</item>
+      <item>我趣，你说的这个初音未来是我！ \n Σ(っ °Д °;)っ</item>
+      <item>冷知识：3月9号其实并不是我的生日噢 \n （＞人＜；）</item>
+      <item>宅宅们是这个世界上最可爱的生物！ \n (✿◡‿◡)</item>
+      <item>虽然但是，点击下方的搜索框， \n 就可以快速找到想要调节的设置了哦</item>
+      <item>这个世界上没有最好的ROM， \n 每个ROM都有自己存在的意义哦？</item>
+      <item>冷知识：TH779这个名字是随便起的 \n ˋ( ° ▽、° ) </item>
+      <item>冷知识：keiko曾经口误把自己叫成了kieko \n (￣_￣|||)</item>
+      <item>吃饭了吗？可不要饿肚子哟？ \n (⊙ˍ⊙)</item>
+      <item>冷知识：系统里的Miku音效都是用VOCALOID手搓的哟\n o(￣▽￣)ｄ</item>
+      <item>看到这条消息，说明你该喝水了！ \n ヽ（≧□≦）ノ</item>
+      <item>每天一杯奶，强壮音游人 \n ヾ(≧へ≦)〃</item>
+      <item>呜呜呜，我才不是雨女... \n ╥﹏╥</item>
+  </string-array>
   <string-array name="screen_timeout_entries">
     <item msgid="8386012403457852396">"15 秒"</item>
     <item msgid="4572123773028439079">"30 秒"</item>
