@@ -68,7 +68,7 @@
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
 
     <!-- Double Tap to Sleep Statusbar -->
-    <string name="double_tap_sleep_gesture_title">Tap to sleep</string>
-    <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar to put the device to sleep</string>
+    <string name="double_tap_sleep_gesture_title">DT2S</string>
+    <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar or lockscreen to put the Miku to sleep(*￣▽￣*)</string>
 
 </resources>
