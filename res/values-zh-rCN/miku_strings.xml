@@ -68,4 +68,13 @@
     <string name="double_tap_sleep_gesture_title">拍头锁屏</string>
     <string name="double_tap_sleep_gesture_summary">在状态栏或者锁屏界面快速连拍两下就可以锁屏哦(*￣▽￣*)</string>
 
+    <!-- Preference and settings suggestion title text for screen off UDFPS (phone) [CHAR LIMIT=60]-->
+    <string name="ambient_display_screen_off_udfps_title" product="default">长按指纹传感器来解锁手机</string>
+    <!-- Preference and settings suggestion title text for screen off UDFPS  (tablet) [CHAR LIMIT=60]-->
+    <string name="ambient_display_screen_off_udfps_title" product="tablet">长按指纹传感器来解锁平板</string>
+    <!-- Preference and settings suggestion title text for screen off UDFPS  (device) [CHAR LIMIT=60]-->
+    <string name="ambient_display_screen_off_udfps_title" product="device">长按指纹传感器来解锁设备</string>
+    <!-- Summary text for screen off UDFPS [CHAR LIMIT=NONE]-->
+    <string name="ambient_display_screen_off_udfps_summary">长按屏下指纹传感器来解锁并唤醒设备</string>
+
 </resources>
