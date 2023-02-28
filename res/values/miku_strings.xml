@@ -80,4 +80,8 @@
     <!-- Summary text for screen off UDFPS [CHAR LIMIT=NONE]-->
     <string name="ambient_display_screen_off_udfps_summary">To wake up your screen and unlock, long press your under-display fingerprint sensor.</string>
 
+    <!-- Performance Mode -->
+    <string name="cpu_performance_mode_title">Performance mode</string>
+    <string name="cpu_performance_mode_summary">CPU always runs at maximum frequency. It may drain your battery life.</string>
+
 </resources>

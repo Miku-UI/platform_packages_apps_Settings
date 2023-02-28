@@ -77,4 +77,8 @@
     <!-- Summary text for screen off UDFPS [CHAR LIMIT=NONE]-->
     <string name="ambient_display_screen_off_udfps_summary">长按屏下指纹传感器来解锁并唤醒设备</string>
 
+    <!-- Performance Mode -->
+    <string name="cpu_performance_mode_title">性能模式</string>
+    <string name="cpu_performance_mode_summary">CPU 将始终运行在最高频率，可能会显著降低电池续航</string>
+
 </resources>

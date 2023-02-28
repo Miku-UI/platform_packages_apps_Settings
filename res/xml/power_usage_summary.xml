@@ -63,6 +63,13 @@
         android:title="@string/battery_percentage"
         android:summary="@string/battery_percentage_description"
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
+    
+    <com.miku.settings.preferences.SecureSettingSwitchPreference
+        android:key="cpu_performance_mode"
+        android:title="@string/cpu_performance_mode_title"
+        android:summary="@string/cpu_performance_mode_summary"
+        android:defaultValue="false"
+        settings:controller="com.android.settings.fuelgauge.PerformanceModeController" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="power_usage_footer"
