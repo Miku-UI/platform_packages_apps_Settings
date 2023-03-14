@@ -48,7 +48,6 @@
         settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
 
     <PreferenceCategory
-	android:icon="@drawable/icon_miku"
 	android:title="@string/network_category_title" />
 
     <com.android.settings.widget.HomepagePreference
@@ -61,6 +60,15 @@
         settings:controller="com.android.settings.network.TopLevelNetworkEntryPreferenceController"/>
 
     <com.android.settings.widget.HomepagePreference
+        android:fragment="com.android.settings.communal.CommunalDashboardFragment"
+        android:icon="@drawable/ia_settings_communal"
+        android:key="top_level_communal"
+        android:title="@string/communal_settings_title"
+        android:summary="@string/communal_settings_summary"
+        settings:highlightableMenuKey="@string/menu_key_communal"
+        settings:controller="com.android.settings.communal.CommunalPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         android:icon="@drawable/ic_devices_other"
         android:key="top_level_connected_devices"
@@ -70,7 +78,6 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <PreferenceCategory
-	android:icon="@drawable/icon_miku"
 	android:title="@string/apps_category_title" />
 
     <com.android.settings.widget.HomepagePreference
@@ -82,7 +89,6 @@
         settings:highlightableMenuKey="@string/menu_key_apps"/>
 
     <PreferenceCategory
-	android:icon="@drawable/icon_miku"
 	android:title="@string/display_and_sound_category_title" />
 
     <com.android.settings.widget.HomepagePreference
@@ -119,7 +125,6 @@
         settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
 
     <PreferenceCategory
-	android:icon="@drawable/icon_miku"
 	android:title="@string/security_category_title" />
 
     <com.android.settings.widget.HomepagePreference
@@ -177,7 +182,6 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <PreferenceCategory
-	android:icon="@drawable/icon_miku"
 	android:title="@string/others_category_title" />
 
     <com.android.settings.widget.HomepagePreference
