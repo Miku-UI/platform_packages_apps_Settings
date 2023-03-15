@@ -64,9 +64,6 @@
     <string name="global_actions_advanced_reboot_title">Enable advanced restart</string>
     <string name="global_actions_advanced_reboot_summary">Show additional reboot options in power menu</string>
 
-    <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
-
     <!-- Double Tap to Sleep Statusbar -->
     <string name="double_tap_sleep_gesture_title">DT2S</string>
     <string name="double_tap_sleep_gesture_summary">Double-tap anywhere on the status bar or lockscreen to put the Miku to sleep(*￣▽￣*)</string>
