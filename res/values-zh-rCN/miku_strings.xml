@@ -61,9 +61,6 @@
     <string name="global_actions_advanced_reboot_title">启用高级重启</string>
     <string name="global_actions_advanced_reboot_summary">打开以后将会在重启菜单显示额外的选项噢</string>
 
-    <!-- Volume link notification -->
-    <string name="volume_link_notification_title">把铃声与通知音量绑定在一起~</string>
-
     <!-- Double Tap to Sleep Statusbar -->
     <string name="double_tap_sleep_gesture_title">拍头锁屏</string>
     <string name="double_tap_sleep_gesture_summary">在状态栏或者锁屏界面快速连拍两下就可以锁屏哦(*￣▽￣*)</string>
