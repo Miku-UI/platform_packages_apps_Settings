@@ -78,4 +78,8 @@
     <string name="cpu_performance_mode_title">性能模式</string>
     <string name="cpu_performance_mode_summary">CPU 将始终运行在最高频率，可能会显著降低电池续航</string>
 
+    <!-- Navigation bar hint -->
+    <string name="show_navbar_gesture_bar_title">手势条</string>
+    <string name="show_navbar_gesture_bar_summary">在屏幕底部显示手势条</string>
+
 </resources>
