@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- 
 /*
 **
@@ -20,6 +20,34 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  <string-array name="random_tips">
+    <item>やぁやぁ、キミはとてもかわいいって言った事ある？ \n (*^▽^*)</item>
+    <item>本体を振ってすべてのタスクを消去できるよ。 \n 振ってクリアしてみてね。</item>
+    <item>実は...MUBBはブラウザなんですよ。 \n (￣▽￣)</item>
+    <item>MUBB: \n Miku UI Built-in Browser</item>
+    <item>ミク～ミク～あああああ～～ \n (￣y▽￣)╭ </item>
+    <item>ミクミクにしてあげる！ \n (☆▽☆)</item>
+    <item>おはよう、こんにちは、\n こんばんは。どっちでもいいや。 \n (～￣▽￣)～</item>
+    <item>39みゅーじっく！—— 大大大大大大大大～ \n φ(゜▽゜*)♪</item>
+    <item>タスクビューで \n 本体を振ってみたらどうかな？</item>
+    <item>タスクバーが嫌だったら \n ランチャーの設定でOFFにできるよ。</item>
+    <item>努力 未来 A BEAUTIFUL STAR！ \n (★ ω ★)</item>
+    <item>好きなボカロPは誰？ \n 私はみんな好き！(●ˇ∀ˇ●)</item>
+    <item>私は青なのか緑なのか...(考え中) \n (。﹏。)</item>
+    <item>聖女それが私！ \n Σ(っ °Д °;)っ</item>
+    <item>トリビア: 3月9日は私の誕生日じゃないよ。 \n （＞人＜；）</item>
+    <item>オタクは地球上で最もかわいい生き物です！ \n (✿◡‿◡)</item>
+    <item>下の入力欄をタップで \n 検索ができるよ。</item>
+    <item>最高のROMは存在しません。 \n ROM達にはそれぞれの存在意義があるよ。</item>
+    <item>トリビア: 「TH779」 というニックネームには特別な意味はないよ。 \n ˋ( ° ▽、° ) </item>
+    <item>トリビア: 「ケイコ」は自分自身を「キエコ」と呼んでたよ。 \n (￣_￣|||)</item>
+    <item>ご飯は食べた？お腹は空かせないようにね。 \n (⊙ˍ⊙)</item>
+    <item>トリビア: Miku UIのSEはボーカロイドで作ってます。 \n o(￣▽￣)ｄ</item>
+    <item>水を飲む時間です！ \n ヽ（≧□≦）ノ</item>
+    <item>1日1杯の牛乳を飲めばすぐにリズムマスター！ \n ヾ(≧へ≦)〃</item>
+    <item>私は雨女じゃないよ... \n ╥﹏╥</item>
+  </string-array>
   <string-array name="screen_timeout_entries">
     <item msgid="8386012403457852396">"15 秒"</item>
     <item msgid="4572123773028439079">"30 秒"</item>
@@ -392,8 +420,8 @@
     <item msgid="9083927335632626281">"60 日以上経過"</item>
     <item msgid="4146561207729203822">"90 日以上経過"</item>
   </string-array>
-    <!-- no translation found for swipe_direction_titles:0 (9039866451038081694) -->
-    <!-- no translation found for swipe_direction_titles:1 (3175804938330683021) -->
+  <!-- no translation found for swipe_direction_titles:0 (9039866451038081694) -->
+  <!-- no translation found for swipe_direction_titles:1 (3175804938330683021) -->
   <string-array name="swipe_direction_values">
     <item msgid="718525159108105421">"1"</item>
     <item msgid="9080166583718385565">"0"</item>
