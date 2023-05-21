@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /*
 **
@@ -17,7 +17,9 @@
 ** limitations under the License.
 */
  -->
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="random_tips">
     <item>やぁやぁ、キミはとてもかわいいって言った事ある？ \n (*^▽^*)</item>
     <item>本体を振ってすべてのタスクを消去できるよ。 \n 振ってクリアしてみてね。</item>
@@ -73,13 +75,13 @@
     <item msgid="6258291104689105723">"10分"</item>
     <item msgid="6231662826434607130">"30分"</item>
   </string-array>
-  <!-- no translation found for dark_ui_scheduler_preference_titles:0 (7465697698048662118) -->
-  <!-- no translation found for dark_ui_scheduler_preference_titles:1 (4057198235664064478) -->
-  <!-- no translation found for dark_ui_scheduler_preference_titles:2 (8842756744447000897) -->
-  <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:0 (8160793372964333729) -->
-  <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:1 (1570862084158925417) -->
-  <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:2 (1527300254382984555) -->
-  <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:3 (5231566512901956369) -->
+    <!-- no translation found for dark_ui_scheduler_preference_titles:0 (7465697698048662118) -->
+    <!-- no translation found for dark_ui_scheduler_preference_titles:1 (4057198235664064478) -->
+    <!-- no translation found for dark_ui_scheduler_preference_titles:2 (8842756744447000897) -->
+    <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:0 (8160793372964333729) -->
+    <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:1 (1570862084158925417) -->
+    <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:2 (1527300254382984555) -->
+    <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:3 (5231566512901956369) -->
   <string-array name="lock_after_timeout_entries">
     <item msgid="2223808927866488981">"直後"</item>
     <item msgid="463591454172790676">"5秒"</item>
@@ -125,10 +127,10 @@
     <item msgid="4036325515437530221">"ブロック中"</item>
     <item msgid="8883455894013518008">"接続不良により一時的に無効"</item>
   </string-array>
-  <!-- no translation found for wifi_tether_security:0 (6312112980634811065) -->
-  <!-- no translation found for wifi_tether_security:1 (1428294025896439258) -->
-  <!-- no translation found for wifi_tether_security:2 (6851763638266088835) -->
-  <!-- no translation found for wifi_tether_security:3 (5512131148045414341) -->
+    <!-- no translation found for wifi_tether_security:0 (6312112980634811065) -->
+    <!-- no translation found for wifi_tether_security:1 (1428294025896439258) -->
+    <!-- no translation found for wifi_tether_security:2 (6851763638266088835) -->
+    <!-- no translation found for wifi_tether_security:3 (5512131148045414341) -->
   <string-array name="eap_ocsp_type">
     <item msgid="8568170800958331461">"検証しない"</item>
     <item msgid="5703177653586269306">"証明書のステータスをリクエストする"</item>
@@ -522,8 +524,8 @@
     <item msgid="9083927335632626281">"60 日以上経過"</item>
     <item msgid="4146561207729203822">"90 日以上経過"</item>
   </string-array>
-  <!-- no translation found for swipe_direction_titles:0 (9039866451038081694) -->
-  <!-- no translation found for swipe_direction_titles:1 (3175804938330683021) -->
+    <!-- no translation found for swipe_direction_titles:0 (9039866451038081694) -->
+    <!-- no translation found for swipe_direction_titles:1 (3175804938330683021) -->
   <string-array name="swipe_direction_values">
     <item msgid="718525159108105421">"1"</item>
     <item msgid="9080166583718385565">"0"</item>
@@ -594,15 +596,15 @@
     <item msgid="6242790734457941014">"RUIM / SIM"</item>
     <item msgid="8980776035119085660">"NV"</item>
   </string-array>
-  <!-- no translation found for enhanced_4g_lte_mode_title_variant:0 (1841976293698111057) -->
-  <!-- no translation found for enhanced_4g_lte_mode_title_variant:1 (6822859933189908133) -->
-  <!-- no translation found for enhanced_4g_lte_mode_title_variant:2 (4543171628914168621) -->
-  <!-- no translation found for enhanced_4g_lte_mode_sumary_variant:0 (6624400115590055120) -->
-  <!-- no translation found for enhanced_4g_lte_mode_sumary_variant:1 (5783108243674842461) -->
-  <!-- no translation found for enhanced_4g_lte_mode_sumary_variant:2 (2605068646093321511) -->
-  <!-- no translation found for rtt_setting_mode:1 (7903019313228349427) -->
-  <!-- no translation found for rtt_setting_mode:2 (8525285145696236811) -->
-  <!-- no translation found for rtt_setting_mode:3 (7725394146877517088) -->
+    <!-- no translation found for enhanced_4g_lte_mode_title_variant:0 (1841976293698111057) -->
+    <!-- no translation found for enhanced_4g_lte_mode_title_variant:1 (6822859933189908133) -->
+    <!-- no translation found for enhanced_4g_lte_mode_title_variant:2 (4543171628914168621) -->
+    <!-- no translation found for enhanced_4g_lte_mode_sumary_variant:0 (6624400115590055120) -->
+    <!-- no translation found for enhanced_4g_lte_mode_sumary_variant:1 (5783108243674842461) -->
+    <!-- no translation found for enhanced_4g_lte_mode_sumary_variant:2 (2605068646093321511) -->
+    <!-- no translation found for rtt_setting_mode:1 (7903019313228349427) -->
+    <!-- no translation found for rtt_setting_mode:2 (8525285145696236811) -->
+    <!-- no translation found for rtt_setting_mode:3 (7725394146877517088) -->
   <string-array name="nfc_payment_favor">
     <item msgid="9104058551372383947">"常時"</item>
     <item msgid="5283665583617307336">"別の決済アプリが起動されている場合を除く"</item>
