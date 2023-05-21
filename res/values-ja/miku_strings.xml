@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright 2021 Miku UI
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Category Titles -->
+  <string name="network_category_title">ネットワーク</string>
+  <string name="apps_category_title">アプリ</string>
+  <string name="display_and_sound_category_title">画面と音</string>
+  <string name="security_category_title">セキュリティ</string>
+  <string name="others_category_title">その他</string>
+  <!-- Custom seekbar -->
+  <string name="custom_seekbar_value">値: <xliff:g id="v">%s</xliff:g></string>
+  <string name="custom_seekbar_default_value">デフォルト</string>
+  <string name="custom_seekbar_default_value_to_set">デフォルトの値: <xliff:g id="v">%s</xliff:g>\n長押しで設定します</string>
+  <string name="custom_seekbar_default_value_is_set">デフォルトの値が設定されています</string>
+  <!-- Auto Reboot -->
+  <string name="auto_reboot_title">自動で再起動</string>
+  <string name="auto_reboot_summary">選択した時間内にロックの解除がされなかった場合は自動的に Miku UI を再起動します。</string>
+  <!-- Three-fingers-swipe to screenshot -->
+  <string name="three_finger_gesture">スワイプでスクリーンショット</string>
+  <string name="three_finger_gesture_summary">3 本指でスワイプをして～～完了っ！</string>
+  <!-- Maintainer name -->
+  <string name="maintainer_name">❤マスター❤</string>
+  <string name="miku_maintainer_uri" translatable="false">http://127.0.0.1</string>
+  <!-- Miku build type -->
+  <string name="miku_type">❤ビルドタイプ❤</string>
+  <!-- Miku version -->
+  <string name="miku_version">Miku UI バージョン</string>
+  <string name="miku_version_uri" translatable="false">https://github.com/Miku-UI</string>
+  <!-- SELinux Status -->
+  <string name="selinux_status">SELinux ステータス</string>
+  <string name="selinux_status_disabled">無効？ それは変ですよ...</string>
+  <string name="selinux_status_permissive">Permissive～気をつけてね～</string>
+  <string name="selinux_status_enforcing">Enforcing、安全ですよ。</string>
+  <!-- Status Bar Lyric -->
+  <string name="status_bar_show_lyric_title">ステータスバーの歌詞 (アプリの対応が必要です)</string>
+  <string name="status_bar_show_lyric_summary">ステータスバーに歌詞を表示します。 @cjybyjk さんありがとう！ </string>
+  <!-- Units -->
+  <string name="unit_seconds">秒</string>
+  <string name="unit_milliseconds">ミリ秒</string>
+  <string name="unit_pixels">dp</string>
+  <!-- Global Actions -->
+  <string name="global_actions_advanced_reboot_title">高度な再起動を有効化</string>
+  <string name="global_actions_advanced_reboot_summary">電源メニューに追加の再起動オプションを表示します</string>
+  <!-- Double Tap to Sleep Statusbar -->
+  <string name="double_tap_sleep_gesture_title">DT2S</string>
+  <string name="double_tap_sleep_gesture_summary">ステータスバーやロック画面上の任意の場所をダブルタップでミクをスリープにしちゃう事ができます (*￣▽￣*)</string>
+  <!-- Preference and settings suggestion title text for screen off UDFPS (phone) [CHAR LIMIT=60]-->
+  <string name="ambient_display_screen_off_udfps_title" product="default">指紋センサーを長押しでロックを解除</string>
+  <!-- Preference and settings suggestion title text for screen off UDFPS  (tablet) [CHAR LIMIT=60]-->
+  <string name="ambient_display_screen_off_udfps_title" product="tablet">指紋センサーを長押しでタブレットのロックを解除</string>
+  <!-- Preference and settings suggestion title text for screen off UDFPS  (device) [CHAR LIMIT=60]-->
+  <string name="ambient_display_screen_off_udfps_title" product="device">指紋センサーを長押しでロックを解除</string>
+  <!-- Summary text for screen off UDFPS [CHAR LIMIT=NONE]-->
+  <string name="ambient_display_screen_off_udfps_summary">画面を起動してロックを解除する場合は画面下の指紋センサーを長押ししてください。</string>
+  <!-- Performance Mode -->
+  <string name="cpu_performance_mode_title">パフォーマンスモード</string>
+  <string name="cpu_performance_mode_summary">CPU が常に最大周波数で動作します。バッテリーを激しく消費する可能性があります。</string>
+  <!-- Navigation bar hint -->
+  <string name="show_navbar_gesture_bar_title">ジェスチャーバー</string>
+  <string name="show_navbar_gesture_bar_summary">画面の下にジェスチャーバーを表示します</string>
+</resources>
