@@ -53,7 +53,7 @@
   <string name="global_actions_advanced_reboot_title">高度な再起動を有効化</string>
   <string name="global_actions_advanced_reboot_summary">電源メニューに追加の再起動オプションを表示します</string>
   <!-- Double Tap to Sleep Statusbar -->
-  <string name="double_tap_sleep_gesture_title">DT2S</string>
+  <string name="double_tap_sleep_gesture_title">ダブルタップでスリープ</string>
   <string name="double_tap_sleep_gesture_summary">ステータスバーやロック画面上の任意の場所をダブルタップでミクをスリープにしちゃう事ができます (*￣▽￣*)</string>
   <!-- Preference and settings suggestion title text for screen off UDFPS (phone) [CHAR LIMIT=60]-->
   <string name="ambient_display_screen_off_udfps_title" product="default">指紋センサーを長押しでロックを解除</string>
