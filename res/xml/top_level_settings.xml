@@ -21,8 +21,8 @@
     android:key="top_level_settings">
 
     <com.android.settings.widget.HomepagePreference
-	android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
-        android:icon="@drawable/ic_phone_info"
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:icon="@drawable/ic_settings_about_device"
         android:key="top_level_about_device"
         android:title="@string/about_settings"
         android:summary="@string/summary_placeholder"
@@ -48,8 +48,8 @@
         settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
 
     <PreferenceCategory
-	android:icon="@drawable/icon_miku"
-	android:title="@string/network_category_title" />
+        android:icon="@drawable/icon_miku"
+        android:title="@string/network_category_title" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
@@ -79,8 +79,8 @@
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
     <PreferenceCategory
-	android:icon="@drawable/icon_miku"
-	android:title="@string/apps_category_title" />
+        android:icon="@drawable/icon_miku"
+        android:title="@string/apps_category_title" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.applications.AppDashboardFragment"
@@ -91,8 +91,8 @@
         settings:highlightableMenuKey="@string/menu_key_apps"/>
 
     <PreferenceCategory
-	android:icon="@drawable/icon_miku"
-	android:title="@string/display_and_sound_category_title" />
+        android:icon="@drawable/icon_miku"
+        android:title="@string/display_and_sound_category_title" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.notification.ConfigureNotificationSettings"
@@ -128,8 +128,8 @@
         settings:controller="com.android.settings.display.TopLevelWallpaperPreferenceController"/>
 
     <PreferenceCategory
-	android:icon="@drawable/icon_miku"
-	android:title="@string/security_category_title" />
+        android:icon="@drawable/icon_miku"
+        android:title="@string/security_category_title" />
 
     <com.android.settings.widget.HomepagePreference
         android:icon="@drawable/ic_settings_safety_center"
@@ -186,8 +186,8 @@
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
     <PreferenceCategory
-	android:icon="@drawable/icon_miku"
-	android:title="@string/others_category_title" />
+        android:icon="@drawable/icon_miku"
+        android:title="@string/others_category_title" />
 
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.system.SystemDashboardFragment"
@@ -210,8 +210,8 @@
         android:key="top_level_miku"
         android:title="@string/miku_settings_title"
         android:summary="@string/miku_settings_summary"
-        android:icon="@drawable/ic_phone_info"
-	settings:highlightableMenuKey="@string/menu_key_miku"
+        android:icon="@drawable/ic_settings_about_device"
+        settings:highlightableMenuKey="@string/menu_key_miku"
         android:fragment="com.miku.exsettings.MikuSettings"/>
 
     <com.android.settings.widget.HomepagePreference
