@@ -22,8 +22,15 @@
     settings:keywords="@string/keywords_android_version">
 
     <PreferenceScreen
-        android:key="mikuui_logo"
+        android:key="mikuui_logo1"
         android:layout="@layout/mikuui_logo"/>
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="mikuui_logo"
+        android:order="0"
+        android:layout="@layout/mikuui_logo"
+        android:selectable="false"
+        settings:isPreferenceVisible="true"/>
 
     <!-- Android version -->
     <Preference
