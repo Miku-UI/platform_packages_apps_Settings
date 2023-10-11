@@ -35,26 +35,25 @@
         android:contentDescription="@string/search_bar_account_avatar_content_description"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-	android:layout_width="match_parent"
-	android:layout_height="55dp">
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
 
         <TextView
-	    android:id="@+id/homepage_title"
-	    android:layout_width="wrap_content"
-	    android:layout_height="60dp"
-	    android:gravity="center"
-	    style="@style/HomepageTitleText"
-	    android:text="@string/settings_label"
-	    app:layout_constraintTop_toTopOf="parent"
-	    app:layout_constraintStart_toStartOf="parent"/>
+            android:id="@+id/homepage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            style="@style/HomepageTitleText"
+            android:text="@string/settings_label"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-	<ImageView
-	    android:layout_width="200dp"
-	    android:layout_height="60dp"
-	    android:layout_marginRight="@dimen/homepage_title_margin_horizontal"
-	    android:src="@drawable/mikuui_banner"
-	    app:layout_constraintTop_toTopOf="parent"
-	    app:layout_constraintEnd_toEndOf="parent"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:src="@drawable/mikuui_banner"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout
