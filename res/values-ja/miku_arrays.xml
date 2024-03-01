@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2021 Miku UI
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,34 +12,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Auto reboot settings -->
-  <string-array name="auto_reboot_entries">
-    <item>いやだ！</item>
-    <item>10 分 (休憩)</item>
-    <item>30 分 (お昼寝)</item>
-    <item>1 時間</item>
-    <item>2 時間</item>
-    <item>4 時間</item>
-    <item>8 時間 (そのまま寝た)</item>
-    <item>12 時間</item>
-    <item>24 時間 (丸一日寝た)</item>
-    <item>36 時間 (ミク...大丈夫？)</item>
-    <item>48 時間 (2 日経った！)</item>
-    <item>72 時間 (お願い！起きて！QAQ)</item>
-  </string-array>
-  <string-array name="auto_reboot_values" translatable="false">
-    <item>0</item>
-    <!-- Disabled -->
-    <item>600000</item>
-    <item>1800000</item>
-    <item>3600000</item>
-    <item>7200000</item>
-    <item>14400000</item>
-    <item>28800000</item>
-    <item>43200000</item>
-    <item>86400000</item>
-    <item>129600000</item>
-    <item>172800000</item>
-    <item>259200000</item>
-  </string-array>
+    <!-- Auto reboot settings -->
+    <string-array name="auto_reboot_entries">
+        <item>いやだ！</item>
+        <item>10 分 (休憩)</item>
+        <item>30 分 (お昼寝)</item>
+        <item>1 時間</item>
+        <item>2 時間</item>
+        <item>4 時間</item>
+        <item>8 時間 (そのまま寝た)</item>
+        <item>12 時間</item>
+        <item>24 時間 (丸一日寝た)</item>
+        <item>36 時間 (ミク...大丈夫？)</item>
+        <item>48 時間 (2 日経った！)</item>
+        <item>72 時間 (お願い！起きて！QAQ)</item>
+    </string-array>
 </resources>
