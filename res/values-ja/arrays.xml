@@ -1,5 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- 
+<?xml version="1.0" encoding="utf-8"?>
+<!--
 /*
 **
 ** Copyright 2007 The Android Open Source Project
@@ -16,11 +16,8 @@
 ** See the License for the specific language governing permissions and
 ** limitations under the License.
 */
- -->
-
-<resources xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="random_tips">
     <item>やぁやぁ、キミはとてもかわいいって言った事ある？ \n (*^▽^*)</item>
     <item>本体を振ってすべてのタスクを消去できるよ。 \n 振ってクリアしてみてね。</item>
@@ -48,463 +45,702 @@
     <item>1日1杯の牛乳を飲めばすぐにリズムマスター！ \n ヾ(≧へ≦)〃</item>
     <item>私は雨女じゃないよ... \n ╥﹏╥</item>
   </string-array>
+  <!-- Display settings.  The delay in inactivity before the screen is turned off. These are shown in a list dialog. -->
   <string-array name="screen_timeout_entries">
-    <item msgid="8386012403457852396">"15 秒"</item>
-    <item msgid="4572123773028439079">"30 秒"</item>
-    <item msgid="7016081293774377048">"1 分"</item>
-    <item msgid="838575533670111144">"2 分"</item>
-    <item msgid="2693197579676214668">"5 分"</item>
-    <item msgid="1955784331962974678">"10 分"</item>
-    <item msgid="5578717731965793584">"30 分"</item>
+    <item>15 秒</item>
+    <item>30 秒</item>
+    <item>1 分</item>
+    <item>2 分</item>
+    <item>5 分</item>
+    <item>10 分</item>
+    <item>30 分</item>
   </string-array>
-    <!-- no translation found for dark_ui_scheduler_preference_titles:0 (7465697698048662118) -->
-    <!-- no translation found for dark_ui_scheduler_preference_titles:1 (4057198235664064478) -->
-    <!-- no translation found for dark_ui_scheduler_preference_titles:2 (8842756744447000897) -->
-    <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:0 (8160793372964333729) -->
-    <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:1 (1570862084158925417) -->
-    <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:2 (1527300254382984555) -->
-    <!-- no translation found for dark_ui_scheduler_with_bedtime_preference_titles:3 (5231566512901956369) -->
+  <!-- Do not translate. -->
+  <!-- Dark theme scheduling preferences  [CHAR LIMIT=NONE] -->
+  <string-array name="dark_ui_scheduler_preference_titles">
+    <!-- 0: None -->
+    <item>@string/dark_ui_auto_mode_never</item>
+    <!-- 1: Custom -->
+    <item>@string/dark_ui_auto_mode_custom</item>
+    <!-- 2: Auto -->
+    <item>@string/dark_ui_auto_mode_auto</item>
+  </string-array>
+  <!-- Dark theme scheduling preferences  [CHAR LIMIT=NONE] -->
+  <string-array name="dark_ui_scheduler_with_bedtime_preference_titles">
+    <!-- 0: None -->
+    <item>@string/dark_ui_auto_mode_never</item>
+    <!-- 1: Custom -->
+    <item>@string/dark_ui_auto_mode_custom</item>
+    <!-- 2: Auto -->
+    <item>@string/dark_ui_auto_mode_auto</item>
+    <!-- 3: Bedtime -->
+    <item>@string/dark_ui_auto_mode_custom_bedtime</item>
+  </string-array>
+  <!-- Security settings.  The delay after screen is turned off until device locks.
+         These are shown in a list dialog. -->
   <string-array name="lock_after_timeout_entries">
-    <item msgid="2223808927866488981">"直後"</item>
-    <item msgid="463591454172790676">"5秒"</item>
-    <item msgid="6981910499530067289">"15秒"</item>
-    <item msgid="841968393904987343">"30秒"</item>
-    <item msgid="8209996803755081758">"1分"</item>
-    <item msgid="8532038695054819775">"2分"</item>
-    <item msgid="230858078069711241">"5分"</item>
-    <item msgid="7289395602286160723">"10分"</item>
-    <item msgid="3142577549730704595">"30分"</item>
+    <item>直後</item>
+    <item>5秒</item>
+    <item>15秒</item>
+    <item>30秒</item>
+    <item>1分</item>
+    <item>2分</item>
+    <item>5分</item>
+    <item>10分</item>
+    <item>30分</item>
   </string-array>
+  <!-- Do not translate. -->
+  <!-- Wi-Fi settings -->
+  <!-- Match this with the order of NetworkInfo.DetailedState. -->
+  <skip></skip>
+  <!-- Wi-Fi settings. The status messages when the network is unknown. -->
   <string-array name="wifi_status">
-    <item msgid="1201478116293383426"></item>
-    <item msgid="7388036070768806193">"スキャン中..."</item>
-    <item msgid="1656176059757237036">"接続処理中..."</item>
-    <item msgid="3249903732481917388">"認証中..."</item>
-    <item msgid="7789156794775399931">"IPアドレスを取得中..."</item>
-    <item msgid="492518447401534767">"接続済み"</item>
-    <item msgid="4322989558568666518">"保留中"</item>
-    <item msgid="286164147080824297">"切断中..."</item>
-    <item msgid="1628460745311787730">"切断されました"</item>
-    <item msgid="4013828218541488949">"失敗しました"</item>
-    <item msgid="5473541238056528086">"ブロック中"</item>
-    <item msgid="1114588261171522603">"接続不良により一時的に無効"</item>
+    <!-- Status message of Wi-Fi when it is idle. -->
+    <item></item>
+    <!-- Status message of Wi-Fi when it is scanning. -->
+    <item>スキャン中...</item>
+    <!-- Status message of Wi-Fi when it is connecting. -->
+    <item>接続処理中...</item>
+    <!-- Status message of Wi-Fi when it is authenticating. -->
+    <item>認証中...</item>
+    <!-- Status message of Wi-Fi when it is obtaining IP address. -->
+    <item>IPアドレスを取得中...</item>
+    <!-- Status message of Wi-Fi when it is connected. -->
+    <item>接続済み</item>
+    <!-- Status message of Wi-Fi when it is suspended. -->
+    <item>保留中</item>
+    <!-- Status message of Wi-Fi when it is disconnecting. -->
+    <item>切断中...</item>
+    <!-- Status message of Wi-Fi when it is disconnected. -->
+    <item>切断されました</item>
+    <!-- Status message of Wi-Fi when it is a failure. -->
+    <item>失敗しました</item>
+    <!-- Status message of Wi-Fi when it is blocked. -->
+    <item>ブロック中</item>
+    <!-- Status message of Wi-Fi when connectiong is being verified. -->
+    <item>接続不良により一時的に無効</item>
   </string-array>
-    <!-- no translation found for wifi_tether_security:0 (6312112980634811065) -->
-    <!-- no translation found for wifi_tether_security:1 (1428294025896439258) -->
-    <!-- no translation found for wifi_tether_security:2 (6851763638266088835) -->
-    <!-- no translation found for wifi_tether_security:3 (5512131148045414341) -->
-  <string-array name="eap_ocsp_type">
-    <item msgid="8568170800958331461">"検証しない"</item>
-    <item msgid="5703177653586269306">"証明書のステータスをリクエストする"</item>
-    <item msgid="326388247868439528">"証明書のステータスを必須にする"</item>
+  <!-- Security types for wireless tether -->
+  <string-array name="wifi_tether_security">
+    <!-- Do not translate. -->
+    <item>@string/wifi_security_sae</item>
+    <!-- Do not translate. -->
+    <item>@string/wifi_security_psk_sae</item>
+    <!-- Do not translate. -->
+    <item>@string/wifi_security_wpa2</item>
+    <!-- Do not translate. -->
+    <item>@string/wifi_security_none</item>
   </string-array>
+  <!-- Values for security type for wireless tether -->
+  <!-- Match this with the constants in WifiDialog. -->
+  <skip></skip>
+  <!-- Wi-Fi settings.  The type of EAP method a Wi-Fi network has. -->
+  <!-- Target EAP methods that will have different TTS strings -->
+  <!-- Note that this array length should be same as the wifi_eap_method_tts_strings-->
+  <!-- TTS strings for the target EAP methods -->
+  <!-- Note that this array length should be same as the wifi_eap_method_target_strings-->
+  <!-- Type of EAP method when EAP SIM, AKA, AKA' are not supported -->
+  <!-- Type of OCSP -->
+  <string-array name="eap_ocsp_type" translatable="true">
+    <item>検証しない</item>
+    <item>証明書のステータスをリクエストする</item>
+    <item>証明書のステータスを必須にする</item>
+  </string-array>
+  <!-- Match this with the integer value of WifiEnterpriseConfig.TlsVersion -->
+  <!-- Type of TlsVersion -->
+  <!-- Wi-Fi AP band settings.  Either 2.4GHz or 5GHz prefer. -->
+  <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
+  <!-- Match this with the order of WifiP2pDevice.Status -->
+  <!-- Wi-Fi p2p settings device status message -->
   <string-array name="wifi_p2p_status">
-    <item msgid="8357401480964012245">"接続済み"</item>
-    <item msgid="66312817817365647">"招待済み"</item>
-    <item msgid="4463567967438038210">"失敗しました"</item>
-    <item msgid="6556827947082659801">"利用可能"</item>
-    <item msgid="6096962300722555553">"圏外"</item>
+    <item>接続済み</item>
+    <item>招待済み</item>
+    <item>失敗しました</item>
+    <item>利用可能</item>
+    <item>圏外</item>
   </string-array>
+  <!-- Bluetooth Settings -->
+  <!-- Bluetooth developer settings: Titles for maximum number of connected audio devices -->
   <string-array name="bluetooth_max_connected_audio_devices">
-    <item msgid="4792793579224104167">"システムのデフォルトを使用: <xliff:g id="DEFAULT_BLUETOOTH_MAX_CONNECTED_AUDIO_DEVICES">%1$d</xliff:g>"</item>
-    <item msgid="5818942631838356082">"1"</item>
-    <item msgid="4804155564025402919">"2"</item>
-    <item msgid="7123296338505723878">"3"</item>
-    <item msgid="9100937224980838123">"4"</item>
-    <item msgid="6702740528496186521">"5"</item>
+    <item>システムのデフォルトを使用: <xliff:g id="default_bluetooth_max_connected_audio_devices">%1$d</xliff:g></item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
   </string-array>
+  <!-- Bluetooth developer settings: Values for maximum number of connected audio devices -->
+  <!-- Bluetooth audio routing settings: Titles for audio routing options -->
   <string-array name="bluetooth_audio_routing_titles">
-    <item msgid="3488687531285795335">"アプリのデフォルトを使用する"</item>
-    <item msgid="5112879855377353813">"補聴器で再生"</item>
-    <item msgid="4853360663119482646">"スマートフォンのスピーカーで再生"</item>
+    <item>アプリのデフォルトを使用する</item>
+    <item>補聴器で再生</item>
+    <item>スマートフォンのスピーカーで再生</item>
   </string-array>
+  <!-- Bluetooth audio routing settings: Values for audio routing options -->
+  <!-- Match this with drawable.wifi_signal. -->
+  <skip></skip>
+  <!-- Wi-Fi settings. The signal strength a Wi-Fi network has. -->
   <string-array name="wifi_signal">
-    <item msgid="199360311367724149">"弱"</item>
-    <item msgid="2470925506985305429">"弱"</item>
-    <item msgid="8545211062334016668">"中"</item>
-    <item msgid="7468449584777730187">"強"</item>
-    <item msgid="202124107702016530">"非常に強い"</item>
+    <item>弱</item>
+    <item>弱</item>
+    <item>中</item>
+    <item>強</item>
+    <item>非常に強い</item>
   </string-array>
+  <!-- Phase 2 options for PEAP -->
   <string-array name="wifi_peap_phase2_entries">
-    <item msgid="8082624033981656770">"MSCHAPV2"</item>
-    <item msgid="4182817453412578800">"GTC"</item>
+    <item>MSCHAPV2</item>
+    <item>GTC</item>
   </string-array>
+  <!-- Type of EAP method when EAP SIM, AKA, AKA' are supported -->
   <string-array name="wifi_peap_phase2_entries_with_sim_auth">
-    <item msgid="5943169794516984261">"MSCHAPV2"</item>
-    <item msgid="2379904471264702148">"GTC"</item>
-    <item msgid="5248162884898921025">"SIM"</item>
-    <item msgid="3148964951886919224">"AKA"</item>
-    <item msgid="8987072060394684912">"AKA\'"</item>
+    <item translatable="false">MSCHAPV2</item>
+    <item translatable="false">GTC</item>
+    <item translatable="false">SIM</item>
+    <item translatable="false">AKA</item>
+    <item translatable="false">AKA\'</item>
   </string-array>
+  <!-- Phase 2 options for TTLS -->
   <string-array name="wifi_ttls_phase2_entries">
-    <item msgid="7970149422845752634">"PAP"</item>
-    <item msgid="5204890303748068014">"MSCHAP"</item>
-    <item msgid="2210309879499032393">"MSCHAPV2"</item>
-    <item msgid="6686694694122598353">"GTC"</item>
+    <item>PAP</item>
+    <item>MSCHAP</item>
+    <item>MSCHAPV2</item>
+    <item>GTC</item>
   </string-array>
+  <!-- Wi-Fi IP settings. -->
+  <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
   <string-array name="wifi_ip_settings">
-    <item msgid="6665889765350160154">"DHCP"</item>
-    <item msgid="6215795691318745695">"静的"</item>
+    <!-- Use DHCP (Dynamic Host Configuration Protocol) for obtaining IP settings [CHAR LIMIT=25] -->
+    <item>DHCP</item>
+    <!-- Use statically defined IP settings [CHAR LIMIT=25]-->
+    <item>静的</item>
   </string-array>
+  <!-- Wi-Fi proxy settings. -->
+  <!-- Note that adding/removing/moving the items will need wifi settings code change. -->
   <string-array name="wifi_proxy_settings">
-    <item msgid="4669222334822978847">"なし"</item>
-    <item msgid="6242198071587397280">"手動"</item>
-    <item msgid="464383874780058242">"プロキシを自動設定"</item>
+    <!-- No HTTP proxy is used for the current wifi network [CHAR LIMIT=25] -->
+    <item>なし</item>
+    <!-- Manual HTTP proxy settings are used for the current wifi network [CHAR LIMIT=25] -->
+    <item>手動</item>
+    <!-- Proxy Auto-Config URL that is used for the current wifi network [CHAR LIMIT=25] -->
+    <item>プロキシを自動設定</item>
   </string-array>
+  <!-- Authentication Types used in APN editor -->
   <string-array name="apn_auth_entries">
-    <item msgid="2900892411844440682">"なし"</item>
-    <item msgid="3391314878583432149">"PAP"</item>
-    <item msgid="5548769169086098722">"CHAP"</item>
-    <item msgid="5845194685644699724">"PAPまたはCHAP"</item>
+    <item>なし</item>
+    <item>PAP</item>
+    <item>CHAP</item>
+    <item>PAPまたはCHAP</item>
   </string-array>
+  <!-- Authentication Types used in APN editor -->
   <string-array name="apn_protocol_entries">
-    <item msgid="5005228027485376993">"IPv4"</item>
-    <item msgid="3249973932011349323">"IPv6"</item>
-    <item msgid="2254055042792806324">"IPv4/IPv6"</item>
+    <item>IPv4</item>
+    <item>IPv6</item>
+    <item>IPv4/IPv6</item>
   </string-array>
+  <!-- Bearer Info used in APN editor -->
   <string-array name="bearer_entries">
-    <item msgid="6515855421456643076">"指定なし"</item>
-    <item msgid="1922344287654584114">"LTE"</item>
-    <item msgid="8438853814055082017">"HSPAP"</item>
-    <item msgid="8761381586178359495">"HSPA"</item>
-    <item msgid="3072175002109671984">"HSUPA"</item>
-    <item msgid="641801916037303837">"HSDPA"</item>
-    <item msgid="1249220913128455055">"UMTS"</item>
-    <item msgid="2126812829752295024">"EDGE"</item>
-    <item msgid="3899085634999494594">"GPRS"</item>
-    <item msgid="2140271473984712463">"eHRPD"</item>
-    <item msgid="1543121347736419491">"EVDO_B"</item>
-    <item msgid="7296183100985507304">"EVDO_A"</item>
-    <item msgid="1261786928723784732">"EVDO_0"</item>
-    <item msgid="1396997182108950268">"1xRTT"</item>
-    <item msgid="3658086883471544773">"IS95B"</item>
-    <item msgid="6208908029106498824">"IS95A"</item>
-    <item msgid="5043127102327682718">"NR"</item>
+    <item>指定なし</item>
+    <item>LTE</item>
+    <item>HSPAP</item>
+    <item>HSPA</item>
+    <item>HSUPA</item>
+    <item>HSDPA</item>
+    <item>UMTS</item>
+    <item>EDGE</item>
+    <item>GPRS</item>
+    <item>eHRPD</item>
+    <item>EVDO_B</item>
+    <item>EVDO_A</item>
+    <item>EVDO_0</item>
+    <item>1xRTT</item>
+    <item>IS95B</item>
+    <item>IS95A</item>
+    <item>NR</item>
   </string-array>
+  <!-- MVNO Info used in APN editor -->
   <string-array name="mvno_type_entries">
-    <item msgid="1909908032710683029">"なし"</item>
-    <item msgid="8568003268185342352">"SPN"</item>
-    <item msgid="1804537219968457989">"IMSI"</item>
-    <item msgid="3441876902463317017">"GID"</item>
+    <item>なし</item>
+    <item translatable="false">SPN</item>
+    <item translatable="false">IMSI</item>
+    <item translatable="false">GID</item>
   </string-array>
+  <!-- User display names for app ops codes -->
   <string-array name="app_ops_summaries">
-    <item msgid="8837238583601420163">"おおよその位置情報"</item>
-    <item msgid="3205182755091629995">"精細な位置情報"</item>
-    <item msgid="8952113542524604064">"GPS"</item>
-    <item msgid="50701215019227883">"バイブレーション"</item>
-    <item msgid="2690144000353492014">"連絡先の読み取り"</item>
-    <item msgid="3858029424955955625">"連絡先の変更"</item>
-    <item msgid="3439658954936709507">"通話履歴の読み取り"</item>
-    <item msgid="1908944516631132130">"通話履歴の変更"</item>
-    <item msgid="9066115715905100138">"カレンダーの読み取り"</item>
-    <item msgid="1664720478157892566">"カレンダーの変更"</item>
-    <item msgid="5478277451617814822">"Wi-Fiスキャン"</item>
-    <item msgid="2429454210217003798">"通知"</item>
-    <item msgid="8909068846471624576">"セルスキャン"</item>
-    <item msgid="2527973826970434181">"通話の発信"</item>
-    <item msgid="2766022553327609913">"SMSの読み取り"</item>
-    <item msgid="167775364051357284">"SMSの書き込み"</item>
-    <item msgid="3397583039407928979">"SMSの受信"</item>
-    <item msgid="3658964859478786980">"緊急SMSの受信"</item>
-    <item msgid="7975129014728281140">"MMSの受信"</item>
-    <item msgid="404809195686849835">"WAPプッシュの受信"</item>
-    <item msgid="5167716820004184705">"SMSの送信"</item>
-    <item msgid="3834284815734286927">"ICC SMSの読み取り"</item>
-    <item msgid="6394881108820762646">"ICC SMSの書き込み"</item>
-    <item msgid="3275060808384314406">"設定の変更"</item>
-    <item msgid="8672921438869137431">"上部に描画"</item>
-    <item msgid="346101114322879720">"通知へのアクセス"</item>
-    <item msgid="4760681822601767255">"カメラ"</item>
-    <item msgid="2172823594140104317">"音声の録音"</item>
-    <item msgid="5612873260709742213">"音声の再生"</item>
-    <item msgid="2027206403725749996">"クリップボードの読み取り"</item>
-    <item msgid="5643742956725663156">"クリップボードの変更"</item>
-    <item msgid="7362845549479684378">"メディアボタン"</item>
-    <item msgid="3843484466100107397">"音声フォーカス"</item>
-    <item msgid="617344340943430125">"主音量"</item>
-    <item msgid="1249691739381713634">"音声の音量"</item>
-    <item msgid="6485000384018554920">"着信音の音量"</item>
-    <item msgid="3378000878531336372">"メディアの音量"</item>
-    <item msgid="5272927168355895681">"アラームの音量"</item>
-    <item msgid="4422070755065530548">"通知音量"</item>
-    <item msgid="3250654589277825306">"Bluetoothの音量"</item>
-    <item msgid="4212187233638382465">"スリープモードにしない"</item>
-    <item msgid="5099026183238335900">"場所を監視"</item>
-    <item msgid="2297727967385895059">"高精度の現在地情報を監視"</item>
-    <item msgid="8700593962030471569">"使用統計情報を取得"</item>
-    <item msgid="4140820386622184831">"マイクをミュート/ミュート解除"</item>
-    <item msgid="317746827951691657">"トーストの表示"</item>
-    <item msgid="5679422988212309779">"メディア プロジェクション"</item>
-    <item msgid="6454031639780101439">"VPN の有効化"</item>
-    <item msgid="2441327072846850561">"壁紙の書き込み"</item>
-    <item msgid="2162456889277589861">"ストラクチャのアシスト"</item>
-    <item msgid="4644645617399271070">"スクリーンショットのアシスト"</item>
-    <item msgid="8321845997769724385">"スマートフォンのステータスの読み取り"</item>
-    <item msgid="8319500905789302082">"ボイスメールの追加"</item>
-    <item msgid="1745447762712473288">"SIP の使用"</item>
-    <item msgid="2986821801246709737">"発信の処理"</item>
-    <item msgid="2702338156976571452">"指紋"</item>
-    <item msgid="7925495329948404955">"ボディー センサー"</item>
-    <item msgid="8163066895749904470">"緊急速報メールの読み取り"</item>
-    <item msgid="7621394050624063528">"仮の現在地情報"</item>
-    <item msgid="37519917674959757">"ストレージの読み取り"</item>
-    <item msgid="3868809525697401379">"ストレージへの書き込み"</item>
-    <item msgid="2504191192460059817">"画面をオン"</item>
-    <item msgid="7905819538788103556">"アカウントの取得"</item>
-    <item msgid="1675025662248079254">"バックグラウンドで実行"</item>
-    <item msgid="2553974920157061225">"ユーザー補助機能の音量"</item>
+    <item>おおよその位置情報</item>
+    <item>精細な位置情報</item>
+    <item>GPS</item>
+    <item>バイブレーション</item>
+    <item>連絡先の読み取り</item>
+    <item>連絡先の変更</item>
+    <item>通話履歴の読み取り</item>
+    <item>通話履歴の変更</item>
+    <item>カレンダーの読み取り</item>
+    <item>カレンダーの変更</item>
+    <item>Wi-Fiスキャン</item>
+    <item>通知</item>
+    <item>セルスキャン</item>
+    <item>通話の発信</item>
+    <item>SMSの読み取り</item>
+    <item>SMSの書き込み</item>
+    <item>SMSの受信</item>
+    <item>緊急SMSの受信</item>
+    <item>MMSの受信</item>
+    <item>WAPプッシュの受信</item>
+    <item>SMSの送信</item>
+    <item>ICC SMSの読み取り</item>
+    <item>ICC SMSの書き込み</item>
+    <item>設定の変更</item>
+    <item>上部に描画</item>
+    <item>通知へのアクセス</item>
+    <item>カメラ</item>
+    <item>音声の録音</item>
+    <item>音声の再生</item>
+    <item>クリップボードの読み取り</item>
+    <item>クリップボードの変更</item>
+    <item>メディアボタン</item>
+    <item>音声フォーカス</item>
+    <item>主音量</item>
+    <item>音声の音量</item>
+    <item>着信音の音量</item>
+    <item>メディアの音量</item>
+    <item>アラームの音量</item>
+    <item>通知音量</item>
+    <item>Bluetoothの音量</item>
+    <item>スリープモードにしない</item>
+    <item>場所を監視</item>
+    <item>高精度の現在地情報を監視</item>
+    <item>使用統計情報を取得</item>
+    <item>マイクをミュート/ミュート解除</item>
+    <item>トーストの表示</item>
+    <item>メディア プロジェクション</item>
+    <item>VPN の有効化</item>
+    <item>壁紙の書き込み</item>
+    <item>ストラクチャのアシスト</item>
+    <item>スクリーンショットのアシスト</item>
+    <item>スマートフォンのステータスの読み取り</item>
+    <item>ボイスメールの追加</item>
+    <item>SIP の使用</item>
+    <item>発信の処理</item>
+    <item>指紋</item>
+    <item>ボディー センサー</item>
+    <item>緊急速報メールの読み取り</item>
+    <item>仮の現在地情報</item>
+    <item>ストレージの読み取り</item>
+    <item>ストレージへの書き込み</item>
+    <item>画面をオン</item>
+    <item>アカウントの取得</item>
+    <item>バックグラウンドで実行</item>
+    <item>ユーザー補助機能の音量</item>
   </string-array>
+  <!-- User display names for app ops codes -->
   <string-array name="app_ops_labels">
-    <item msgid="7780927354556651567">"位置情報"</item>
-    <item msgid="364182753727575631">"位置情報"</item>
-    <item msgid="5728662879095632194">"位置情報"</item>
-    <item msgid="4104617224667554750">"バイブレーション"</item>
-    <item msgid="1623646715189708947">"連絡先の読み取り"</item>
-    <item msgid="5060760609109972207">"連絡先の変更"</item>
-    <item msgid="7451260062940797278">"通話履歴の読み取り"</item>
-    <item msgid="2348589304974534308">"通話履歴の変更"</item>
-    <item msgid="4089146706115315300">"カレンダーの読み取り"</item>
-    <item msgid="1305780729690198918">"カレンダーの変更"</item>
-    <item msgid="3461096740171440592">"位置情報"</item>
-    <item msgid="6657539556093198883">"通知の投稿"</item>
-    <item msgid="8112680908829570200">"位置情報"</item>
-    <item msgid="5019327268152480733">"通話の発信"</item>
-    <item msgid="8001855901083066554">"SMS/MMSの読み取り"</item>
-    <item msgid="187744670643011148">"SMS/MMSの書き込み"</item>
-    <item msgid="3324078624274013835">"SMS/MMSの受信"</item>
-    <item msgid="1924065490920451511">"SMS/MMSの受信"</item>
-    <item msgid="1239934115787777477">"SMS/MMSの受信"</item>
-    <item msgid="1030342664910454057">"SMS/MMSの受信"</item>
-    <item msgid="9189359977063200554">"SMS/MMSの送信"</item>
-    <item msgid="6954817837534799424">"SMS/MMSの読み取り"</item>
-    <item msgid="7921014514153395846">"SMS/MMSの書き込み"</item>
-    <item msgid="8997371825401751421">"設定の変更"</item>
-    <item msgid="7005755175240764443">"上部に描画"</item>
-    <item msgid="8267704990417682222">"通知へのアクセス"</item>
-    <item msgid="3180676986290096851">"カメラ"</item>
-    <item msgid="9174072114281872917">"音声の録音"</item>
-    <item msgid="1444183972646890539">"音声の再生"</item>
-    <item msgid="4337542044275236638">"クリップボードの読み取り"</item>
-    <item msgid="2681224211796661809">"クリップボードの変更"</item>
-    <item msgid="4479361062226474111">"メディアボタン"</item>
-    <item msgid="5651140069431283570">"音声フォーカス"</item>
-    <item msgid="745291221457314879">"主音量"</item>
-    <item msgid="4722479281326245754">"音声の音量"</item>
-    <item msgid="6749550886745567276">"着信音の音量"</item>
-    <item msgid="2218685029915863168">"メディアの音量"</item>
-    <item msgid="4266577290496513640">"アラームの音量"</item>
-    <item msgid="8608084169623998854">"通知の音量"</item>
-    <item msgid="7948784184567841794">"Bluetoothの音量"</item>
-    <item msgid="1148968792599973150">"スリープモードにしない"</item>
-    <item msgid="8482874682804856549">"場所"</item>
-    <item msgid="5186169827582545242">"現在地"</item>
-    <item msgid="6122293931012635638">"使用統計情報を取得"</item>
-    <item msgid="2526677383312751932">"マイクをミュート/ミュート解除"</item>
-    <item msgid="4000577305179914546">"トーストの表示"</item>
-    <item msgid="8660207174515570558">"メディア プロジェクション"</item>
-    <item msgid="3904996949561946108">"VPN の有効化"</item>
-    <item msgid="504052124101832515">"壁紙の書き込み"</item>
-    <item msgid="1657182386933187909">"ストラクチャのアシスト"</item>
-    <item msgid="437655393941385937">"スクリーンショットのアシスト"</item>
-    <item msgid="973363520315356844">"スマートフォンのステータスの読み取り"</item>
-    <item msgid="1203157739257425062">"ボイスメールの追加"</item>
-    <item msgid="9143978647977300187">"SIP の使用"</item>
-    <item msgid="3053060162752878562">"発信の処理"</item>
-    <item msgid="4480721672278100858">"指紋"</item>
-    <item msgid="7883743426029759112">"ボディー センサー"</item>
-    <item msgid="2546206711741159825">"緊急速報メールの読み取り"</item>
-    <item msgid="2363460595607829243">"仮の現在地情報"</item>
-    <item msgid="3778165903878569143">"ストレージの読み取り"</item>
-    <item msgid="555939881912035315">"ストレージへの書き込み"</item>
-    <item msgid="4281352581602735717">"画面をオン"</item>
-    <item msgid="346122795998225472">"アカウントの取得"</item>
-    <item msgid="3756073389408535680">"バックグラウンドで実行"</item>
-    <item msgid="2114661179947426734">"ユーザー補助機能の音量"</item>
+    <item>位置情報</item>
+    <item>位置情報</item>
+    <item>位置情報</item>
+    <item>バイブレーション</item>
+    <item>連絡先の読み取り</item>
+    <item>連絡先の変更</item>
+    <item>通話履歴の読み取り</item>
+    <item>通話履歴の変更</item>
+    <item>カレンダーの読み取り</item>
+    <item>カレンダーの変更</item>
+    <item>位置情報</item>
+    <item>通知の投稿</item>
+    <item>位置情報</item>
+    <item>通話の発信</item>
+    <item>SMS/MMSの読み取り</item>
+    <item>SMS/MMSの書き込み</item>
+    <item>SMS/MMSの受信</item>
+    <item>SMS/MMSの受信</item>
+    <item>SMS/MMSの受信</item>
+    <item>SMS/MMSの受信</item>
+    <item>SMS/MMSの送信</item>
+    <item>SMS/MMSの読み取り</item>
+    <item>SMS/MMSの書き込み</item>
+    <item>設定の変更</item>
+    <item>上部に描画</item>
+    <item>通知へのアクセス</item>
+    <item>カメラ</item>
+    <item>音声の録音</item>
+    <item>音声の再生</item>
+    <item>クリップボードの読み取り</item>
+    <item>クリップボードの変更</item>
+    <item>メディアボタン</item>
+    <item>音声フォーカス</item>
+    <item>主音量</item>
+    <item>音声の音量</item>
+    <item>着信音の音量</item>
+    <item>メディアの音量</item>
+    <item>アラームの音量</item>
+    <item>通知の音量</item>
+    <item>Bluetoothの音量</item>
+    <item>スリープモードにしない</item>
+    <item>場所</item>
+    <item>現在地</item>
+    <item>使用統計情報を取得</item>
+    <item>マイクをミュート/ミュート解除</item>
+    <item>トーストの表示</item>
+    <item>メディア プロジェクション</item>
+    <item>VPN の有効化</item>
+    <item>壁紙の書き込み</item>
+    <item>ストラクチャのアシスト</item>
+    <item>スクリーンショットのアシスト</item>
+    <item>スマートフォンのステータスの読み取り</item>
+    <item>ボイスメールの追加</item>
+    <item>SIP の使用</item>
+    <item>発信の処理</item>
+    <item>指紋</item>
+    <item>ボディー センサー</item>
+    <item>緊急速報メールの読み取り</item>
+    <item>仮の現在地情報</item>
+    <item>ストレージの読み取り</item>
+    <item>ストレージへの書き込み</item>
+    <item>画面をオン</item>
+    <item>アカウントの取得</item>
+    <item>バックグラウンドで実行</item>
+    <item>ユーザー補助機能の音量</item>
   </string-array>
+  <!-- Keys for the list of accessibility auto click xml. -->
+  <!-- Values for the list of accessibility auto click, pairs to Keys . -->
+  <!-- Keys for the list of accessibility timeouts xml. -->
+  <!-- Values for the list of accessibility timeouts, pairs to Keys . -->
+  <!-- Summaries of accessibility timeout, pairs to Values -->
+  <!-- Titles for the list of long press timeout options. -->
   <string-array name="long_press_timeout_selector_titles">
-    <item msgid="6926391290986427331">"短め"</item>
-    <item msgid="5118829513010894576">"中"</item>
-    <item msgid="6740026006576843477">"長め"</item>
+    <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+    <item>短め</item>
+    <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+    <item>中</item>
+    <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+    <item>長め</item>
   </string-array>
+  <!-- Avoid the gender issue, create the new fork of the string long_press_timeout_selector_titles -->
+  <!-- Titles for the list of long press timeout options in preference. -->
   <string-array name="long_press_timeout_selector_list_titles">
-    <item msgid="8908021508913038488">"短め"</item>
-    <item msgid="7397961711906421599">"中"</item>
-    <item msgid="4079132024502041928">"長め"</item>
+    <!-- A title for the option for short long-press timeout [CHAR LIMIT=25] -->
+    <item>短め</item>
+    <!-- A title for the option for medium long-press timeout [CHAR LIMIT=25] -->
+    <item>中</item>
+    <!-- A title for the option for long long-press timeout [CHAR LIMIT=25] -->
+    <item>長め</item>
   </string-array>
+  <!-- Values for the list of long press timeout options. -->
+  <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
   <string-array name="captioning_typeface_selector_titles">
-    <item msgid="2166553138528640250">"デフォルト"</item>
-    <item msgid="4234707448428002595">"Sans Serif"</item>
-    <item msgid="2390008695651897663">"Sans Serif Condensed"</item>
-    <item msgid="2396492419730702454">"Sans Serif 固定幅"</item>
-    <item msgid="8199675052804786099">"Serif"</item>
-    <item msgid="4554123140736897688">"Serif 固定幅"</item>
-    <item msgid="5485652650875486635">"カジュアル"</item>
-    <item msgid="1071057864355989694">"草書体"</item>
-    <item msgid="5012882784126308133">"スモールキャピタル"</item>
+    <item>デフォルト</item>
+    <item>Sans Serif</item>
+    <item>Sans Serif Condensed</item>
+    <item>Sans Serif 固定幅</item>
+    <item>Serif</item>
+    <item>Serif 固定幅</item>
+    <item>カジュアル</item>
+    <item>草書体</item>
+    <item>スモールキャピタル</item>
   </string-array>
+  <!-- Values for captioning typeface preference. -->
+  <!-- Titles for captioning font size preference. [CHAR LIMIT=35] -->
   <string-array name="captioning_font_size_selector_titles">
-    <item msgid="923916134548435468">"極小"</item>
-    <item msgid="5738147437573674872">"小"</item>
-    <item msgid="4691660235626027304">"中"</item>
-    <item msgid="824386705928670045">"大"</item>
-    <item msgid="2790561781512874585">"極大"</item>
+    <item>極小</item>
+    <item>小</item>
+    <item>中</item>
+    <item>大</item>
+    <item>極大</item>
   </string-array>
+  <!-- Values for captioning font size preference. -->
+  <!-- Titles for captioning character edge type preference. [CHAR LIMIT=35] -->
   <string-array name="captioning_edge_type_selector_titles">
-    <item msgid="70686029249840227">"デフォルト"</item>
-    <item msgid="4224714345662348668">"なし"</item>
-    <item msgid="4132127611510627490">"アウトライン"</item>
-    <item msgid="1226216870460161087">"ドロップシャドウ"</item>
-    <item msgid="2328414188644618697">"浮き彫り"</item>
-    <item msgid="7758730980218689351">"沈み彫り"</item>
+    <item>デフォルト</item>
+    <item>なし</item>
+    <item>アウトライン</item>
+    <item>ドロップシャドウ</item>
+    <item>浮き彫り</item>
+    <item>沈み彫り</item>
   </string-array>
+  <!-- Values for captioning character edge type preference. -->
+  <!-- Titles for captioning color preference. -->
+  <!-- Values for captioning color preference. -->
+  <!-- Titles for captioning opacity preference. [CHAR LIMIT=35] -->
   <string-array name="captioning_opacity_selector_titles">
-    <item msgid="1140998823196874513">"25%"</item>
-    <item msgid="1227705689171449873">"50%"</item>
-    <item msgid="2690365993149520846">"75%"</item>
-    <item msgid="3237802033158517495">"100%"</item>
+    <item>25%</item>
+    <item>50%</item>
+    <item>75%</item>
+    <item>100%</item>
   </string-array>
+  <!-- Values for captioning opacity preference. -->
+  <!-- Titles for captioning text style preset preference. [CHAR LIMIT=35] -->
   <string-array name="captioning_preset_selector_titles">
-    <item msgid="3880932435325583041">"アプリによる設定"</item>
-    <item msgid="8719204526359229387">"黒地に白"</item>
-    <item msgid="5410164687403735103">"白地に黒"</item>
-    <item msgid="1119043472912497241">"黒地に黄色"</item>
-    <item msgid="2836895041823327816">"青地に黄色"</item>
-    <item msgid="747238414788976867">"カスタム"</item>
+    <item>アプリによる設定</item>
+    <item>黒地に白</item>
+    <item>白地に黒</item>
+    <item>黒地に黄色</item>
+    <item>青地に黄色</item>
+    <item>カスタム</item>
   </string-array>
+  <!-- Values for captioning text style preset preference. -->
+  <!-- Titles for the accessibility button location. [CHAR LIMIT=35] -->
   <string-array name="accessibility_button_location_selector_titles">
-    <item msgid="6485511780196327736">"他のアプリの上にフローティング"</item>
-    <item msgid="3605616699204153590">"ナビゲーション バー"</item>
+    <item>他のアプリの上にフローティング</item>
+    <item>ナビゲーション バー</item>
   </string-array>
+  <!-- Values for the accessibility button location. -->
+  <!-- Should Keep in sync with Settings.Secure.ACCESSIBILITY_BUTTON_MODE_* -->
+  <!-- Titles for the accessibility button or gesture. [CHAR LIMIT=35] -->
   <string-array name="accessibility_button_gesture_selector_titles">
-    <item msgid="2370918472773154939">"ボタン"</item>
-    <item msgid="6922258575853746220">"ジェスチャー"</item>
+    <item>ボタン</item>
+    <item>ジェスチャー</item>
   </string-array>
+  <!-- Values for the accessibility button or gesture. -->
+  <!-- Should Keep in sync with Settings.Secure.ACCESSIBILITY_BUTTON_MODE_* -->
+  <!-- Titles for the accessibility button size. [CHAR LIMIT=35] -->
   <string-array name="accessibility_button_size_selector_titles">
-    <item msgid="7482952318152486459">"小"</item>
-    <item msgid="1666628329913333563">"大"</item>
+    <item>小</item>
+    <item>大</item>
   </string-array>
+  <!-- Values for the accessibility button size. -->
+  <!-- Match this with the constants in VpnProfile. -->
+  <skip></skip>
+  <!-- Short names for each VPN type, not really translatable. [CHAR LIMIT=20] -->
+  <!-- VPN proxy settings. -->
   <string-array name="vpn_proxy_settings">
-    <item msgid="7165538292837266997">"なし"</item>
-    <item msgid="2397017538263427575">"手動"</item>
+    <!-- No HTTP proxy is used for the current VPN [CHAR LIMIT=25] -->
+    <item>なし</item>
+    <!-- Manual HTTP proxy settings are used for the current VPN [CHAR LIMIT=25] -->
+    <item>手動</item>
   </string-array>
+  <!-- Match this with the constants in LegacyVpnInfo. -->
+  <skip></skip>
+  <!-- Status for a VPN network. [CHAR LIMIT=100] -->
   <string-array name="vpn_states">
-    <item msgid="2262719249581510939">"切断されました"</item>
-    <item msgid="9141074028293812365">"初期化中..."</item>
-    <item msgid="2234425878608626285">"接続処理中..."</item>
-    <item msgid="27547778933579155">"接続されました"</item>
-    <item msgid="893506841727300393">"タイムアウト"</item>
-    <item msgid="2974952010554140659">"失敗しました"</item>
+    <!-- Status message when VPN is disconnected. -->
+    <item>切断されました</item>
+    <!-- Status message when VPN is initializing. -->
+    <item>初期化中...</item>
+    <!-- Status message when VPN is connecting. -->
+    <item>接続処理中...</item>
+    <!-- Status message when VPN is connected. -->
+    <item>接続されました</item>
+    <!-- Status message when VPN is timeout. -->
+    <item>タイムアウト</item>
+    <!-- Status message when VPN is failed. -->
+    <item>失敗しました</item>
   </string-array>
+  <!-- Values for premium SMS permission selector [CHAR LIMIT=30] -->
   <string-array name="security_settings_premium_sms_values">
-    <item msgid="3985605994234635072">"確認する"</item>
-    <item msgid="2358187544264718285">"許可しない"</item>
-    <item msgid="7043782324123900484">"常に許可する"</item>
+    <!-- Ask user before sending to premium SMS short code. -->
+    <item>確認する</item>
+    <!-- Never allow app to send to premium SMS short code. -->
+    <item>許可しない</item>
+    <!-- Always allow app to send to premium SMS short code. -->
+    <item>常に許可する</item>
   </string-array>
+  <!-- [CHAR LIMIT=40] Labels for memory states -->
   <string-array name="ram_states">
-    <item msgid="335564863849202240">"良好"</item>
-    <item msgid="4881487538039407838">"やや良好"</item>
-    <item msgid="1749887190650889318">"低下"</item>
-    <item msgid="4434319706635379779">"残りわずか"</item>
-    <item msgid="7582717864806562725">"不明"</item>
+    <!-- Normal desired memory state. -->
+    <item>良好</item>
+    <!-- Moderate memory state, not as good as normal. -->
+    <item>やや良好</item>
+    <!-- Memory is running low. -->
+    <item>低下</item>
+    <!-- Memory is critical. -->
+    <item>残りわずか</item>
+    <!-- Unknown memory state -->
+    <item>不明</item>
   </string-array>
+  <!-- Summary for magnification adjustment modes for accessibility -->
+  <!-- Values for magnification adjustment modes for accessibility -->
+  <!-- Keys for color space adjustment modes for accessibility -->
+  <!-- Values for display color space adjustment modes for accessibility -->
+  <!-- Array of color for sim color for multi-sim in light mode -->
+  <!-- Array of titles for sim color for multi-sim -->
   <string-array name="color_picker">
-    <item msgid="7216413848731287689">"シアン"</item>
-    <item msgid="5661027589207588703">"ブルー"</item>
-    <item msgid="1219738214736244749">"グリーン"</item>
-    <item msgid="6331809026622602308">"パープル"</item>
-    <item msgid="6390546163902724700">"ピンク"</item>
-    <item msgid="6500473130620545980">"オレンジ"</item>
+    <item>シアン</item>
+    <item>ブルー</item>
+    <item>グリーン</item>
+    <item>パープル</item>
+    <item>ピンク</item>
+    <item>オレンジ</item>
   </string-array>
+  <!-- Automatic storage management settings. The amount of days for the automatic storage manager
+         to retain. These are shown in a list dialog. [CHAR LIMIT=70] -->
   <string-array name="automatic_storage_management_days">
-    <item msgid="8896644025110620477">"30 日以上経過"</item>
-    <item msgid="9083927335632626281">"60 日以上経過"</item>
-    <item msgid="4146561207729203822">"90 日以上経過"</item>
+    <item>30 日以上経過</item>
+    <item>60 日以上経過</item>
+    <item>90 日以上経過</item>
   </string-array>
-  <!-- no translation found for swipe_direction_titles:0 (9039866451038081694) -->
-  <!-- no translation found for swipe_direction_titles:1 (3175804938330683021) -->
+  <!-- Options for screensaver "When to start" for devices that do not support screensavers
+         while on battery -->
+  <!-- Values for screensaver "When to start" for devices that do not support screensavers
+         while on battery -->
+  <!--String arrays for notification swipe direction -->
+  <string-array name="swipe_direction_titles">
+    <item>@string/swipe_direction_rtl</item>
+    <item>@string/swipe_direction_ltr</item>
+  </string-array>
   <string-array name="swipe_direction_values">
-    <item msgid="718525159108105421">"1"</item>
-    <item msgid="9080166583718385565">"0"</item>
+    <item>1</item>
+    <item>0</item>
   </string-array>
   <string-array name="wifi_metered_entries">
-    <item msgid="3237321077949659241">"自動的に検出"</item>
-    <item msgid="3779092145391320375">"従量制として扱う"</item>
-    <item msgid="2047166446768045816">"定額制として扱う"</item>
+    <item>自動的に検出</item>
+    <item>従量制として扱う</item>
+    <item>定額制として扱う</item>
   </string-array>
   <string-array name="wifi_privacy_entries">
-    <item msgid="3485945604919292489">"ランダム MAC を使用（デフォルト）"</item>
-    <item msgid="741680937828608749">"デバイスの MAC を使用"</item>
+    <item>ランダム MAC を使用（デフォルト）</item>
+    <item>デバイスの MAC を使用</item>
   </string-array>
   <string-array name="wifi_hidden_entries">
-    <item msgid="342232116597649254">"いいえ"</item>
-    <item msgid="2163015208097377388">"はい"</item>
+    <item>いいえ</item>
+    <item>はい</item>
   </string-array>
+  <!-- Titles for autofill logging level preference. [CHAR LIMIT=50] -->
   <string-array name="autofill_logging_level_entries">
-    <item msgid="2263571982739726576">"OFF"</item>
-    <item msgid="4295717421282345505">"デバッグ"</item>
-    <item msgid="8657797891533816070">"詳細"</item>
+    <item>OFF</item>
+    <item>デバッグ</item>
+    <item>詳細</item>
   </string-array>
+  <!-- Values for autofill logging level preference. -->
   <string-array name="cdma_system_select_choices">
-    <item msgid="1205665684426617345">"ホームのみ"</item>
-    <item msgid="6691772120712000966">"自動"</item>
+    <!-- System select dialog screen, setting option name -->
+    <item>ホームのみ</item>
+    <!-- Remove the following option "Affiliated Networks" from the option list -->
+    <!-- <item>Affiliated Networks</item> -->
+    <!-- System select dialog screen, setting option name -->
+    <item>自動</item>
   </string-array>
+  <!-- The preferred network modes in Mobile network settings -->
   <string-array name="preferred_network_mode_choices">
-    <item msgid="5746729990546256950">"GSM / WCDMA を優先"</item>
-    <item msgid="6443811977675152844">"GSM のみ"</item>
-    <item msgid="8767554719068876877">"WCDMA のみ"</item>
-    <item msgid="928773614806830223">"GSM / WCDMA 自動"</item>
-    <item msgid="6742068706546460481">"CDMA / EV-DO 自動"</item>
-    <item msgid="3649606999166018819">"CDMA（EV-DO 非準拠）"</item>
-    <item msgid="3335567389804180984">"EV-DO のみ"</item>
-    <item msgid="30756226617172695">"CDMA / EV-DO / GSM / WCDMA"</item>
-    <item msgid="2847125869624632806">"CDMA+LTE / EV-DO"</item>
-    <item msgid="2247906254631766720">"GSM / WCDMA / LTE"</item>
-    <item msgid="4147872615520331421">"LTE / CDMA / EvDo / GSM / WCDMA"</item>
-    <item msgid="2908834445708457736">"LTE"</item>
-    <item msgid="2947411877551747693">"LTE / WCDMA"</item>
-    <item msgid="7723670142495874534">"TDSCDMA のみ"</item>
-    <item msgid="7662033849563993380">"TDSCDMA / WCDMA"</item>
-    <item msgid="1030644331822315228">"LTE / TDSCDMA"</item>
-    <item msgid="7094751610086221480">"TDSCDMA / GSM"</item>
-    <item msgid="4183784131291491454">"LTE / TDSCDMA / GSM"</item>
-    <item msgid="1012405424112901282">"TDSCDMA / GSM / WCDMA"</item>
-    <item msgid="9095153819433727441">"LTE / TDSCDMA / WCDMA"</item>
-    <item msgid="8130733279433187514">"LTE / TDSCDMA / GSM / WCDMA"</item>
-    <item msgid="4901583947595116332">"TDSCDMA / CDMA / EV-DO / GSM / WCDMA"</item>
-    <item msgid="6400630497408723600">"LTE / TDSCDMA / CDMA / EV-DO / GSM / WCDMA"</item>
-    <item msgid="9080352308817056162">"NR のみ"</item>
-    <item msgid="8150548370973671395">"NR / LTE"</item>
-    <item msgid="5237423971422723128">"NR / LTE / CDMA / EV-DO"</item>
-    <item msgid="6856991565745877075">"NR / LTE / GSM / WCDMA"</item>
-    <item msgid="8908263949185004366">"グローバル"</item>
-    <item msgid="6692179237956480280">"NR / LTE / WCDMA"</item>
-    <item msgid="8160757136163231885">"NR / LTE / TDSCDMA"</item>
-    <item msgid="2207530656708814396">"NR / LTE / TDSCDMA / GSM"</item>
-    <item msgid="2816766128443809642">"NR / LTE / TDSCDMA / WCDMA"</item>
-    <item msgid="611069084780684089">"NR / LTE / TDSCDMA / GSM / WCDMA"</item>
-    <item msgid="5790800263975092724">"NR / LTE / TDSCDMA / CDMA / EV-DO / GSM / WCDMA"</item>
+    <item>GSM / WCDMA を優先</item>
+    <item>GSM のみ</item>
+    <item>WCDMA のみ</item>
+    <item>GSM / WCDMA 自動</item>
+    <item>CDMA / EV-DO 自動</item>
+    <item>CDMA（EV-DO 非準拠）</item>
+    <item>EV-DO のみ</item>
+    <item>CDMA / EV-DO / GSM / WCDMA</item>
+    <item>CDMA+LTE / EV-DO</item>
+    <item>GSM / WCDMA / LTE</item>
+    <item>LTE / CDMA / EvDo / GSM / WCDMA</item>
+    <item>LTE</item>
+    <item>LTE / WCDMA</item>
+    <item>TDSCDMA のみ</item>
+    <item>TDSCDMA / WCDMA</item>
+    <item>LTE / TDSCDMA</item>
+    <item>TDSCDMA / GSM</item>
+    <item>LTE / TDSCDMA / GSM</item>
+    <item>TDSCDMA / GSM / WCDMA</item>
+    <item>LTE / TDSCDMA / WCDMA</item>
+    <item>LTE / TDSCDMA / GSM / WCDMA</item>
+    <item>TDSCDMA / CDMA / EV-DO / GSM / WCDMA</item>
+    <item>LTE / TDSCDMA / CDMA / EV-DO / GSM / WCDMA</item>
+    <item>NR のみ</item>
+    <item>NR / LTE</item>
+    <item>NR / LTE / CDMA / EV-DO</item>
+    <item>NR / LTE / GSM / WCDMA</item>
+    <!-- Global includes NR/LTE/CDMA/EvDo/GSM/WCDMA -->
+    <item>グローバル</item>
+    <item>NR / LTE / WCDMA</item>
+    <item>NR / LTE / TDSCDMA</item>
+    <item>NR / LTE / TDSCDMA / GSM</item>
+    <item>NR / LTE / TDSCDMA / WCDMA</item>
+    <item>NR / LTE / TDSCDMA / GSM / WCDMA</item>
+    <item>NR / LTE / TDSCDMA / CDMA / EV-DO / GSM / WCDMA</item>
   </string-array>
+  <!-- The preferred network modes RIL constants, in order of the modes above,
+         e.g. the choice "GSM/WCDMA preferred" has the corresponding value "0" -->
+  <!-- Choices for CDMA subscription-->
   <string-array name="cdma_subscription_choices">
-    <item msgid="6242790734457941014">"RUIM / SIM"</item>
-    <item msgid="8980776035119085660">"NV"</item>
+    <item>RUIM / SIM</item>
+    <item>NV</item>
   </string-array>
-    <!-- no translation found for enhanced_4g_lte_mode_title_variant:0 (1841976293698111057) -->
-    <!-- no translation found for enhanced_4g_lte_mode_title_variant:1 (6822859933189908133) -->
-    <!-- no translation found for enhanced_4g_lte_mode_title_variant:2 (4543171628914168621) -->
-    <!-- no translation found for rtt_setting_mode:1 (7903019313228349427) -->
-    <!-- no translation found for rtt_setting_mode:2 (8525285145696236811) -->
-    <!-- no translation found for rtt_setting_mode:3 (7725394146877517088) -->
+  <!-- Values for CDMA subscription-->
+  <!-- WiFi calling mode array -->
+  <!-- WiFi calling mode array without wifi only mode -->
+  <!-- Carrier variant of Enhaced 4G LTE Mode title.  [CHAR LIMIT=NONE] -->
+  <string-array name="enhanced_4g_lte_mode_title_variant">
+    <!-- 0: Default -->
+    <item>@string/enhanced_4g_lte_mode_title</item>
+    <!-- 1: Verizon -->
+    <item>@string/enhanced_4g_lte_mode_title_advanced_calling</item>
+    <!-- 2: All carriers who want 4G -->
+    <item>@string/enhanced_4g_lte_mode_title_4g_calling</item>
+  </string-array>
+  <!-- Array of titles palette list for accessibility. -->
+  <!-- Values for palette list view preference. -->
+  <!--String arrays for showing the rtt settings options -->
+  <string-array name="rtt_setting_mode">
+    <!-- 0: Invalid value -->
+    <item></item>
+    <!-- 1:  Not visible -->
+    <item>@string/rtt_settings_no_visible</item>
+    <!-- 2:  Visible during call -->
+    <item>@string/rtt_settings_visible_during_call</item>
+    <!-- 3:  Always visible -->
+    <item>@string/rtt_settings_always_visible</item>
+  </string-array>
+  <!-- All the preference when the open app supports TapPay -->
   <string-array name="nfc_payment_favor">
-    <item msgid="9104058551372383947">"常時"</item>
-    <item msgid="5283665583617307336">"別の決済アプリが起動されている場合を除く"</item>
+    <item>常時</item>
+    <item>別の決済アプリが起動されている場合を除く</item>
   </string-array>
+  <!-- All the values of the preference when the open app supports TapPay -->
   <string-array name="nfc_payment_favor_values">
-    <item msgid="2373999996715432397">"0"</item>
-    <item msgid="5305176997036663262">"1"</item>
+    <item>0</item>
+    <item>1</item>
   </string-array>
+  <!-- Setting entries for timing out to the Dock User when docked. -->
   <string-array name="switch_to_dock_user_when_docked_timeout_entries">
-    <item msgid="3211660022507486536">"なし"</item>
-    <item msgid="7025253383416830453">"1 分後"</item>
-    <item msgid="1574040255478150028">"5 分後"</item>
+    <item>なし</item>
+    <item>1 分後</item>
+    <item>5 分後</item>
   </string-array>
+  <!-- Setting values for timing out to the Dock User when docked. [DO NOT TRANSLATE] -->
+  <!-- Developer settings: ingress rate limit entries. [DO NOT TRANSLATE] -->
+  <string-array name="ingress_rate_limit_entries">
+    <item>@string/ingress_rate_limit_no_limit_entry</item>
+    <item>128kbps</item>
+    <item>256kbps</item>
+    <item>1Mbps</item>
+    <item>5Mbps</item>
+    <item>15Mbps</item>
+  </string-array>
+  <!-- Developer settings: ingress rate limit values. [DO NOT TRANSLATE] -->
+  <string-array name="ingress_rate_limit_values">
+    <item>-1</item>
+    <!-- -1 codes for disabled -->
+    <item>16000</item>
+    <!-- 128kbps == 16000B/s -->
+    <item>32000</item>
+    <!-- 256kbps == 32000B/s -->
+    <item>125000</item>
+    <!-- 1Mbps == 125000B/s -->
+    <item>625000</item>
+    <!-- 5Mbps == 625000/s -->
+    <item>1875000</item>
+    <!-- 15Mbps == 1875000/s -->
+  </string-array>
+  <!-- An allowlist which packages won't show summary in battery usage screen.
+         [CHAR LIMIT=NONE] -->
+  <!-- A list for all temperature units. [DO NOT TRANSLATE] -->
+  <string-array name="temperature_units">
+    <item>default</item>
+    <item>celsius</item>
+    <item>fahrenhe</item>
+  </string-array>
+  <!-- A list for all days of a week. [DO NOT TRANSLATE] -->
+  <string-array name="first_day_of_week">
+    <item>default</item>
+    <item>sun</item>
+    <item>mon</item>
+    <item>tue</item>
+    <item>wed</item>
+    <item>thu</item>
+    <item>fri</item>
+    <item>sat</item>
+  </string-array>
+  <!-- Screen flash notification color when activating -->
+  <!-- hide 3G option from preferred network type UI -->
+  <!-- The following 2 arrays are for battery tips card. Please keep them the same size. -->
+  <!-- The following 4 arrays are for power anomaly tips card. Please keep them the same size. -->
 </resources>
