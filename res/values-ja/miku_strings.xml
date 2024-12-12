@@ -44,7 +44,7 @@
   <string name="selinux_status_enforcing">Enforcing、安全ですよ。</string>
   <!-- Status Bar Lyric -->
   <string name="status_bar_show_lyric_title">ステータスバーの歌詞 (アプリの対応が必要です)</string>
-  <string name="status_bar_show_lyric_summary">ステータスバーに歌詞を表示します。 @cjybyjk さんありがとう！ </string>
+  <string name="status_bar_show_lyric_summary">ステータスバーに歌詞を表示します。Miku UI Lyrics Stub との併用が最適</string>
   <!-- Units -->
   <string name="unit_seconds">秒</string>
   <string name="unit_milliseconds">ミリ秒</string>

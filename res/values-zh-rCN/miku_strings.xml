@@ -50,7 +50,7 @@
 
     <!-- Status Bar Lyric -->
     <string name="status_bar_show_lyric_title">状态栏歌词（需要应用支持哦）</string>
-    <string name="status_bar_show_lyric_summary">感谢Shelling的贡献~</string>
+    <string name="status_bar_show_lyric_summary">在状态栏显示当前播放歌曲的歌词，与 Miku UI Lyrics Stub 配合使用效果更佳。</string>
 
     <!-- Units -->
     <string name="unit_seconds">秒</string>
