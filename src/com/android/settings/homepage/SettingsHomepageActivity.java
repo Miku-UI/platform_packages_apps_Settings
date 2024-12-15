@@ -473,6 +473,7 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         if (Flags.homepageRevamp()) {
             //Update search bar background
             findViewById(R.id.app_bar_container).setBackgroundColor(color);
+            findViewById(R.id.iv_miku_banner).setBackgroundColor(color);
         }
     }
 

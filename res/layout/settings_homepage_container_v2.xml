@@ -64,6 +64,13 @@
         app:elevation="0dp"
         android:touchscreenBlocksFocus="false"
         android:keyboardNavigationCluster="false">
+
+        <ImageView
+            android:id="@+id/iv_miku_banner"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:src="@drawable/mikuui_banner" />
+
         <LinearLayout
             android:id="@+id/app_bar_container"
             android:layout_width="match_parent"

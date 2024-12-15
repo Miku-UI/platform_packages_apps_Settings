@@ -182,9 +182,11 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 
     @Override
     public void onResume() {
-	super.onResume();
-	final TextView tvMikuTip = getActivity().findViewById(R.id.tv_miku_tip);
-	tvMikuTip.setText(RandomResUtils.getRandomString(getResources(), R.array.random_tips, MIKU_TIPS_COUNT));
+        super.onResume();
+        final TextView tvMikuTip = getActivity().findViewById(R.id.tv_miku_tip);
+        if (tvMikuTip != null) {
+            tvMikuTip.setText(RandomResUtils.getRandomString(getResources(), R.array.random_tips, MIKU_TIPS_COUNT));
+        }
     }
 
     @Override
