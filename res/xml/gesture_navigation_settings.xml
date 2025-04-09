@@ -57,7 +57,7 @@
             settings:textEnd="@string/high_label"/>
     </PreferenceCategory>
 
-    <com.miku.settings.preferences.SecureSettingSwitchPreference
+    <com.miku.settings.preferences.SystemSettingSwitchPreference
         android:key="navigation_bar_hint"
         android:title="@string/show_navbar_gesture_bar_title"
         android:summary="@string/show_navbar_gesture_bar_summary"
