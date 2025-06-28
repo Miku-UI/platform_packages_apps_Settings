@@ -157,6 +157,15 @@
             settings:highlightableMenuKey="@string/menu_key_system"/>
 
         <com.android.settings.widget.HomepagePreference
+            android:key="top_level_miku"
+            android:title="@string/miku_settings_title"
+            android:summary="@string/miku_settings_summary"
+            android:order="-15"
+            android:icon="@drawable/icon_miku"
+            settings:highlightableMenuKey="@string/menu_key_miku"
+            android:fragment="com.miku.exsettings.MikuSettings"/>
+
+        <com.android.settings.widget.HomepagePreference
             android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
             android:icon="@drawable/ic_homepage_about"
             android:key="top_level_about_device"
