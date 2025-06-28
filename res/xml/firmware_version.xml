@@ -21,9 +21,11 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
-    <PreferenceScreen
+    <!-- Bug workaround, DO NOT DELETE -->
+    <PreferenceCategory
         android:key="mikuui_logo1"
-        android:layout="@layout/mikuui_logo"/>
+        android:layout="@layout/mikuui_logo">
+    </PreferenceCategory>
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="mikuui_logo"

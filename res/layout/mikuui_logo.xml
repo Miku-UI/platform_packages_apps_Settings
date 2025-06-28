@@ -13,16 +13,39 @@
     limitations under the License.
 -->
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:gravity="center"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="230dp" >
+    android:layout_height="wrap_content">
 
     <ImageView
+        android:id="@+id/iv_miku_bg"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/mikuui_banner"
-        android:scaleType="fitCenter" />
+        android:layout_height="320dp"
+        android:src="@drawable/hero_visual_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/iv_miku"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:src="@drawable/hero_visual_miku"
+        app:layout_constraintTop_toTopOf="@id/iv_miku_bg"
+        app:layout_constraintBottom_toBottomOf="@id/iv_miku_bg" />
+
+    <ImageView
+        android:id="@+id/iv_miku_front"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:src="@drawable/hero_visual_front"
+        app:layout_constraintTop_toTopOf="@id/iv_miku_bg"
+        app:layout_constraintBottom_toBottomOf="@id/iv_miku_bg" />
+    <ImageView
+        android:id="@+id/iv_miku_logo"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/hero_title"
+        app:layout_constraintBottom_toBottomOf="@id/iv_miku" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
