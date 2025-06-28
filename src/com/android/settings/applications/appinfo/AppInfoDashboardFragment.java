@@ -244,7 +244,7 @@ public class AppInfoDashboardFragment extends DashboardFragment
         if (!ensurePackageInfoAvailable(activity)) {
             return;
         }
-        if (!ensureDisplayableModule(activity)) {
+        if (!android.content.pm.Flags.removeHiddenModuleUsage() && !ensureDisplayableModule(activity)) {
             return;
         }
         startListeningToPackageRemove();
@@ -387,6 +387,7 @@ public class AppInfoDashboardFragment extends DashboardFragment
      * If it's not, the fragment will finish.
      *
      * @return true if package is displayable.
+     * TODO(b/382016780): to be removed after flag cleanup.
      */
     @VisibleForTesting
     boolean ensureDisplayableModule(Activity activity) {
@@ -573,7 +574,7 @@ public class AppInfoDashboardFragment extends DashboardFragment
             showIt = false;
         } else if (mPackageInfo == null || mDpm.packageHasActiveAdmins(mPackageInfo.packageName)) {
             showIt = false;
-        } else if (UserHandle.myUserId() != 0) {
+        } else if (!mUserManager.isAdminUser()) {
             showIt = false;
         } else if (mUserManager.getUsers().size() < 2) {
             showIt = false;

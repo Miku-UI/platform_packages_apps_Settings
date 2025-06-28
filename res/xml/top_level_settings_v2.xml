@@ -217,6 +217,15 @@
             android:summary="@string/location_settings_loading_app_permission_stats"
             settings:highlightableMenuKey="@string/menu_key_location"
             settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
+            
+        <com.android.settings.widget.HomepagePreference
+            android:key="top_level_supervision"
+            android:title="@string/supervision_settings_title"
+            android:summary="@string/supervision_settings_summary"
+            android:icon="@drawable/ic_account_child_invert"
+            android:fragment="com.android.settings.supervision.SupervisionDashboardFragment"
+            settings:highlightableMenuKey="@string/menu_key_supervision"
+            settings:controller="com.android.settings.supervision.TopLevelSupervisionPreferenceController"/>
 
         <com.android.settings.widget.HomepagePreference
             android:key="top_level_emergency"
