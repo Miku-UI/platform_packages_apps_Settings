@@ -31,6 +31,7 @@ import androidx.preference.PreferenceScreen;
 
 import com.android.settings.core.BasePreferenceController;
 
+// LINT.IfChange
 public class ColorModePreferenceController extends BasePreferenceController
         implements LifecycleObserver {
 
@@ -100,3 +101,4 @@ public class ColorModePreferenceController extends BasePreferenceController
         return ColorModeUtils.getActiveColorModeName(mContext);
     }
 }
+// LINT.ThenChange(ColorModeScreen.kt)

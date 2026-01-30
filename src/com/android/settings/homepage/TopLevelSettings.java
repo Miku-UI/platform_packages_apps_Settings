@@ -23,7 +23,6 @@ import android.app.ActivityManager;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.res.Configuration;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.provider.SearchIndexableResource;
 import android.text.TextUtils;
@@ -44,14 +43,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.window.embedding.ActivityEmbeddingController;
 
 import com.android.settings.R;
-import com.android.settings.Utils;
 import com.android.settings.utils.RandomResUtils;
 import com.android.settings.activityembedding.ActivityEmbeddingRulesController;
 import com.android.settings.activityembedding.ActivityEmbeddingUtils;
 import com.android.settings.core.RoundCornerPreferenceAdapter;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.DashboardFragment;
-import com.android.settings.flags.Flags;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.support.SupportPreferenceController;
@@ -226,21 +223,6 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     }
 
     @Override
-    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        super.onCreatePreferences(savedInstanceState, rootKey);
-        if (Flags.homepageRevamp()) {
-            return;
-        }
-        int tintColor = Utils.getHomepageIconColor(getContext());
-        iteratePreferences(preference -> {
-            Drawable icon = preference.getIcon();
-            if (icon != null && preference.hasKey()) {
-                icon.setTint(tintColor);
-            }
-        });
-    }
-
-    @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
         highlightPreferenceIfNeeded();
@@ -280,34 +262,6 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         if (recyclerView != null) {
             recyclerView.setPadding(padding, 0, padding, 0);
         }
-    }
-
-    /** Updates the preference internal paddings */
-    public void updatePreferencePadding(boolean isTwoPane) {
-        iteratePreferences(new PreferenceJob() {
-            private int mIconPaddingStart;
-            private int mTextPaddingStart;
-
-            @Override
-            public void init() {
-                mIconPaddingStart = getResources().getDimensionPixelSize(isTwoPane
-                        ? R.dimen.homepage_preference_icon_padding_start_two_pane
-                        : R.dimen.homepage_preference_icon_padding_start);
-                mTextPaddingStart = getResources().getDimensionPixelSize(isTwoPane
-                        ? R.dimen.homepage_preference_text_padding_start_two_pane
-                        : R.dimen.homepage_preference_text_padding_start);
-            }
-
-            @Override
-            public void doForEach(Preference preference) {
-                if (preference instanceof HomepagePreferenceLayout) {
-                    ((HomepagePreferenceLayout) preference).getHelper()
-                            .setIconPaddingStart(mIconPaddingStart);
-                    ((HomepagePreferenceLayout) preference).getHelper()
-                            .setTextPaddingStart(mTextPaddingStart);
-                }
-            }
-        });
     }
 
     /** Returns a {@link TopLevelHighlightMixin} that performs highlighting */
@@ -360,10 +314,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             return mHighlightMixin.onCreateAdapter(this, preferenceScreen, mScrollNeeded);
         }
 
-        if (Flags.homepageRevamp()) {
-            return new RoundCornerPreferenceAdapter(preferenceScreen);
-        }
-        return super.onCreateAdapter(preferenceScreen);
+        return new RoundCornerPreferenceAdapter(preferenceScreen);
     }
 
     @Override
@@ -409,10 +360,8 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
     }
 
     private static int getPreferenceLayoutResId(Context context) {
-        return Flags.homepageRevamp()
-                ? SettingsThemeHelper.isExpressiveTheme(context)
-                        ? R.xml.top_level_settings_expressive
-                        : R.xml.top_level_settings_v2
+        return SettingsThemeHelper.isExpressiveTheme(context)
+                ? R.xml.top_level_settings_expressive
                 : R.xml.top_level_settings;
     }
 

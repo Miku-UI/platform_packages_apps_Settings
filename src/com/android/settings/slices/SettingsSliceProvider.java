@@ -51,8 +51,8 @@ import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.bluetooth.BluetoothSliceBuilder;
 import com.android.settings.core.BasePreferenceController;
-import com.android.settings.notification.VolumeSeekBarPreferenceController;
-import com.android.settings.notification.zen.ZenModeSliceBuilder;
+import com.android.settings.notification.VolumeSliderPreferenceController;
+import com.android.settings.notification.modes.DndModeSliceBuilder;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.SliceBroadcastRelay;
 import com.android.settingslib.utils.ThreadUtils;
@@ -88,6 +88,7 @@ import java.util.stream.Collectors;
  * {@link com.android.settings.core.BasePreferenceController} indexed as
  * {@link SlicesDatabaseHelper.IndexColumns#CONTROLLER} to manipulate the setting.
  */
+@Deprecated(forRemoval = true)
 public class SettingsSliceProvider extends SliceProvider {
 
     private static final String TAG = "SettingsSliceProvider";
@@ -121,7 +122,7 @@ public class SettingsSliceProvider extends SliceProvider {
      * permission can use them.
      */
     private static final List<Uri> PUBLICLY_SUPPORTED_CUSTOM_SLICE_URIS =
-            android.app.Flags.modesUi()
+            !android.app.Flags.modesUiDndSlice()
                     ?
                     Arrays.asList(
                             CustomSliceRegistry.BLUETOOTH_URI,
@@ -195,8 +196,8 @@ public class SettingsSliceProvider extends SliceProvider {
         }
 
         if (CustomSliceRegistry.ZEN_MODE_SLICE_URI.equals(sliceUri)) {
-            if (!android.app.Flags.modesUi()) {
-                registerIntentToUri(ZenModeSliceBuilder.INTENT_FILTER, sliceUri);
+            if (android.app.Flags.modesUiDndSlice()) {
+                registerIntentToUri(DndModeSliceBuilder.INTENT_FILTER, sliceUri);
             }
             return;
         } else if (CustomSliceRegistry.BLUETOOTH_URI.equals(sliceUri)) {
@@ -269,9 +270,9 @@ public class SettingsSliceProvider extends SliceProvider {
                         .getSlicesFeatureProvider()
                         .getNewWifiCallingSliceHelper(getContext())
                         .createWifiCallingSlice(sliceUri);
-            } else if (!android.app.Flags.modesUi()
+            } else if (android.app.Flags.modesUiDndSlice()
                     && CustomSliceRegistry.ZEN_MODE_SLICE_URI.equals(sliceUri)) {
-                return ZenModeSliceBuilder.getSlice(getContext());
+                return DndModeSliceBuilder.getSlice(getContext());
             } else if (CustomSliceRegistry.BLUETOOTH_URI.equals(sliceUri)) {
                 return BluetoothSliceBuilder.getSlice(getContext());
             } else if (CustomSliceRegistry.ENHANCED_4G_SLICE_URI.equals(sliceUri)) {
@@ -446,10 +447,10 @@ public class SettingsSliceProvider extends SliceProvider {
 
         final IntentFilter filter = controller.getIntentFilter();
         if (filter != null) {
-            if (controller instanceof VolumeSeekBarPreferenceController) {
+            if (controller instanceof VolumeSliderPreferenceController) {
                 // Register volume slices to a broadcast relay to reduce unnecessary UI updates
                 VolumeSliceHelper.registerIntentToUri(getContext(), filter, uri,
-                        ((VolumeSeekBarPreferenceController) controller).getAudioStream());
+                        ((VolumeSliderPreferenceController) controller).getAudioStream());
             } else {
                 registerIntentToUri(filter, uri);
             }

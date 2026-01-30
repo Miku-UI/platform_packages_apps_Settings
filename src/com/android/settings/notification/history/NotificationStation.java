@@ -669,6 +669,7 @@ public class NotificationStation extends SettingsPreferenceFragment {
                     .append(delim)
                     .append(String.valueOf(p.getOpenAshmemSize()))
                     .append("\n");
+            p.recycle();
         }
         return sb;
     }
