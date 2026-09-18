@@ -26,13 +26,19 @@ import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyValueStoreDelegate
 import com.android.settingslib.datastore.SettingsSystemStore
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
+import com.android.settingslib.metadata.preferencesapi.preconditions.PreconditionStability
 import com.android.settingslib.metadata.ReadWritePermit
 import com.android.settingslib.metadata.SensitivityLevel
 import com.android.settingslib.metadata.SwitchPreference
 
 // LINT.IfChange
 class BatteryPercentageSwitchPreference :
-    SwitchPreference(KEY, R.string.battery_percentage, R.string.battery_percentage_description),
+    SwitchPreference(
+        KEY,
+        purpose = R.string.status_bar_show_battery_percent_purpose,
+        R.string.battery_percentage,
+        R.string.battery_percentage_description
+    ),
     PreferenceActionMetricsProvider,
     PreferenceAvailabilityProvider {
 
@@ -43,6 +49,11 @@ class BatteryPercentageSwitchPreference :
 
     override fun storage(context: Context): KeyValueStore =
         BatteryPercentageStorage(context, SettingsSystemStore.get(context))
+
+    override val availabilityDescription =
+        "The device must have a battery present and the device must support making the battery percentage setting available."
+
+    override fun getAvailabilityStability() = PreconditionStability.UNSTABLE
 
     override fun isAvailable(context: Context): Boolean =
         Utils.isBatteryPresent(context) &&

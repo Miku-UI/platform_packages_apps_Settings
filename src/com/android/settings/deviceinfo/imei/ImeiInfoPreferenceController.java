@@ -23,6 +23,7 @@ import android.os.UserManager;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
+import android.text.TextUtils;
 import android.util.Log;
 
 import androidx.annotation.VisibleForTesting;
@@ -34,8 +35,13 @@ import androidx.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.settings.Utils;
 import com.android.settings.core.BasePreferenceController;
+import com.android.settings.deviceinfo.PhoneNumberUtil;
 import com.android.settings.deviceinfo.simstatus.SlotSimStatus;
 import com.android.settings.flags.Flags;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Controller that manages preference for single and multi sim devices.
@@ -112,7 +118,7 @@ public class ImeiInfoPreferenceController extends BasePreferenceController {
             multiImeiPreference.setCopyingEnabled(true);
 
             category.addPreference(multiImeiPreference);
-       }
+        }
     }
 
     @Override
@@ -121,9 +127,66 @@ public class ImeiInfoPreferenceController extends BasePreferenceController {
     }
 
     private CharSequence getSummary(int simSlot) {
+        List<String> imeiList = getImeiList();
+        if (imeiList.isEmpty()) {
+            return "";
+        }
+        String imei = "";
+        if (simSlot >= imeiList.size()) {
+            imei = imeiList.getFirst();
+        } else {
+            imei = imeiList.get(simSlot);
+        }
+        return PhoneNumberUtil.expandByTts(imei);
+    }
+
+    private String getImeiBySlot(int simSlot) {
         final int phoneType = getPhoneType(simSlot);
         return phoneType == PHONE_TYPE_CDMA ? mTelephonyManager.getMeid(simSlot)
                 : mTelephonyManager.getImei(simSlot);
+    }
+
+    private List<String> getImeiListBySlot() {
+        List<String> imeiListBySlot = new ArrayList<>();
+
+        for (int i = 0; i < mSlotSimStatus.size(); i++) {
+            String imeiItem = getImeiBySlot(i);
+            if (!TextUtils.isEmpty(imeiItem)) {
+                imeiListBySlot.add(imeiItem);
+            }
+        }
+        return imeiListBySlot;
+    }
+
+    private String getPrimaryImei() {
+        String primaryImei = "";
+        try {
+            primaryImei = mTelephonyManager.getPrimaryImei();
+        } catch (Exception exception) {
+            Log.i(TAG, "PrimaryImei not available. " + exception);
+        }
+        return primaryImei;
+    }
+
+    /**
+     * As per GSMA specification TS37, below Primary IMEI requirements are mandatory to support
+     * TS37_2.2_REQ_5
+     * TS37_2.2_REQ_8 (Attached the document has description about this test cases)
+     *
+     * b/434700998, using the lower IMEI as the primary IMEI.
+     * IMEI 1 = primary IMEI i.e. lower IMEI
+     * IMEI 2 = non-primary IMEI
+     */
+    private List<String> getImeiList() {
+        List<String> imeiList = getImeiListBySlot();
+        String primaryImei = getPrimaryImei();
+
+        if (!TextUtils.isEmpty(primaryImei)) {
+            imeiList.remove(primaryImei);
+            Collections.sort(imeiList);
+            imeiList.addFirst(primaryImei);
+        }
+        return imeiList;
     }
 
     @Override
@@ -164,37 +227,22 @@ public class ImeiInfoPreferenceController extends BasePreferenceController {
         preference.setSummary(getSummary(simSlot));
     }
 
-    private CharSequence getTitleForGsmPhone(int simSlot, boolean isPrimaryImei) {
-        int titleId = isPrimaryImei ? R.string.imei_multi_sim_primary : R.string.imei_multi_sim;
-        return isMultiSim() ? mContext.getString(titleId, simSlot + 1)
+    private CharSequence getTitleForGsmPhone(int simSlot) {
+        // using simSlot as index
+        return isMultiSim() ? mContext.getString(R.string.imei_multi_sim, simSlot + 1)
                 : mContext.getString(R.string.status_imei);
     }
 
-    private CharSequence getTitleForCdmaPhone(int simSlot, boolean isPrimaryImei) {
-        int titleId = isPrimaryImei ? R.string.meid_multi_sim_primary : R.string.meid_multi_sim;
-        return isMultiSim() ? mContext.getString(titleId, simSlot + 1)
+    private CharSequence getTitleForCdmaPhone(int simSlot) {
+        // using simSlot as index
+        return isMultiSim() ? mContext.getString(R.string.meid_multi_sim, simSlot + 1)
                 : mContext.getString(R.string.status_meid_number);
     }
 
-    protected boolean isPrimaryImei(int simSlot) {
-        CharSequence imei = getSummary(simSlot);
-        if (imei == null) {
-            return false;
-        }
-        String primaryImei = null;
-        try {
-            primaryImei = mTelephonyManager.getPrimaryImei();
-        } catch (Exception exception) {
-            Log.i(TAG, "PrimaryImei not available. " + exception);
-        }
-        return (primaryImei != null) && primaryImei.equals(imei.toString());
-    }
-
     private CharSequence getTitle(int simSlot) {
-        boolean isPrimaryImei = isMultiSim() && isPrimaryImei(simSlot);
         final int phoneType = getPhoneType(simSlot);
-        return phoneType == PHONE_TYPE_CDMA ? getTitleForCdmaPhone(simSlot, isPrimaryImei)
-                : getTitleForGsmPhone(simSlot, isPrimaryImei);
+        return phoneType == PHONE_TYPE_CDMA ? getTitleForCdmaPhone(simSlot)
+                : getTitleForGsmPhone(simSlot);
     }
 
     public int getPhoneType(int slotIndex) {
