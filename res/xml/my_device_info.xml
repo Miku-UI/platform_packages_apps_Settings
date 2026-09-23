@@ -21,6 +21,15 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
+    <com.android.settings.widget.MikuBannerPreference
+        android:key="mikuui_logo"
+        android:order="-10"
+        android:layout="@layout/mikuui_logo"
+        android:selectable="false"
+        settings:allowDividerAbove="false"
+        settings:allowDividerBelow="false"
+        settings:isPreferenceVisible="true"/>
+
     <com.android.settingslib.widget.LayoutPreference
         android:key="my_device_info_header"
         android:layout="@layout/settings_entity_header"

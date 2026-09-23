@@ -27,11 +27,13 @@
         android:layout="@layout/mikuui_logo">
     </PreferenceCategory>
 
-    <com.android.settingslib.widget.LayoutPreference
+    <com.android.settings.widget.MikuBannerPreference
         android:key="mikuui_logo"
         android:order="0"
         android:layout="@layout/mikuui_logo"
         android:selectable="false"
+        settings:allowDividerAbove="false"
+        settings:allowDividerBelow="false"
         settings:isPreferenceVisible="true"/>
 
     <!-- Android version -->
