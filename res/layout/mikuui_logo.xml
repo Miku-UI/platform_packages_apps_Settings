@@ -29,6 +29,8 @@
         android:importantForAccessibility="no"
         android:scaleType="fitXY"
         android:src="@drawable/hero_visual_bg"
+        android:tint="@color/mikuui_banner_text"
+        android:tintMode="src_in"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
