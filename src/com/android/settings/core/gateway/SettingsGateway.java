@@ -223,6 +223,7 @@ import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSetting
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.miku.exsettings.MikuSettings;
+import com.miku.exsettings.fragments.ControlCenterSettings;
 import com.miku.exsettings.fragments.SmartPixels;
 
 public class SettingsGateway {
@@ -414,6 +415,7 @@ public class SettingsGateway {
             BatteryInfoFragment.class.getName(),
             UserAspectRatioDetails.class.getName(),
             MikuSettings.class.getName(),
+            ControlCenterSettings.class.getName(),
             SmartPixels.class.getName(),
             ScreenTimeoutSettings.class.getName(),
             ResetNetwork.class.getName(),
