@@ -78,4 +78,12 @@
     <string name="show_navbar_gesture_bar_title">手势条</string>
     <string name="show_navbar_gesture_bar_summary">在屏幕底部显示手势条</string>
 
+    <!-- About phone device info card -->
+    <string name="miku_device_info_model">机型</string>
+    <string name="miku_device_info_version">Miku UI 版本</string>
+    <string name="miku_device_info_display">分辨率</string>
+    <string name="miku_device_info_battery">电池</string>
+    <string name="miku_device_info_kernel">内核</string>
+    <string name="miku_device_info_security">安全更新</string>
+
 </resources>

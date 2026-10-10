@@ -30,6 +30,17 @@
         settings:allowDividerBelow="false"
         settings:isPreferenceVisible="true"/>
 
+    <com.android.settings.widget.MikuDeviceInfoCardPreference
+        android:key="miku_device_info_card"
+        android:order="-5"
+        android:layout="@layout/miku_device_info_card"
+        android:selectable="false"
+        settings:allowDividerAbove="false"
+        settings:allowDividerBelow="false"
+        settings:searchable="false"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.MikuDeviceInfoCardPreferenceController"
+        settings:isPreferenceVisible="true"/>
+
     <com.android.settingslib.widget.LayoutPreference
         android:key="my_device_info_header"
         android:layout="@layout/settings_entity_header"
