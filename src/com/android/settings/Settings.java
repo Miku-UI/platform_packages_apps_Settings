@@ -648,7 +648,7 @@ public class Settings extends SettingsActivity {
             super(ResetDashboardScreen.KEY, ResetDashboardFragment.class);
         }
     }
-    public static class MikuSettingsActivity extends SettingsActivity {}
+    public static class MikuExSettingsActivity extends SettingsActivity {}
 
     /**
      * Activity for MediaControlsSettings

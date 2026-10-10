@@ -5938,8 +5938,8 @@
                 android:value="com.miku.exsettings.fragments.SmartPixels" />
         </activity>
 
-        <!-- MikuSettings -->
-        <activity android:name=".Settings$MikuSettingsActivity"
+        <!-- MikuExSettings -->
+        <activity android:name=".Settings$MikuExSettingsActivity"
             android:label="@string/miku_settings_title"
             android:parentActivityName="com.android.settings"
             android:exported="true">
@@ -5948,7 +5948,7 @@
                 <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.miku.exsettings.MikuSettings" />
+                android:value="com.miku.exsettings.MikuExSettings" />
         </activity>
 
         <!-- [b/197780098] Disable eager initialization of Jetpack libraries. -->

@@ -58,7 +58,7 @@ import com.android.settings.supervision.SupervisionDashboardFragment;
 import com.android.settings.system.SystemDashboardFragment;
 import com.android.settingslib.drawer.CategoryKey;
 
-import com.miku.exsettings.MikuSettings;
+import com.miku.exsettings.MikuExSettings;
 
 import java.util.Map;
 
@@ -148,7 +148,7 @@ public class DashboardFragmentRegistry {
                 CategoryKey.CATEGORY_MEDIA_CONTROLS_SETTINGS);
         PARENT_TO_CATEGORY_KEY_MAP.put(PrivacyControlsFragment.class.getName(),
                 CategoryKey.CATEGORY_PRIVACY_CONTROLS);
-        PARENT_TO_CATEGORY_KEY_MAP.put(MikuSettings.class.getName(),
+        PARENT_TO_CATEGORY_KEY_MAP.put(MikuExSettings.class.getName(),
                 CategoryKey.CATEGORY_SYSTEM_DEVELOPMENT);
         PARENT_TO_CATEGORY_KEY_MAP.put(AppSecuritySubpageFragment.class.getName(),
                 CategoryKey.CATEGORY_SC_APP_SECURITY);

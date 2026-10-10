@@ -272,7 +272,7 @@
             android:summary="@string/miku_settings_summary"
             android:icon="@drawable/icon_miku"
             settings:highlightableMenuKey="@string/menu_key_miku"
-            android:fragment="com.miku.exsettings.MikuSettings"/>
+            android:fragment="com.miku.exsettings.MikuExSettings"/>
 
         <com.android.settings.widget.HomepagePreference
             android:icon="@drawable/ic_help_filled"

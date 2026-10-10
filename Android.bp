@@ -55,7 +55,7 @@ android_library {
     srcs: [
         "src/**/*.java",
         "src/**/*.kt",
-        "MikuSettings/src/**/*.java",
+        "MikuExSettings/src/**/*.java",
     ],
     exclude_srcs: [
         "src/com/android/settings/biometrics/fingerprint2/lib/**/*.kt",
@@ -66,7 +66,7 @@ android_library {
         "res",
         "res-export", // for external usage
         "res-product",
-        "MikuSettings/res",
+        "MikuExSettings/res",
     ],
     aaptflags: ["--extra-packages com.miku.exsettings"],
     optional_uses_libs: ["com.android.extensions.appfunctions"],

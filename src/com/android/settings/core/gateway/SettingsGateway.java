@@ -222,7 +222,7 @@ import com.android.settings.wifi.p2p.WifiP2pSettings;
 import com.android.settings.wifi.savedaccesspoints2.SavedAccessPointsWifiSettings2;
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
-import com.miku.exsettings.MikuSettings;
+import com.miku.exsettings.MikuExSettings;
 import com.miku.exsettings.fragments.ControlCenterSettings;
 import com.miku.exsettings.fragments.SmartPixels;
 
@@ -414,7 +414,7 @@ public class SettingsGateway {
             NumberingSystemLocaleListFragment.class.getName(),
             BatteryInfoFragment.class.getName(),
             UserAspectRatioDetails.class.getName(),
-            MikuSettings.class.getName(),
+            MikuExSettings.class.getName(),
             ControlCenterSettings.class.getName(),
             SmartPixels.class.getName(),
             ScreenTimeoutSettings.class.getName(),
@@ -486,7 +486,7 @@ public class SettingsGateway {
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
             Settings.ShadeSettingsActivity.class.getName(),
-            Settings.MikuSettingsActivity.class.getName(),
+            Settings.MikuExSettingsActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
     };
 }

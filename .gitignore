@@ -1,4 +1,4 @@
 .idea/
 *.code-workspace
 *.iml
-MikuSettings/*
+MikuExSettings/*
