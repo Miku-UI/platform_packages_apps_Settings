@@ -355,7 +355,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         return new HomepagePreference(getPrefContext());
     }
 
-    void reloadHighlightMenuKey() {
+    protected void reloadHighlightMenuKey() {
         if (mHighlightMixin != null) {
             mHighlightMixin.reloadHighlightMenuKey(getArguments());
         }

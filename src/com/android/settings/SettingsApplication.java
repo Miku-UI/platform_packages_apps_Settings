@@ -37,6 +37,7 @@ import com.android.settings.development.DeveloperOptionsActivityLifecycle;
 import com.android.settings.flags.Flags;
 import com.android.settings.fuelgauge.BatterySettingsStorage;
 import com.android.settings.homepage.SettingsHomepageActivity;
+import com.android.settings.homepage.TopLevelSettings;
 import com.android.settings.localepicker.LocaleNotificationDataManager;
 import com.android.settings.metrics.SettingsMetricsLogger;
 import com.android.settings.msds.MSDLPlayerWrapper;
@@ -155,6 +156,14 @@ public class SettingsApplication extends Application {
 
     public SettingsHomepageActivity getHomeActivity() {
         return mHomeActivity.get();
+    }
+
+    /**
+     * Homepage fragment for {@link SettingsHomepageActivity}. Product variants override this
+     * to supply a subclass while keeping destination XML on {@link TopLevelSettings}.
+     */
+    public TopLevelSettings createTopLevelSettings() {
+        return new TopLevelSettings();
     }
 
     @Nullable

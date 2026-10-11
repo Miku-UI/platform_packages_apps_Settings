@@ -33,6 +33,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.ApplicationInfoFlags;
 import android.content.pm.UserInfo;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Process;
@@ -281,7 +282,12 @@ public class SettingsHomepageActivity extends FragmentActivity implements
             }
         }
         mMainFragment = showFragment(() -> {
-            final TopLevelSettings fragment = new TopLevelSettings();
+            final TopLevelSettings fragment;
+            if (getApplication() instanceof SettingsApplication) {
+                fragment = ((SettingsApplication) getApplication()).createTopLevelSettings();
+            } else {
+                fragment = new TopLevelSettings();
+            }
             fragment.getArguments().putString(SettingsActivity.EXTRA_FRAGMENT_ARG_KEY,
                     highlightMenuKey);
             return fragment;
@@ -389,12 +395,24 @@ public class SettingsHomepageActivity extends FragmentActivity implements
 
     private void setupEdgeToEdge() {
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
+        final Window window = getWindow();
+        window.setNavigationBarContrastEnforced(false);
+        window.setNavigationBarColor(Color.TRANSPARENT);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content),
                 (v, windowInsets) -> {
                     Insets insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars()
                             | WindowInsetsCompat.Type.displayCutout());
-                    // Apply the insets paddings to the view.
-                    v.setPadding(insets.left, 0, insets.right, insets.bottom);
+                    // Keep the homepage background under the gesture bar so top-stretch
+                    // overscroll does not reveal a contrasting strip there.
+                    v.setPadding(insets.left, 0, insets.right, 0);
+
+                    View homepageContainer = findViewById(R.id.homepage_container);
+                    if (homepageContainer != null) {
+                        homepageContainer.setPadding(homepageContainer.getPaddingLeft(),
+                                homepageContainer.getPaddingTop(),
+                                homepageContainer.getPaddingRight(), insets.bottom);
+                    }
 
                     // reset the top padding of search bar container to original top padding
                     // plus insets top.
@@ -427,21 +445,28 @@ public class SettingsHomepageActivity extends FragmentActivity implements
     }
 
     private void updateHomepageBackground() {
-        if (!mIsEmbeddingActivityEnabled) {
-            return;
-        }
-
         final Window window = getWindow();
         final int color = mIsTwoPane
                 ? getColor(R.color.settings_two_pane_background_color)
                 : Utils.getColorAttrDefaultColor(this, android.R.attr.colorBackground);
 
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        window.setNavigationBarColor(Color.TRANSPARENT);
+        window.setNavigationBarContrastEnforced(false);
 
-        // Update content background.
         findViewById(android.R.id.content).setBackgroundColor(color);
-        //Update search bar background
-        findViewById(R.id.app_bar_container).setBackgroundColor(color);
+        final View homepage = findViewById(R.id.settings_homepage_container);
+        if (homepage != null) {
+            homepage.setBackgroundColor(color);
+        }
+        final View scrollable = findViewById(R.id.main_content_scrollable_container);
+        if (scrollable != null) {
+            scrollable.setBackgroundColor(color);
+        }
+        final View appBarContainer = findViewById(R.id.app_bar_container);
+        if (appBarContainer != null) {
+            appBarContainer.setBackgroundColor(color);
+        }
         final View mikuBanner = findViewById(R.id.layout_miku_banner);
         if (mikuBanner != null) {
             mikuBanner.setBackgroundColor(color);
