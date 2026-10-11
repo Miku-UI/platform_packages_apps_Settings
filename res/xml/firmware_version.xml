@@ -27,7 +27,7 @@
         android:layout="@layout/mikuui_logo">
     </PreferenceCategory>
 
-    <com.android.settings.widget.MikuBannerPreference
+    <com.miku.android.settings.widget.MikuBannerPreference
         android:key="mikuui_logo"
         android:order="0"
         android:layout="@layout/mikuui_logo"
@@ -51,7 +51,7 @@
         android:title="@string/miku_version"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.MikuVersionPreferenceController"/>
+        settings:controller="com.miku.android.settings.deviceinfo.MikuVersionPreferenceController"/>
 
     <!-- Build type -->
     <Preference
@@ -60,7 +60,7 @@
         android:summary="@string/summary_placeholder"
         android:selectable="false"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.MikuTypePreferenceController"/>
+        settings:controller="com.miku.android.settings.deviceinfo.MikuTypePreferenceController"/>
 
     <!-- Maintainer name -->
     <Preference
@@ -68,7 +68,7 @@
         android:title="@string/maintainer_name"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.MaintainerPreferenceController"/>
+        settings:controller="com.miku.android.settings.deviceinfo.MaintainerPreferenceController"/>
 
     <!-- Security patch -->
     <Preference

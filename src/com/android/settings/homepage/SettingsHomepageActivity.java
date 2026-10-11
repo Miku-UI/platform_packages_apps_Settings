@@ -442,7 +442,10 @@ public class SettingsHomepageActivity extends FragmentActivity implements
         findViewById(android.R.id.content).setBackgroundColor(color);
         //Update search bar background
         findViewById(R.id.app_bar_container).setBackgroundColor(color);
-        findViewById(R.id.layout_miku_banner).setBackgroundColor(color);
+        final View mikuBanner = findViewById(R.id.layout_miku_banner);
+        if (mikuBanner != null) {
+            mikuBanner.setBackgroundColor(color);
+        }
     }
 
     private void showSuggestionFragment(boolean scrollNeeded) {

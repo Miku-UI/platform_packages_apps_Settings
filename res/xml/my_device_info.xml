@@ -21,7 +21,7 @@
     android:key="my_device_info_pref_screen"
     android:title="@string/about_settings">
 
-    <com.android.settings.widget.MikuBannerPreference
+    <com.miku.android.settings.widget.MikuBannerPreference
         android:key="mikuui_logo"
         android:order="-10"
         android:layout="@layout/mikuui_logo"
@@ -30,7 +30,7 @@
         settings:allowDividerBelow="false"
         settings:isPreferenceVisible="true"/>
 
-    <com.android.settings.widget.MikuDeviceInfoCardPreference
+    <com.miku.android.settings.widget.MikuDeviceInfoCardPreference
         android:key="miku_device_info_card"
         android:order="-5"
         android:layout="@layout/miku_device_info_card"
@@ -38,7 +38,7 @@
         settings:allowDividerAbove="false"
         settings:allowDividerBelow="false"
         settings:searchable="false"
-        settings:controller="com.android.settings.deviceinfo.aboutphone.MikuDeviceInfoCardPreferenceController"
+        settings:controller="com.miku.android.settings.deviceinfo.MikuDeviceInfoCardPreferenceController"
         settings:isPreferenceVisible="true"/>
 
     <com.android.settingslib.widget.LayoutPreference

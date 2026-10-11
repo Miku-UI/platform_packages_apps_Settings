@@ -81,19 +81,4 @@
     <string name="show_navbar_gesture_bar_title">Gesture bar</string>
     <string name="show_navbar_gesture_bar_summary">Show gesture bar at the bottom of the screen</string>
 
-    <!-- About phone device info card -->
-    <string name="miku_device_info_model">Model</string>
-    <string name="miku_device_info_version">Miku UI version</string>
-    <string name="miku_device_info_cpu" translatable="false">CPU</string>
-    <string name="miku_device_info_ram" translatable="false">RAM</string>
-    <string name="miku_device_info_display">Display</string>
-    <string name="miku_device_info_battery">Battery</string>
-    <string name="miku_device_info_kernel">Kernel</string>
-    <string name="miku_device_info_security">SPL</string>
-    <string name="miku_device_info_selinux" translatable="false">SELinux</string>
-    <string name="miku_device_info_maintainer" translatable="false">Master</string>
-    <string name="miku_device_info_ram_value">%d GB</string>
-    <string name="miku_device_info_battery_value">%d mAh</string>
-    <string name="miku_device_info_display_value">%1$d x %2$d\n%3$dHz</string>
-
 </resources>

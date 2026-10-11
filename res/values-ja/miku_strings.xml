@@ -69,10 +69,4 @@
   <!-- Navigation bar hint -->
   <string name="show_navbar_gesture_bar_title">ジェスチャーバー</string>
   <string name="show_navbar_gesture_bar_summary">画面の下にジェスチャーバーを表示します</string>
-  <!-- About phone device info card -->
-  <string name="miku_device_info_model">モデル</string>
-  <string name="miku_device_info_version">Miku UI バージョン</string>
-  <string name="miku_device_info_display">解像度</string>
-  <string name="miku_device_info_battery">バッテリー</string>
-  <string name="miku_device_info_kernel">カーネル</string>
 </resources>
