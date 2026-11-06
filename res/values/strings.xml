@@ -14052,6 +14052,10 @@
     <string name="dsu_loader_loading" translatable="false">Loading\u2026</string>
     <!-- DSU Loader. Do not translate. -->
     <string name="dsu_is_running" translatable="false">DSU is running</string>
+    <!-- Button at the bottom of the DSU Loader dialog. -->
+    <string name="dsu_local_gsi_install" translatable="false">从本地安装 GSI</string>
+    <!-- Toast when the picked file is not a system image. -->
+    <string name="dsu_local_gsi_invalid" translatable="false">不是合法的 system.img</string>
 
     <!-- Name of dev option called "Bug report handler" [CHAR LIMIT=NONE] -->
     <string name="bug_report_handler_title">Bug report handler</string>

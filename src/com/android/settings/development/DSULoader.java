@@ -16,12 +16,18 @@
 
 package com.android.settings.development;
 
+import android.app.Activity;
 import android.app.ListActivity;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.AssetFileDescriptor;
+import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.SystemProperties;
+import android.os.image.DynamicSystemClient;
+import android.provider.OpenableColumns;
 import android.text.TextUtils;
 import android.util.Slog;
 import android.view.LayoutInflater;
@@ -30,6 +36,7 @@ import android.view.View.MeasureSpec;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.settings.R;
 
@@ -42,12 +49,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -71,6 +81,21 @@ public class DSULoader extends ListActivity {
             "https://dl.google.com/developers/android/gsi/gsi-src.json";
 
     private static final int TIMEOUT_MS = 10 * 1000;
+    private static final int REQUEST_PICK_GSI = 1;
+    private static final String DOCUMENTS_UI_PACKAGE = "com.android.documentsui";
+    private static final int IMAGE_INVALID = 0;
+    private static final int IMAGE_SPARSE = 1;
+    private static final int IMAGE_RAW = 2;
+    private static final int SPARSE_MAGIC = 0xed26ff3a;
+    private static final int SPARSE_HEADER_SIZE = 28;
+    private static final int SPARSE_CHUNK_HEADER_SIZE = 12;
+    // ext4 superblock starts at 1024; s_magic is 0x38 bytes into it.
+    private static final int EXT4_MAGIC_OFFSET = 0x438;
+    private static final int EXT4_SUPER_MAGIC = 0xEF53;
+    private static final int FS_SUPER_OFFSET = 1024;
+    private static final int EROFS_SUPER_MAGIC = 0xE0F5E1E2;
+    private static final int F2FS_SUPER_MAGIC = 0xF2F52010;
+    private static final int HEADER_BYTES = 4096;
     private List<Object> mDSUList = new ArrayList<Object>();
     private ArrayAdapter<Object> mAdapter;
 
@@ -358,6 +383,8 @@ public class DSULoader extends ListActivity {
     @Override
     protected void onCreate(Bundle icicle) {
         super.onCreate(icicle);
+        setContentView(R.layout.dsu_loader);
+        findViewById(R.id.dsu_install_local_gsi).setOnClickListener(v -> pickLocalGsi());
         String dsuList = SystemProperties.get(PROPERTY_KEY_LIST);
         Slog.e(TAG, "Try to get DSU list from: " + PROPERTY_KEY_LIST);
         if (dsuList == null || dsuList.isEmpty()) {
@@ -403,6 +430,182 @@ public class DSULoader extends ListActivity {
             }).start();
         }
         finish();
+    }
+
+    private void pickLocalGsi() {
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+        intent.addCategory(Intent.CATEGORY_OPENABLE);
+        intent.setType("*/*");
+        intent.putExtra(Intent.EXTRA_LOCAL_ONLY, true);
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION
+                | Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
+        intent.setPackage(DOCUMENTS_UI_PACKAGE);
+        try {
+            startActivityForResult(intent, REQUEST_PICK_GSI);
+        } catch (ActivityNotFoundException e) {
+            intent.setPackage(null);
+            try {
+                startActivityForResult(intent, REQUEST_PICK_GSI);
+            } catch (ActivityNotFoundException e2) {
+                Slog.e(TAG, "No file manager", e2);
+            }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode != REQUEST_PICK_GSI) {
+            return;
+        }
+        if (resultCode != Activity.RESULT_OK || data == null || data.getData() == null) {
+            return;
+        }
+        Uri uri = data.getData();
+        int grantFlags = data.getFlags() & Intent.FLAG_GRANT_READ_URI_PERMISSION;
+        if (grantFlags != 0) {
+            try {
+                getContentResolver().takePersistableUriPermission(uri, grantFlags);
+            } catch (SecurityException e) {
+                Slog.i(TAG, "persistable permission not available");
+            }
+        }
+
+        String name = null;
+        long size = -1;
+        try (Cursor cursor = getContentResolver().query(uri,
+                new String[] {OpenableColumns.DISPLAY_NAME, OpenableColumns.SIZE},
+                null, null, null)) {
+            if (cursor != null && cursor.moveToFirst()) {
+                name = cursor.getString(0);
+                if (!cursor.isNull(1)) {
+                    size = cursor.getLong(1);
+                }
+            }
+        } catch (SecurityException e) {
+            Slog.e(TAG, "query failed", e);
+            showInvalidImage();
+            return;
+        }
+        if (name == null && uri.getLastPathSegment() != null) {
+            name = Uri.decode(uri.getLastPathSegment());
+        }
+        if (name == null || !name.toLowerCase(Locale.US).endsWith(".img")) {
+            showInvalidImage();
+            return;
+        }
+
+        int kind;
+        try (InputStream in = getContentResolver().openInputStream(uri)) {
+            if (in == null) {
+                showInvalidImage();
+                return;
+            }
+            kind = inspectSystemImage(in);
+        } catch (IOException | SecurityException e) {
+            Slog.e(TAG, "read image header failed", e);
+            showInvalidImage();
+            return;
+        }
+        if (kind == IMAGE_INVALID) {
+            showInvalidImage();
+            return;
+        }
+        if (size <= 0) {
+            try (AssetFileDescriptor afd = getContentResolver().openAssetFileDescriptor(uri, "r")) {
+                if (afd != null) {
+                    size = afd.getLength();
+                }
+            } catch (IOException e) {
+                size = -1;
+            }
+        }
+        if (kind == IMAGE_RAW && size <= 0) {
+            showInvalidImage();
+            return;
+        }
+        installLocalGsi(uri, size);
+    }
+
+    private void installLocalGsi(Uri uri, long size) {
+        try {
+            grantUriPermission("com.android.dynsystem", uri, Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        } catch (SecurityException e) {
+            Slog.e(TAG, "grantUriPermission failed", e);
+            showInvalidImage();
+            return;
+        }
+        Intent intent = new Intent();
+        intent.setClassName("com.android.dynsystem", "com.android.dynsystem.VerificationActivity");
+        intent.setAction(DynamicSystemClient.ACTION_START_INSTALL);
+        intent.setData(uri);
+        intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        if (size > 0) {
+            intent.putExtra(DynamicSystemClient.KEY_SYSTEM_SIZE, size);
+        }
+        intent.putExtra(DynamicSystemClient.KEY_SYSTEM_IMAGE, true);
+        intent.putExtra("KEY_PUBKEY", "");
+        startActivity(intent);
+        finish();
+    }
+
+    private void showInvalidImage() {
+        Toast.makeText(this, R.string.dsu_local_gsi_invalid, Toast.LENGTH_LONG).show();
+    }
+
+    /** Sparse system.img, or a raw ext4 / erofs / f2fs image. */
+    private static int inspectSystemImage(InputStream in) throws IOException {
+        byte[] buf = new byte[HEADER_BYTES];
+        int n = 0;
+        while (n < buf.length) {
+            int read = in.read(buf, n, buf.length - n);
+            if (read < 0) {
+                break;
+            }
+            n += read;
+        }
+        if (n >= 8 && isBootImage(buf)) {
+            return IMAGE_INVALID;
+        }
+        if (n >= SPARSE_HEADER_SIZE && isSparseImage(buf, n)) {
+            return IMAGE_SPARSE;
+        }
+        ByteBuffer little = ByteBuffer.wrap(buf, 0, n).order(ByteOrder.LITTLE_ENDIAN);
+        if (n >= EXT4_MAGIC_OFFSET + 2
+                && little.getShort(EXT4_MAGIC_OFFSET) == (short) EXT4_SUPER_MAGIC) {
+            return IMAGE_RAW;
+        }
+        if (n >= FS_SUPER_OFFSET + 4) {
+            int magic = little.getInt(FS_SUPER_OFFSET);
+            if (magic == EROFS_SUPER_MAGIC || magic == F2FS_SUPER_MAGIC) {
+                return IMAGE_RAW;
+            }
+        }
+        return IMAGE_INVALID;
+    }
+
+    private static boolean isBootImage(byte[] buf) {
+        return buf[0] == 'A' && buf[1] == 'N' && buf[2] == 'D' && buf[3] == 'R'
+                && buf[4] == 'O' && buf[5] == 'I' && buf[6] == 'D' && buf[7] == '!';
+    }
+
+    private static boolean isSparseImage(byte[] buf, int length) {
+        ByteBuffer header = ByteBuffer.wrap(buf, 0, length).order(ByteOrder.LITTLE_ENDIAN);
+        if (header.getInt(0) != SPARSE_MAGIC) {
+            return false;
+        }
+        int major = header.getShort(4) & 0xffff;
+        int minor = header.getShort(6) & 0xffff;
+        int fileHeader = header.getShort(8) & 0xffff;
+        int chunkHeader = header.getShort(10) & 0xffff;
+        int blockSize = header.getInt(12);
+        int totalBlocks = header.getInt(16);
+        return major <= 1
+                && minor == 0
+                && fileHeader == SPARSE_HEADER_SIZE
+                && chunkHeader == SPARSE_CHUNK_HEADER_SIZE
+                && blockSize >= 512
+                && (blockSize & 0x3) == 0
+                && totalBlocks > 0;
     }
 
     private class DSUPackageListAdapter extends ArrayAdapter<Object> {
